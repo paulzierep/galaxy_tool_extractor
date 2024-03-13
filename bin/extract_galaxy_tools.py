@@ -103,7 +103,11 @@ def add_tool_stats_to_tools(tools_df: pd.DataFrame, tool_stats_path: Path, colum
             else:
                 summed_count = sum(counts)
 
+<<<<<<< HEAD
             tools_df.loc[pd.Index([row_index]), column_name] = summed_count
+=======
+            tools_df.loc[str(row_index), column_name] = summed_count
+>>>>>>> 5c5dd64 (Merge pull request #5 from paulzierep/improved-stats-generation)
 
     return tools_df
 
