@@ -343,15 +343,15 @@
         "Description": "SPAdes is an assembly toolkit containing various assembly pipelines. It implements the following 4 stages: assembly graph construction, k-bimer adjustment, construction of paired assembly graph and contig construction.",
         "bio.tool id": "spades",
         "bio.tool ids": [
-            "rnaspades",
             "rnaviralspades",
-            "metaplasmidspades",
-            "metaviralspades",
             "metaspades",
+            "rnaspades",
+            "coronaspades",
+            "metaviralspades",
             "spades",
             "biosyntheticspades",
-            "plasmidspades",
-            "coronaspades"
+            "metaplasmidspades",
+            "plasmidspades"
         ],
         "biii": null,
         "bio.tool name": "SPAdes",
