@@ -40,8 +40,14 @@ conf_path = project_path.joinpath("data", "conf.yml")
 public_servers = project_path.joinpath("results", "available_public_servers.csv")
 
 GALAXY_TOOL_STATS = {
-    "No. of tool users (2022-2023) (usegalaxy.eu)": usage_stats_path.joinpath("tool_usage_per_user_2022_23_EU.csv"),
-    "Total tool usage (usegalaxy.eu)": usage_stats_path.joinpath("total_tool_usage_EU.csv"),
+    "No. of tool users (2022-2023) (usegalaxy.eu)": usage_stats_path.joinpath(
+        "eu", "tool_usage_per_user_2022_23_EU.csv"
+    ),
+    "Total tool usage (usegalaxy.eu)": usage_stats_path.joinpath("eu", "total_tool_usage_EU.csv"),
+    "Tool users last 2 years (usegalaxy.org)": usage_stats_path.joinpath("org", "tool_users_2y_29.06.2024.csv"),
+    "Tool users all time (usegalaxy.org)": usage_stats_path.joinpath("org", "tool_users_all_29.06.2024.csv"),
+    "Tool usage last 2 years (usegalaxy.org)": usage_stats_path.joinpath("org", "tool_usage_2y_29.06.2024.csv"),
+    "Tool usage all time years (usegalaxy.org)": usage_stats_path.joinpath("org", "tool_usage_all_29.06.2024.csv"),
 }
 
 # load the configs globally
@@ -49,18 +55,26 @@ with open(conf_path) as f:
     configs = yaml.safe_load(f)
 
 
-def get_last_url_position(toot_id: str) -> str:
+def get_last_url_position(tool_id: str) -> str:
     """
-    Returns the second last url position of the toot_id, if the value is not a
+    Returns the last url position of the toot_id, if the value is not a
     url it returns the toot_id. So works for local and toolshed
     installed tools.
 
     :param tool_id: galaxy tool id
     """
 
-    if "/" in toot_id:
-        toot_id = toot_id.split("/")[-1]
-    return toot_id
+    if "/" in tool_id:
+        # if the version is part of the string `toolshed.g2.bx.psu.edu/repos/devteam/column_maker/Add_a_column1/1.6,2538327`
+        if len(tool_id.split("/")) == 5:
+            new_tool_id = tool_id.split("/")[-2]
+        # otherwise `toolshed.g2.bx.psu.edu/repos/devteam/column_maker/Add_a_column1,2538327`
+        elif len(tool_id.split("/")) == 4:
+            new_tool_id = tool_id.split("/")[-1]
+        else:
+            print(f"{tool_id} is not a proper tool url")
+            new_tool_id = None
+    return new_tool_id
 
 
 def get_tool_stats_from_stats_file(tool_stats_df: pd.DataFrame, tool_ids: List[str]) -> int:
