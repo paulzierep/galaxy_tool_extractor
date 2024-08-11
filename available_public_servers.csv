@@ -1,6 +1,6 @@
 name	url
 APOSTL	http://apostl.moffitt.org/
-ARGs-OAP	http://smile.hku.hk/SARGs
+BF2I-MAP	http://bf2i-galaxy.insa-lyon.fr:8080/
 BioBix	http://galaxy.ugent.be/
 CIRM-CFBP	https://iris.angers.inra.fr/galaxypub-cfbp
 Center for Phage Technology (CPT)	https://cpt.tamu.edu/galaxy-public/
@@ -11,7 +11,6 @@ CropGalaxy	http://cropgalaxy.excellenceinbreeding.org/
 Dintor	http://dintor.eurac.edu/
 FreeBioinfo	http://www.freebioinfo.org/
 GASLINI	http://igg.cloud.ba.infn.it/galaxy
-Galaxy@AuBi	https://galaxy.mesocentre.uca.fr
 Galaxy@Pasteur	https://galaxy.pasteur.fr/
 GalaxyTrakr	https://galaxytrakr.org/
 Genomic Hyperbrowser	http://hyperbrowser.uio.no/hb/
