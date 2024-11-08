@@ -58,7 +58,7 @@ def main() -> None:
 
             # Create the base URL template for each tool link
             url_template = (
-                "{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu/{owner}/{wrapper_id}/{tool_id}"
+                "{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%{owner}%{wrapper_id}%{tool_id}"
             )
 
             # Build HTML list items with links
