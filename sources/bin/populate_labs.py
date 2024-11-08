@@ -2,10 +2,13 @@ import argparse
 import os
 from typing import List
 
-import oyaml as yaml
 import pandas as pd
+from ruamel.yaml import YAML as yaml
+from ruamel.yaml.scalarstring import LiteralScalarString
 
-# import yaml
+
+def add_tools_url(tools) -> None:
+    return tools
 
 
 def main() -> None:
@@ -44,22 +47,20 @@ def main() -> None:
             # Use the first column (assumed to be the tool title) as the title_md
             title_md = row[data.columns[0]]  # Get the first column's value as title_md
 
-            # Start the unordered list <ul> and construct each <li> for every other column in the row
-            description = row["Description"]
-            # for column in data.columns[1:]:  # Skip the first column (since it's title_md)
-            #     description += f"  <li>{column}: {row[column]}</li>\n"
-            # description += "</ul>"
+            # Prepare the description with LiteralScalarString to enforce literal block style
+            description = f"|+ {row['Description']}\n{row['Galaxy tool ids']}".strip()
+            description_md = LiteralScalarString(description)
 
-            # Create the tool entry with the formatted HTML list
+            # Create the tool entry
             tool_entry = {
                 "title_md": title_md,
-                "description_md": description,  # Directly insert the HTML string without escape sequences
+                "description_md": description_md,
             }
             yaml_data["tabs"][0]["content"].append(tool_entry)
 
         # Write the YAML data to the output file
         with open(args.tool_yml, "w") as yaml_file:
-            yaml.dump(yaml_data, yaml_file, default_flow_style=False, allow_unicode=True, indent=2)
+            yaml().dump(yaml_data, yaml_file)
         print(f"Data successfully written to '{args.tool_yml}'")
 
     except Exception as e:
