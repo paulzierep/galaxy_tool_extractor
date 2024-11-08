@@ -47,13 +47,17 @@ def main() -> None:
             # Use the first column (assumed to be the tool title) as the title_md
             title_md = row[data.columns[0]]  # Get the first column's value as title_md
 
-            # Prepare the description with a Markdown bullet for each Galaxy tool id
-            description = f"|+ {row['Description']}"
+            # Prepare the description with an HTML unordered list for each Galaxy tool ID
+            description = f"{row['Description']}"
             tool_ids = row["Galaxy tool ids"]
 
             # Split the tool IDs by comma (or any other delimiter as needed)
             tool_ids_list = tool_ids.split(",") if isinstance(tool_ids, str) else [tool_ids]
-            description += "\n" + "\n".join([f"- {str(tool_id).strip()}" for tool_id in tool_ids_list])
+
+            # Create an HTML unordered list for tool IDs
+            description += (
+                "\n<ul>\n" + "\n".join([f"  <li>{str(tool_id).strip()}</li>" for tool_id in tool_ids_list]) + "\n</ul>"
+            )
 
             # Use LiteralScalarString to enforce literal block style for the description
             description_md = LiteralScalarString(description.strip())

@@ -6,1921 +6,2497 @@ tabs:
   content:
   - title_md: PAMPA
     description_md: |-
-      |+ Tools to compute and analyse biodiversity metrics
-      - pampa_communitymetrics
-      - pampa_presabs
-      - pampa_glmcomm
-      - pampa_glmsp
-      - pampa_plotglm
+      Tools to compute and analyse biodiversity metrics
+      <ul>
+        <li>pampa_communitymetrics</li>
+        <li>pampa_presabs</li>
+        <li>pampa_glmcomm</li>
+        <li>pampa_glmsp</li>
+        <li>pampa_plotglm</li>
+      </ul>
   - title_md: TreeBest
     description_md: |-
-      |+ TreeBeST best
-      - treebest_best
+      TreeBeST best
+      <ul>
+        <li>treebest_best</li>
+      </ul>
   - title_md: abacas
     description_md: |-
-      |+ Order and Orientate Contigs
-      - abacas
+      Order and Orientate Contigs
+      <ul>
+        <li>abacas</li>
+      </ul>
   - title_md: abricate
     description_md: |-
-      |+ Mass screening of contigs for antiobiotic resistance genes
-      - abricate
-      - abricate_list
-      - abricate_summary
+      Mass screening of contigs for antiobiotic resistance genes
+      <ul>
+        <li>abricate</li>
+        <li>abricate_list</li>
+        <li>abricate_summary</li>
+      </ul>
   - title_md: abritamr
     description_md: |-
-      |+ A pipeline for running AMRfinderPlus and collating results into functional classes
-      - abritamr
+      A pipeline for running AMRfinderPlus and collating results into functional classes
+      <ul>
+        <li>abritamr</li>
+      </ul>
   - title_md: abyss
     description_md: |-
-      |+ Assembly By Short Sequences - a de novo, parallel, paired-end sequence assembler
-      - abyss-pe
+      Assembly By Short Sequences - a de novo, parallel, paired-end sequence assembler
+      <ul>
+        <li>abyss-pe</li>
+      </ul>
   - title_md: aldex2
     description_md: |-
-      |+ Performs analysis Of differential abundance taking sample variation into account
-      - aldex2
+      Performs analysis Of differential abundance taking sample variation into account
+      <ul>
+        <li>aldex2</li>
+      </ul>
   - title_md: amplican
     description_md: |-
-      |+ AmpliCan is an analysis tool for genome editing.
-      - amplican
+      AmpliCan is an analysis tool for genome editing.
+      <ul>
+        <li>amplican</li>
+      </ul>
   - title_md: amrfinderplus
     description_md: |-
-      |+ "AMRFinderPlus is designed to find acquired antimicrobial resistance genes and point mutations in protein and/or assembled nucleotide sequences.It can also search "plus", stress, heat, and biocide resistance and virulence factors for some organisms.
-      - amrfinderplus
+      "AMRFinderPlus is designed to find acquired antimicrobial resistance genes and point mutations in protein and/or assembled nucleotide sequences.It can also search "plus", stress, heat, and biocide resistance and virulence factors for some organisms.
+      <ul>
+        <li>amrfinderplus</li>
+      </ul>
   - title_md: ancombc
     description_md: |-
-      |+ Performs analysis of compositions of microbiomes with bias correction.
-      - ancombc
+      Performs analysis of compositions of microbiomes with bias correction.
+      <ul>
+        <li>ancombc</li>
+      </ul>
   - title_md: antismash
     description_md: |-
-      |+ Antismash allows the genome-wide identification, annotation and analysis of secondary metabolite biosynthesis gene clusters
-      - antismash
+      Antismash allows the genome-wide identification, annotation and analysis of secondary metabolite biosynthesis gene clusters
+      <ul>
+        <li>antismash</li>
+      </ul>
   - title_md: artic
     description_md: |-
-      |+ The artic pipeline is designed to help run the artic bioinformatics protocols;for example the nCoV-2019 novel coronavirus protocol.Features include: read filtering, primer trimming, amplicon coverage normalisation,variant calling and consensus building
-      - artic_guppyplex
-      - artic_minion
+      The artic pipeline is designed to help run the artic bioinformatics protocols;for example the nCoV-2019 novel coronavirus protocol.Features include: read filtering, primer trimming, amplicon coverage normalisation,variant calling and consensus building
+      <ul>
+        <li>artic_guppyplex</li>
+        <li>artic_minion</li>
+      </ul>
   - title_md: assemblystats
     description_md: |-
-      |+ Summarise an assembly (e.g. N50 metrics)
-      - assemblystats
+      Summarise an assembly (e.g. N50 metrics)
+      <ul>
+        <li>assemblystats</li>
+      </ul>
   - title_md: bakta
     description_md: |-
-      |+ "Bakta is a tool for the rapid & standardized annotation of bacterial genomes and plasmids from both isolates and MAGs.It provides dbxref-rich and sORF-including annotations in machine-readable JSON & bioinformatics standard file formats for automatic downstream analysis."
-      - bakta
+      "Bakta is a tool for the rapid & standardized annotation of bacterial genomes and plasmids from both isolates and MAGs.It provides dbxref-rich and sORF-including annotations in machine-readable JSON & bioinformatics standard file formats for automatic downstream analysis."
+      <ul>
+        <li>bakta</li>
+      </ul>
   - title_md: bamtools
     description_md: |-
-      |+ Operate on and transform BAM datasets in various ways using bamtools
-      - bamtools
+      Operate on and transform BAM datasets in various ways using bamtools
+      <ul>
+        <li>bamtools</li>
+      </ul>
   - title_md: bandage
     description_md: |-
-      |+ Bandage - A Bioinformatics Application for Navigating De novo Assembly Graphs Easily
-      - bandage_image
-      - bandage_info
+      Bandage - A Bioinformatics Application for Navigating De novo Assembly Graphs Easily
+      <ul>
+        <li>bandage_image</li>
+        <li>bandage_info</li>
+      </ul>
   - title_md: bayescan
     description_md: |-
-      |+ Detecting natural selection from population-based genetic data
-      - BayeScan
+      Detecting natural selection from population-based genetic data
+      <ul>
+        <li>BayeScan</li>
+      </ul>
   - title_md: bbtools
     description_md: |-
-      |+ BBTools is a suite of fast, multithreaded bioinformatics tools designed for analysis of DNA and RNA sequence data.BBTools can handle common sequencing file formats such as fastq, fasta, sam, scarf, fasta+qual, compressed or raw,with autodetection of quality encoding and interleaving. It is written in Java and works on any platform supportingJava, including Linux, MacOS, and Microsoft Windows and Linux; there are no dependencies other than Java (version7 or higher). Program descriptions and options are shown when running the shell scripts with no parameters.
-      - bbtools_bbduk
-      - bbtools_bbmap
-      - bbtools_bbmerge
-      - bbtools_bbnorm
-      - bbtools_callvariants
-      - bbtools_tadpole
+      BBTools is a suite of fast, multithreaded bioinformatics tools designed for analysis of DNA and RNA sequence data.BBTools can handle common sequencing file formats such as fastq, fasta, sam, scarf, fasta+qual, compressed or raw,with autodetection of quality encoding and interleaving. It is written in Java and works on any platform supportingJava, including Linux, MacOS, and Microsoft Windows and Linux; there are no dependencies other than Java (version7 or higher). Program descriptions and options are shown when running the shell scripts with no parameters.
+      <ul>
+        <li>bbtools_bbduk</li>
+        <li>bbtools_bbmap</li>
+        <li>bbtools_bbmerge</li>
+        <li>bbtools_bbnorm</li>
+        <li>bbtools_callvariants</li>
+        <li>bbtools_tadpole</li>
+      </ul>
   - title_md: bigscape
     description_md: |-
-      |+ Construct sequence similarity networks of BGCs and groups them into GCF
-      - bigscape
+      Construct sequence similarity networks of BGCs and groups them into GCF
+      <ul>
+        <li>bigscape</li>
+      </ul>
   - title_md: binning_refiner
     description_md: |-
-      |+ Reconciles the outputs of different binning programs with the aim to improve the quality of genome bins,especially with respect to contamination levels.
-      - bin_refiner
+      Reconciles the outputs of different binning programs with the aim to improve the quality of genome bins,especially with respect to contamination levels.
+      <ul>
+        <li>bin_refiner</li>
+      </ul>
   - title_md: biohansel
     description_md: |-
-      |+ Heidelberg and Enteritidis SNP Elucidation
-      - biohansel
+      Heidelberg and Enteritidis SNP Elucidation
+      <ul>
+        <li>biohansel</li>
+      </ul>
   - title_md: biom_format
     description_md: |-
-      |+ The biom-format package provides a command line interface and Python API for working with BIOM files.
-      - biom_add_metadata
-      - biom_convert
-      - biom_from_uc
-      - biom_normalize_table
-      - biom_subset_table
-      - biom_summarize_table
+      The biom-format package provides a command line interface and Python API for working with BIOM files.
+      <ul>
+        <li>biom_add_metadata</li>
+        <li>biom_convert</li>
+        <li>biom_from_uc</li>
+        <li>biom_normalize_table</li>
+        <li>biom_subset_table</li>
+        <li>biom_summarize_table</li>
+      </ul>
   - title_md: biotradis
     description_md: |-
-      |+ Bio-Tradis is a tool suite dedicated to essentiality analyses with TraDis data.
-      - bacteria_tradis
-      - tradis_essentiality
-      - tradis_gene_insert_sites
+      Bio-Tradis is a tool suite dedicated to essentiality analyses with TraDis data.
+      <ul>
+        <li>bacteria_tradis</li>
+        <li>tradis_essentiality</li>
+        <li>tradis_gene_insert_sites</li>
+      </ul>
   - title_md: blast2go
     description_md: |-
-      |+ Maps BLAST results to GO annotation terms
-      - blast2go
+      Maps BLAST results to GO annotation terms
+      <ul>
+        <li>blast2go</li>
+      </ul>
   - title_md: blast_rbh
     description_md: |-
-      |+ BLAST Reciprocal Best Hits (RBH) from two FASTA files
-      - blast_reciprocal_best_hits
+      BLAST Reciprocal Best Hits (RBH) from two FASTA files
+      <ul>
+        <li>blast_reciprocal_best_hits</li>
+      </ul>
   - title_md: blastxml_to_top_descr
     description_md: |-
-      |+ Make table of top BLAST match descriptions
-      - blastxml_to_top_descr
+      Make table of top BLAST match descriptions
+      <ul>
+        <li>blastxml_to_top_descr</li>
+      </ul>
   - title_md: bracken
     description_md: |-
-      |+ Bayesian Reestimation of Abundance with KrakEN
-      - est_abundance
+      Bayesian Reestimation of Abundance with KrakEN
+      <ul>
+        <li>est_abundance</li>
+      </ul>
   - title_md: busco
     description_md: |-
-      |+ BUSCO assess genome and annotation completeness
-      - busco
+      BUSCO assess genome and annotation completeness
+      <ul>
+        <li>busco</li>
+      </ul>
   - title_md: cat
     description_md: |-
-      |+ Contig Annotation Tool (CAT)
-      - cat_add_names
-      - cat_bins
-      - cat_contigs
-      - cat_prepare
-      - cat_summarise
+      Contig Annotation Tool (CAT)
+      <ul>
+        <li>cat_add_names</li>
+        <li>cat_bins</li>
+        <li>cat_contigs</li>
+        <li>cat_prepare</li>
+        <li>cat_summarise</li>
+      </ul>
   - title_md: cd_hit_dup
     description_md: |-
-      |+ simple tool for removing duplicates from sequencing reads
-      - cd_hit_dup
+      simple tool for removing duplicates from sequencing reads
+      <ul>
+        <li>cd_hit_dup</li>
+      </ul>
   - title_md: cdhit
     description_md: |-
-      |+ Cluster or compare biological sequence datasets
-      - cd_hit
+      Cluster or compare biological sequence datasets
+      <ul>
+        <li>cd_hit</li>
+      </ul>
   - title_md: cemitool
     description_md: |-
-      |+ Gene co-expression network analysis tool
-      - cemitool
+      Gene co-expression network analysis tool
+      <ul>
+        <li>cemitool</li>
+      </ul>
   - title_md: checkm
     description_md: |-
-      |+ Assess the quality of microbial genomes recovered from isolates, single cells, and metagenomes
-      - checkm_analyze
-      - checkm_lineage_set
-      - checkm_lineage_wf
-      - checkm_plot
-      - checkm_qa
-      - checkm_taxon_set
-      - checkm_taxonomy_wf
-      - checkm_tetra
-      - checkm_tree
-      - checkm_tree_qa
+      Assess the quality of microbial genomes recovered from isolates, single cells, and metagenomes
+      <ul>
+        <li>checkm_analyze</li>
+        <li>checkm_lineage_set</li>
+        <li>checkm_lineage_wf</li>
+        <li>checkm_plot</li>
+        <li>checkm_qa</li>
+        <li>checkm_taxon_set</li>
+        <li>checkm_taxonomy_wf</li>
+        <li>checkm_tetra</li>
+        <li>checkm_tree</li>
+        <li>checkm_tree_qa</li>
+      </ul>
   - title_md: clair3
     description_md: |-
-      |+ Symphonizing pileup and full-alignment for high-performance long-read variant calling
-      - clair3
+      Symphonizing pileup and full-alignment for high-performance long-read variant calling
+      <ul>
+        <li>clair3</li>
+      </ul>
   - title_md: clinod
     description_md: |-
-      |+ NoD: a Nucleolar localization sequence detector for eukaryotic and viral proteins
-      - clinod
+      NoD: a Nucleolar localization sequence detector for eukaryotic and viral proteins
+      <ul>
+        <li>clinod</li>
+      </ul>
   - title_md: clustalw
     description_md: |-
-      |+ ClustalW multiple sequence alignment program for DNA or proteins
-      - clustalw
+      ClustalW multiple sequence alignment program for DNA or proteins
+      <ul>
+        <li>clustalw</li>
+      </ul>
   - title_md: cmsearch_deoverlap
     description_md: |-
-      |+ removes lower scoring overlaps from cmsearch results.
-      - cmsearch_deoverlap
+      removes lower scoring overlaps from cmsearch results.
+      <ul>
+        <li>cmsearch_deoverlap</li>
+      </ul>
   - title_md: codeml
     description_md: |-
-      |+ Detects positive selection
-      - codeml
+      Detects positive selection
+      <ul>
+        <li>codeml</li>
+      </ul>
   - title_md: cojac
     description_md: |-
-      |+ co-occurrence of mutations on amplicons
-      - cooc_mutbamscan
-      - cooc_pubmut
-      - cooc_tabmut
+      co-occurrence of mutations on amplicons
+      <ul>
+        <li>cooc_mutbamscan</li>
+        <li>cooc_pubmut</li>
+        <li>cooc_tabmut</li>
+      </ul>
   - title_md: combine_assembly_stats
     description_md: |-
-      |+ Combine multiple Assemblystats datasets into a single tabular report
-      - combine_stats
+      Combine multiple Assemblystats datasets into a single tabular report
+      <ul>
+        <li>combine_stats</li>
+      </ul>
   - title_md: combine_metaphlan_humann
     description_md: |-
-      |+ Combine MetaPhlAn2 and HUMAnN2 outputs to relate genus/species abundances and gene families/pathways abundances
-      - combine_metaphlan_humann
+      Combine MetaPhlAn2 and HUMAnN2 outputs to relate genus/species abundances and gene families/pathways abundances
+      <ul>
+        <li>combine_metaphlan_humann</li>
+      </ul>
   - title_md: compare_humann2_output
     description_md: |-
-      |+ Compare outputs of HUMAnN2 for several samples and extract similar and specific information
-      - compare_humann2_output
+      Compare outputs of HUMAnN2 for several samples and extract similar and specific information
+      <ul>
+        <li>compare_humann2_output</li>
+      </ul>
   - title_md: compleasm
     description_md: |-
-      |+ Compleasm: a faster and more accurate reimplementation of BUSCO
-      - compleasm
+      Compleasm: a faster and more accurate reimplementation of BUSCO
+      <ul>
+        <li>compleasm</li>
+      </ul>
   - title_md: concoct
     description_md: |-
-      |+ CONCOCT (Clustering cONtigs with COverage and ComposiTion) does unsupervised binning of metagenomic contigs byusing nucleotide composition - kmer frequencies - and coverage data for multiple samples. CONCOCT can accurately(up to species level) bin metagenomic contigs.
-      - concoct
-      - concoct_coverage_table
-      - concoct_cut_up_fasta
-      - concoct_extract_fasta_bins
-      - concoct_merge_cut_up_clustering
+      CONCOCT (Clustering cONtigs with COverage and ComposiTion) does unsupervised binning of metagenomic contigs byusing nucleotide composition - kmer frequencies - and coverage data for multiple samples. CONCOCT can accurately(up to species level) bin metagenomic contigs.
+      <ul>
+        <li>concoct</li>
+        <li>concoct_coverage_table</li>
+        <li>concoct_cut_up_fasta</li>
+        <li>concoct_extract_fasta_bins</li>
+        <li>concoct_merge_cut_up_clustering</li>
+      </ul>
   - title_md: coverm
     description_md: |-
-      |+ CoverM genome and contig wrappers
-      - coverm_contig
-      - coverm_genome
+      CoverM genome and contig wrappers
+      <ul>
+        <li>coverm_contig</li>
+        <li>coverm_genome</li>
+      </ul>
   - title_md: cryptogenotyper
     description_md: |-
-      |+ CryptoGenotyper is a standalone tool to *in-silico*  determine species and subtype based on SSU rRNA and gp60 markers.
-      - CryptoGenotyper
+      CryptoGenotyper is a standalone tool to *in-silico*  determine species and subtype based on SSU rRNA and gp60 markers.
+      <ul>
+        <li>CryptoGenotyper</li>
+      </ul>
   - title_md: cutadapt
     description_md: |-
-      |+ Flexible tool to remove adapter sequences (and quality trim) high throughput sequencing reads (fasta/fastq).
-      - cutadapt
+      Flexible tool to remove adapter sequences (and quality trim) high throughput sequencing reads (fasta/fastq).
+      <ul>
+        <li>cutadapt</li>
+      </ul>
   - title_md: dada2
     description_md: |-
-      |+ DADA2 wrappers
-      - dada2_assignTaxonomyAddspecies
-      - dada2_dada
-      - dada2_filterAndTrim
-      - dada2_learnErrors
-      - dada2_makeSequenceTable
-      - dada2_mergePairs
-      - dada2_plotComplexity
-      - dada2_plotQualityProfile
-      - dada2_removeBimeraDenovo
-      - dada2_seqCounts
+      DADA2 wrappers
+      <ul>
+        <li>dada2_assignTaxonomyAddspecies</li>
+        <li>dada2_dada</li>
+        <li>dada2_filterAndTrim</li>
+        <li>dada2_learnErrors</li>
+        <li>dada2_makeSequenceTable</li>
+        <li>dada2_mergePairs</li>
+        <li>dada2_plotComplexity</li>
+        <li>dada2_plotQualityProfile</li>
+        <li>dada2_removeBimeraDenovo</li>
+        <li>dada2_seqCounts</li>
+      </ul>
   - title_md: das_tool
     description_md: |-
-      |+ DAS Tool for genome resolved metagenomics
-      - Fasta_to_Contig2Bin
-      - das_tool
+      DAS Tool for genome resolved metagenomics
+      <ul>
+        <li>Fasta_to_Contig2Bin</li>
+        <li>das_tool</li>
+      </ul>
   - title_md: deseq2
     description_md: |-
-      |+ Differential gene expression analysis based on the negative binomial distribution
-      - deseq2
+      Differential gene expression analysis based on the negative binomial distribution
+      <ul>
+        <li>deseq2</li>
+      </ul>
   - title_md: diamond
     description_md: |-
-      |+ DIAMOND is a new alignment tool for aligning short DNA sequencing reads to a protein reference database such as NCBI-NR.
-      - bg_diamond
-      - bg_diamond_makedb
-      - bg_diamond_view
+      DIAMOND is a new alignment tool for aligning short DNA sequencing reads to a protein reference database such as NCBI-NR.
+      <ul>
+        <li>bg_diamond</li>
+        <li>bg_diamond_makedb</li>
+        <li>bg_diamond_view</li>
+      </ul>
   - title_md: disco
     description_md: |-
-      |+ DISCO is a overlap-layout-consensus (OLC) metagenome assembler
-      - disco
+      DISCO is a overlap-layout-consensus (OLC) metagenome assembler
+      <ul>
+        <li>disco</li>
+      </ul>
   - title_md: dram
     description_md: |-
-      |+ DRAM for distilling microbial metabolism to automate the curation of microbiome function
-      - dram_annotate
-      - dram_distill
-      - dram_merge_annotations
-      - dram_neighborhoods
-      - dram_strainer
+      DRAM for distilling microbial metabolism to automate the curation of microbiome function
+      <ul>
+        <li>dram_annotate</li>
+        <li>dram_distill</li>
+        <li>dram_merge_annotations</li>
+        <li>dram_neighborhoods</li>
+        <li>dram_strainer</li>
+      </ul>
   - title_md: drep
     description_md: |-
-      |+ dRep compares and dereplicates genome sets
-      - drep_compare
-      - drep_dereplicate
+      dRep compares and dereplicates genome sets
+      <ul>
+        <li>drep_compare</li>
+        <li>drep_dereplicate</li>
+      </ul>
   - title_md: ectyper
     description_md: |-
-      |+ EC-Typer - in silico serotyping of Escherichia coli species
-      - ectyper
+      EC-Typer - in silico serotyping of Escherichia coli species
+      <ul>
+        <li>ectyper</li>
+      </ul>
   - title_md: effectiveT3
     description_md: |-
-      |+ Find bacterial type III effectors in protein sequences
-      - effectiveT3
+      Find bacterial type III effectors in protein sequences
+      <ul>
+        <li>effectiveT3</li>
+      </ul>
   - title_md: eggnog_mapper
     description_md: |-
-      |+ eggnog-mapper fast functional annotation of novel sequences
-      - eggnog_mapper
-      - eggnog_mapper_annotate
-      - eggnog_mapper_search
+      eggnog-mapper fast functional annotation of novel sequences
+      <ul>
+        <li>eggnog_mapper</li>
+        <li>eggnog_mapper_annotate</li>
+        <li>eggnog_mapper_search</li>
+      </ul>
   - title_md: emboss_5
     description_md: |-
-      |+ Galaxy wrappers for EMBOSS version 5.0.0 tools
-      - EMBOSS: antigenic1
-      - EMBOSS: backtranseq2
-      - EMBOSS: banana3
-      - EMBOSS: biosed4
-      - EMBOSS: btwisted5
-      - EMBOSS: cai6
-      - EMBOSS: cai_custom6
-      - EMBOSS: chaos7
-      - EMBOSS: charge8
-      - EMBOSS: checktrans9
-      - EMBOSS: chips10
-      - EMBOSS: cirdna11
-      - EMBOSS: codcmp12
-      - EMBOSS: coderet13
-      - EMBOSS: compseq14
-      - EMBOSS: cpgplot15
-      - EMBOSS: cpgreport16
-      - EMBOSS: cusp17
-      - EMBOSS: cutseq18
-      - EMBOSS: dan19
-      - EMBOSS: degapseq20
-      - EMBOSS: descseq21
-      - EMBOSS: diffseq22
-      - EMBOSS: digest23
-      - EMBOSS: dotmatcher24
-      - EMBOSS: dotpath25
-      - EMBOSS: dottup26
-      - EMBOSS: dreg27
-      - EMBOSS: einverted28
-      - EMBOSS: epestfind29
-      - EMBOSS: equicktandem31
-      - EMBOSS: est2genome32
-      - EMBOSS: etandem33
-      - EMBOSS: extractfeat34
-      - EMBOSS: extractseq35
-      - EMBOSS: freak36
-      - EMBOSS: fuzznuc37
-      - EMBOSS: fuzzpro38
-      - EMBOSS: fuzztran39
-      - EMBOSS: garnier40
-      - EMBOSS: geecee41
-      - EMBOSS: getorf42
-      - EMBOSS: helixturnhelix43
-      - EMBOSS: hmoment44
-      - EMBOSS: iep45
-      - EMBOSS: infoseq46
-      - EMBOSS: isochore47
-      - EMBOSS: lindna48
-      - EMBOSS: marscan49
-      - EMBOSS: maskfeat50
-      - EMBOSS: maskseq51
-      - EMBOSS: matcher52
-      - EMBOSS: megamerger53
-      - EMBOSS: merger54
-      - EMBOSS: msbar55
-      - EMBOSS: needle56
-      - EMBOSS: newcpgreport57
-      - EMBOSS: newcpgseek58
-      - EMBOSS: newseq59
-      - EMBOSS: noreturn60
-      - EMBOSS: notseq61
-      - EMBOSS: nthseq62
-      - EMBOSS: octanol63
-      - EMBOSS: oddcomp64
-      - EMBOSS: palindrome65
-      - EMBOSS: pasteseq66
-      - EMBOSS: patmatdb67
-      - EMBOSS: pepcoil68
-      - EMBOSS: pepinfo69
-      - EMBOSS: pepnet70
-      - EMBOSS: pepstats71
-      - EMBOSS: pepwheel72
-      - EMBOSS: pepwindow73
-      - EMBOSS: pepwindowall74
-      - EMBOSS: plotcon75
-      - EMBOSS: plotorf76
-      - EMBOSS: polydot77
-      - EMBOSS: preg78
-      - EMBOSS: prettyplot79
-      - EMBOSS: prettyseq80
-      - EMBOSS: primersearch81
-      - EMBOSS: revseq82
-      - EMBOSS: seqmatchall83
-      - EMBOSS: seqret84
-      - EMBOSS: showfeat85
-      - EMBOSS: shuffleseq87
-      - EMBOSS: sigcleave88
-      - EMBOSS: sirna89
-      - EMBOSS: sixpack90
-      - EMBOSS: skipseq91
-      - EMBOSS: splitter92
-      - EMBOSS: supermatcher95
-      - EMBOSS: syco96
-      - EMBOSS: tcode97
-      - EMBOSS: textsearch98
-      - EMBOSS: tmap99
-      - EMBOSS: tranalign100
-      - EMBOSS: transeq101
-      - EMBOSS: trimest102
-      - EMBOSS: trimseq103
-      - EMBOSS: twofeat104
-      - EMBOSS: union105
-      - EMBOSS: vectorstrip106
-      - EMBOSS: water107
-      - EMBOSS: wobble108
-      - EMBOSS: wordcount109
-      - EMBOSS: wordmatch110
+      Galaxy wrappers for EMBOSS version 5.0.0 tools
+      <ul>
+        <li>EMBOSS: antigenic1</li>
+        <li>EMBOSS: backtranseq2</li>
+        <li>EMBOSS: banana3</li>
+        <li>EMBOSS: biosed4</li>
+        <li>EMBOSS: btwisted5</li>
+        <li>EMBOSS: cai6</li>
+        <li>EMBOSS: cai_custom6</li>
+        <li>EMBOSS: chaos7</li>
+        <li>EMBOSS: charge8</li>
+        <li>EMBOSS: checktrans9</li>
+        <li>EMBOSS: chips10</li>
+        <li>EMBOSS: cirdna11</li>
+        <li>EMBOSS: codcmp12</li>
+        <li>EMBOSS: coderet13</li>
+        <li>EMBOSS: compseq14</li>
+        <li>EMBOSS: cpgplot15</li>
+        <li>EMBOSS: cpgreport16</li>
+        <li>EMBOSS: cusp17</li>
+        <li>EMBOSS: cutseq18</li>
+        <li>EMBOSS: dan19</li>
+        <li>EMBOSS: degapseq20</li>
+        <li>EMBOSS: descseq21</li>
+        <li>EMBOSS: diffseq22</li>
+        <li>EMBOSS: digest23</li>
+        <li>EMBOSS: dotmatcher24</li>
+        <li>EMBOSS: dotpath25</li>
+        <li>EMBOSS: dottup26</li>
+        <li>EMBOSS: dreg27</li>
+        <li>EMBOSS: einverted28</li>
+        <li>EMBOSS: epestfind29</li>
+        <li>EMBOSS: equicktandem31</li>
+        <li>EMBOSS: est2genome32</li>
+        <li>EMBOSS: etandem33</li>
+        <li>EMBOSS: extractfeat34</li>
+        <li>EMBOSS: extractseq35</li>
+        <li>EMBOSS: freak36</li>
+        <li>EMBOSS: fuzznuc37</li>
+        <li>EMBOSS: fuzzpro38</li>
+        <li>EMBOSS: fuzztran39</li>
+        <li>EMBOSS: garnier40</li>
+        <li>EMBOSS: geecee41</li>
+        <li>EMBOSS: getorf42</li>
+        <li>EMBOSS: helixturnhelix43</li>
+        <li>EMBOSS: hmoment44</li>
+        <li>EMBOSS: iep45</li>
+        <li>EMBOSS: infoseq46</li>
+        <li>EMBOSS: isochore47</li>
+        <li>EMBOSS: lindna48</li>
+        <li>EMBOSS: marscan49</li>
+        <li>EMBOSS: maskfeat50</li>
+        <li>EMBOSS: maskseq51</li>
+        <li>EMBOSS: matcher52</li>
+        <li>EMBOSS: megamerger53</li>
+        <li>EMBOSS: merger54</li>
+        <li>EMBOSS: msbar55</li>
+        <li>EMBOSS: needle56</li>
+        <li>EMBOSS: newcpgreport57</li>
+        <li>EMBOSS: newcpgseek58</li>
+        <li>EMBOSS: newseq59</li>
+        <li>EMBOSS: noreturn60</li>
+        <li>EMBOSS: notseq61</li>
+        <li>EMBOSS: nthseq62</li>
+        <li>EMBOSS: octanol63</li>
+        <li>EMBOSS: oddcomp64</li>
+        <li>EMBOSS: palindrome65</li>
+        <li>EMBOSS: pasteseq66</li>
+        <li>EMBOSS: patmatdb67</li>
+        <li>EMBOSS: pepcoil68</li>
+        <li>EMBOSS: pepinfo69</li>
+        <li>EMBOSS: pepnet70</li>
+        <li>EMBOSS: pepstats71</li>
+        <li>EMBOSS: pepwheel72</li>
+        <li>EMBOSS: pepwindow73</li>
+        <li>EMBOSS: pepwindowall74</li>
+        <li>EMBOSS: plotcon75</li>
+        <li>EMBOSS: plotorf76</li>
+        <li>EMBOSS: polydot77</li>
+        <li>EMBOSS: preg78</li>
+        <li>EMBOSS: prettyplot79</li>
+        <li>EMBOSS: prettyseq80</li>
+        <li>EMBOSS: primersearch81</li>
+        <li>EMBOSS: revseq82</li>
+        <li>EMBOSS: seqmatchall83</li>
+        <li>EMBOSS: seqret84</li>
+        <li>EMBOSS: showfeat85</li>
+        <li>EMBOSS: shuffleseq87</li>
+        <li>EMBOSS: sigcleave88</li>
+        <li>EMBOSS: sirna89</li>
+        <li>EMBOSS: sixpack90</li>
+        <li>EMBOSS: skipseq91</li>
+        <li>EMBOSS: splitter92</li>
+        <li>EMBOSS: supermatcher95</li>
+        <li>EMBOSS: syco96</li>
+        <li>EMBOSS: tcode97</li>
+        <li>EMBOSS: textsearch98</li>
+        <li>EMBOSS: tmap99</li>
+        <li>EMBOSS: tranalign100</li>
+        <li>EMBOSS: transeq101</li>
+        <li>EMBOSS: trimest102</li>
+        <li>EMBOSS: trimseq103</li>
+        <li>EMBOSS: twofeat104</li>
+        <li>EMBOSS: union105</li>
+        <li>EMBOSS: vectorstrip106</li>
+        <li>EMBOSS: water107</li>
+        <li>EMBOSS: wobble108</li>
+        <li>EMBOSS: wordcount109</li>
+        <li>EMBOSS: wordmatch110</li>
+      </ul>
   - title_md: ete
     description_md: |-
-      |+ Analyse phylogenetic trees using the ETE Toolkit
-      - ete_gene_csv_finder
-      - ete_genetree_splitter
-      - ete_homology_classifier
-      - ete_init_taxdb
-      - ete_lineage_generator
-      - ete3_mod
-      - ete_species_tree_generator
+      Analyse phylogenetic trees using the ETE Toolkit
+      <ul>
+        <li>ete_gene_csv_finder</li>
+        <li>ete_genetree_splitter</li>
+        <li>ete_homology_classifier</li>
+        <li>ete_init_taxdb</li>
+        <li>ete_lineage_generator</li>
+        <li>ete3_mod</li>
+        <li>ete_species_tree_generator</li>
+      </ul>
   - title_md: export2graphlan
     description_md: |-
-      |+ export2graphlan is a conversion software tool for producing both annotation and tree file for GraPhlAn
-      - export2graphlan
+      export2graphlan is a conversion software tool for producing both annotation and tree file for GraPhlAn
+      <ul>
+        <li>export2graphlan</li>
+      </ul>
   - title_md: ez_histograms
     description_md: |-
-      |+ ggplot2 histograms and density plots
-      - ez_histograms
+      ggplot2 histograms and density plots
+      <ul>
+        <li>ez_histograms</li>
+      </ul>
   - title_md: fargene
     description_md: |-
-      |+ fARGene (Fragmented Antibiotic Resistance Gene iENntifiEr )
-      - fargene
+      fARGene (Fragmented Antibiotic Resistance Gene iENntifiEr )
+      <ul>
+        <li>fargene</li>
+      </ul>
   - title_md: fastani
     description_md: |-
-      |+ Fast alignment-free computation of whole-genome Average Nucleotide Identity
-      - fastani
+      Fast alignment-free computation of whole-genome Average Nucleotide Identity
+      <ul>
+        <li>fastani</li>
+      </ul>
   - title_md: fastk
     description_md: |-
-      |+ FastK: A K-mer counter (for HQ assembly data sets)
-      - fastk_fastk
+      FastK: A K-mer counter (for HQ assembly data sets)
+      <ul>
+        <li>fastk_fastk</li>
+      </ul>
   - title_md: fastp
     description_md: |-
-      |+ Fast all-in-one preprocessing for FASTQ files
-      - fastp
+      Fast all-in-one preprocessing for FASTQ files
+      <ul>
+        <li>fastp</li>
+      </ul>
   - title_md: fastqe
     description_md: |-
-      |+ FASTQE
-      - fastqe
+      FASTQE
+      <ul>
+        <li>fastqe</li>
+      </ul>
   - title_md: fasttree
     description_md: |-
-      |+ FastTree infers approximately-maximum-likelihood phylogenetic trees from alignments of nucleotide or protein sequences - GVL
-      - fasttree
+      FastTree infers approximately-maximum-likelihood phylogenetic trees from alignments of nucleotide or protein sequences - GVL
+      <ul>
+        <li>fasttree</li>
+      </ul>
   - title_md: featurecounts
     description_md: |-
-      |+ featureCounts counts the number of reads aligned to defined masked regions in a reference genome
-      - featurecounts
+      featureCounts counts the number of reads aligned to defined masked regions in a reference genome
+      <ul>
+        <li>featurecounts</li>
+      </ul>
   - title_md: filter_spades_repeats
     description_md: |-
-      |+ Remove short and repeat contigs/scaffolds
-      - filter_spades_repeat
+      Remove short and repeat contigs/scaffolds
+      <ul>
+        <li>filter_spades_repeat</li>
+      </ul>
   - title_md: filtlong
     description_md: |-
-      |+ Filtlong - Filtering long reads by quality
-      - filtlong
+      Filtlong - Filtering long reads by quality
+      <ul>
+        <li>filtlong</li>
+      </ul>
   - title_md: flashlfq
     description_md: |-
-      |+ FlashLFQ mass-spectrometry proteomics label-free quantification
-      - flashlfq
+      FlashLFQ mass-spectrometry proteomics label-free quantification
+      <ul>
+        <li>flashlfq</li>
+      </ul>
   - title_md: flye
     description_md: |-
-      |+ Assembly of long and error-prone reads.
-      - flye
+      Assembly of long and error-prone reads.
+      <ul>
+        <li>flye</li>
+      </ul>
   - title_md: format_metaphlan2_output
     description_md: |-
-      |+ Format MetaPhlAn2 output to extract abundance at different taxonomic levels
-      - format_metaphlan2_output
+      Format MetaPhlAn2 output to extract abundance at different taxonomic levels
+      <ul>
+        <li>format_metaphlan2_output</li>
+      </ul>
   - title_md: fraggenescan
     description_md: |-
-      |+ Tool for finding (fragmented) genes in short read
-      - fraggenescan
+      Tool for finding (fragmented) genes in short read
+      <ul>
+        <li>fraggenescan</li>
+      </ul>
   - title_md: freyja
     description_md: |-
-      |+ lineage abundances estimation
-      - freyja_aggregate_plot
-      - freyja_boot
-      - freyja_demix
-      - freyja_variants
+      lineage abundances estimation
+      <ul>
+        <li>freyja_aggregate_plot</li>
+        <li>freyja_boot</li>
+        <li>freyja_demix</li>
+        <li>freyja_variants</li>
+      </ul>
   - title_md: frogs
     description_md: |-
-      |+ Suite for metabarcoding analysis
-      - FROGS_affiliation_filters
-      - FROGS_affiliation_postprocess
-      - FROGS_affiliation_stats
-      - FROGS_biom_to_stdBiom
-      - FROGS_biom_to_tsv
-      - FROGS_cluster_filters
-      - FROGS_cluster_stats
-      - FROGS_clustering
-      - FROGS_demultiplex
-      - FROGSSTAT_DESeq2_Preprocess
-      - FROGSSTAT_DESeq2_Visualisation
-      - FROGSFUNC_step2_functions
-      - FROGSFUNC_step3_pathways
-      - FROGSFUNC_step1_placeseqs
-      - FROGS_itsx
-      - FROGS_normalisation
-      - FROGSSTAT_Phyloseq_Alpha_Diversity
-      - FROGSSTAT_Phyloseq_Beta_Diversity
-      - FROGSSTAT_Phyloseq_Sample_Clustering
-      - FROGSSTAT_Phyloseq_Composition_Visualisation
-      - FROGSSTAT_Phyloseq_Import_Data
-      - FROGSSTAT_Phyloseq_Multivariate_Analysis_Of_Variance
-      - FROGSSTAT_Phyloseq_Structure_Visualisation
-      - FROGS_preprocess
-      - FROGS_remove_chimera
-      - FROGS_taxonomic_affiliation
-      - FROGS_Tree
-      - FROGS_tsv_to_biom
+      Suite for metabarcoding analysis
+      <ul>
+        <li>FROGS_affiliation_filters</li>
+        <li>FROGS_affiliation_postprocess</li>
+        <li>FROGS_affiliation_stats</li>
+        <li>FROGS_biom_to_stdBiom</li>
+        <li>FROGS_biom_to_tsv</li>
+        <li>FROGS_cluster_filters</li>
+        <li>FROGS_cluster_stats</li>
+        <li>FROGS_clustering</li>
+        <li>FROGS_demultiplex</li>
+        <li>FROGSSTAT_DESeq2_Preprocess</li>
+        <li>FROGSSTAT_DESeq2_Visualisation</li>
+        <li>FROGSFUNC_step2_functions</li>
+        <li>FROGSFUNC_step3_pathways</li>
+        <li>FROGSFUNC_step1_placeseqs</li>
+        <li>FROGS_itsx</li>
+        <li>FROGS_normalisation</li>
+        <li>FROGSSTAT_Phyloseq_Alpha_Diversity</li>
+        <li>FROGSSTAT_Phyloseq_Beta_Diversity</li>
+        <li>FROGSSTAT_Phyloseq_Sample_Clustering</li>
+        <li>FROGSSTAT_Phyloseq_Composition_Visualisation</li>
+        <li>FROGSSTAT_Phyloseq_Import_Data</li>
+        <li>FROGSSTAT_Phyloseq_Multivariate_Analysis_Of_Variance</li>
+        <li>FROGSSTAT_Phyloseq_Structure_Visualisation</li>
+        <li>FROGS_preprocess</li>
+        <li>FROGS_remove_chimera</li>
+        <li>FROGS_taxonomic_affiliation</li>
+        <li>FROGS_Tree</li>
+        <li>FROGS_tsv_to_biom</li>
+      </ul>
   - title_md: funannotate
     description_md: |-
-      |+ Funannotate is a genome prediction, annotation, and comparison software package.
-      - funannotate_annotate
-      - funannotate_clean
-      - funannotate_compare
-      - funannotate_predict
-      - funannotate_sort
+      Funannotate is a genome prediction, annotation, and comparison software package.
+      <ul>
+        <li>funannotate_annotate</li>
+        <li>funannotate_clean</li>
+        <li>funannotate_compare</li>
+        <li>funannotate_predict</li>
+        <li>funannotate_sort</li>
+      </ul>
   - title_md: getmlst
     description_md: |-
-      |+ Download MLST datasets by species from pubmlst.org
-      - getmlst
+      Download MLST datasets by species from pubmlst.org
+      <ul>
+        <li>getmlst</li>
+      </ul>
   - title_md: ggplot2
     description_md: |-
-      |+ ggplot2 is a system for declaratively creating graphics, based on The Grammar of Graphics.You provide the data, tell ggplot2 how to map variables to aesthetics, what graphical primitives to use,and it takes care of the details.
-      - ggplot2_heatmap
-      - ggplot2_pca
-      - ggplot2_histogram
-      - ggplot2_point
-      - ggplot2_violin
+      ggplot2 is a system for declaratively creating graphics, based on The Grammar of Graphics.You provide the data, tell ggplot2 how to map variables to aesthetics, what graphical primitives to use,and it takes care of the details.
+      <ul>
+        <li>ggplot2_heatmap</li>
+        <li>ggplot2_pca</li>
+        <li>ggplot2_histogram</li>
+        <li>ggplot2_point</li>
+        <li>ggplot2_violin</li>
+      </ul>
   - title_md: gi2taxonomy
     description_md: |-
-      |+ Fetch taxonomic representation
-      - Fetch Taxonomic Ranks
+      Fetch taxonomic representation
+      <ul>
+        <li>Fetch Taxonomic Ranks</li>
+      </ul>
   - title_md: glimmer
     description_md: |-
-      |+ Glimmer makes gene predictions.
-      - glimmer_acgt_content
-      - glimmer_build_icm
-      - glimmer_extract
-      - glimmer_gbk_to_orf
-      - glimmer_glimmer_to_gff
-      - glimmer_long_orfs
-      - glimmer_knowledge_based
-      - glimmer_not_knowledge_based
+      Glimmer makes gene predictions.
+      <ul>
+        <li>glimmer_acgt_content</li>
+        <li>glimmer_build_icm</li>
+        <li>glimmer_extract</li>
+        <li>glimmer_gbk_to_orf</li>
+        <li>glimmer_glimmer_to_gff</li>
+        <li>glimmer_long_orfs</li>
+        <li>glimmer_knowledge_based</li>
+        <li>glimmer_not_knowledge_based</li>
+      </ul>
   - title_md: glimmer_hmm
     description_md: |-
-      |+ GlimmerHMM is a new gene finder based on a Generalized Hidden Markov Model (GHMM)
-      - nan
+      GlimmerHMM is a new gene finder based on a Generalized Hidden Markov Model (GHMM)
+      <ul>
+        <li>nan</li>
+      </ul>
   - title_md: goenrichment
     description_md: |-
-      |+ Performs GO Enrichment analysis.
-      - goenrichment
-      - goslimmer
+      Performs GO Enrichment analysis.
+      <ul>
+        <li>goenrichment</li>
+        <li>goslimmer</li>
+      </ul>
   - title_md: goseq
     description_md: |-
-      |+ goseq does selection-unbiased testing for category enrichment amongst differentially expressed (DE) genes for RNA-seq data
-      - goseq
+      goseq does selection-unbiased testing for category enrichment amongst differentially expressed (DE) genes for RNA-seq data
+      <ul>
+        <li>goseq</li>
+      </ul>
   - title_md: graphlan
     description_md: |-
-      |+ GraPhlAn is a software tool for producing high-quality circular representations of taxonomic and phylogenetic trees
-      - graphlan
-      - graphlan_annotate
+      GraPhlAn is a software tool for producing high-quality circular representations of taxonomic and phylogenetic trees
+      <ul>
+        <li>graphlan</li>
+        <li>graphlan_annotate</li>
+      </ul>
   - title_md: graphmap
     description_md: |-
-      |+ Mapper for long, error-prone reads.
-      - graphmap_align
-      - graphmap_overlap
+      Mapper for long, error-prone reads.
+      <ul>
+        <li>graphmap_align</li>
+        <li>graphmap_overlap</li>
+      </ul>
   - title_md: gtdbtk
     description_md: |-
-      |+ GTDB-Tk is a software tool kit for assigning objective taxonomic classifications to bacterial and archaeal genomesbased on the Genome Database Taxonomy GTDB. It is designed to work with recent advances that allow hundreds orthousands of metagenome-assembled genomes (MAGs) to be obtained directly from environmental samples. It can alsobe applied to isolate and single-cell genomes. 
-      - gtdbtk_classify_wf
+      GTDB-Tk is a software tool kit for assigning objective taxonomic classifications to bacterial and archaeal genomesbased on the Genome Database Taxonomy GTDB. It is designed to work with recent advances that allow hundreds orthousands of metagenome-assembled genomes (MAGs) to be obtained directly from environmental samples. It can alsobe applied to isolate and single-cell genomes. 
+      <ul>
+        <li>gtdbtk_classify_wf</li>
+      </ul>
   - title_md: gubbins
     description_md: |-
-      |+ Gubbins - bacterial recombination detection
-      - gubbins
+      Gubbins - bacterial recombination detection
+      <ul>
+        <li>gubbins</li>
+      </ul>
   - title_md: hamronization
     description_md: |-
-      |+ Convert AMR gene detection tool output to hAMRonization specification format.
-      - hamronize_summarize
-      - hamronize_tool
+      Convert AMR gene detection tool output to hAMRonization specification format.
+      <ul>
+        <li>hamronize_summarize</li>
+        <li>hamronize_tool</li>
+      </ul>
   - title_md: hansel
     description_md: |-
-      |+ Heidelberg and Enteritidis SNP Elucidation
-      - bio_hansel
+      Heidelberg and Enteritidis SNP Elucidation
+      <ul>
+        <li>bio_hansel</li>
+      </ul>
   - title_md: hifiasm_meta
     description_md: |-
-      |+ A hifiasm fork for metagenome assembly using Hifi reads.
-      - hifiasm_meta
+      A hifiasm fork for metagenome assembly using Hifi reads.
+      <ul>
+        <li>hifiasm_meta</li>
+      </ul>
   - title_md: hivtrace
     description_md: |-
-      |+ An application that identifies potential transmission clusters within a supplied FASTA file with an option to find potential links against the Los Alamos HIV Sequence Database.
-      - hivtrace
+      An application that identifies potential transmission clusters within a supplied FASTA file with an option to find potential links against the Los Alamos HIV Sequence Database.
+      <ul>
+        <li>hivtrace</li>
+      </ul>
   - title_md: hmmer3
     description_md: |-
-      |+ HMMER is used for searching sequence databases for homologs of proteinsequences, and for making protein sequence alignments. It implementsmethods using probabilistic models called profile hidden Markov models(profile HMMs).
-      - hmmer_alimask
-      - hmmer_hmmalign
-      - hmmer_hmmbuild
-      - hmmer_hmmconvert
-      - hmmer_hmmemit
-      - hmmer_hmmfetch
-      - hmmer_hmmscan
-      - hmmer_hmmsearch
-      - hmmer_jackhmmer
-      - hmmer_nhmmer
-      - hmmer_nhmmscan
-      - hmmer_phmmer
+      HMMER is used for searching sequence databases for homologs of proteinsequences, and for making protein sequence alignments. It implementsmethods using probabilistic models called profile hidden Markov models(profile HMMs).
+      <ul>
+        <li>hmmer_alimask</li>
+        <li>hmmer_hmmalign</li>
+        <li>hmmer_hmmbuild</li>
+        <li>hmmer_hmmconvert</li>
+        <li>hmmer_hmmemit</li>
+        <li>hmmer_hmmfetch</li>
+        <li>hmmer_hmmscan</li>
+        <li>hmmer_hmmsearch</li>
+        <li>hmmer_jackhmmer</li>
+        <li>hmmer_nhmmer</li>
+        <li>hmmer_nhmmscan</li>
+        <li>hmmer_phmmer</li>
+      </ul>
   - title_md: humann
     description_md: |-
-      |+ HUMAnN for functionally profiling metagenomes and metatranscriptomes at species-level resolution
-      - humann
-      - humann_barplot
-      - humann_join_tables
-      - humann_reduce_table
-      - humann_regroup_table
-      - humann_rename_table
-      - humann_renorm_table
-      - humann_split_stratified_table
-      - humann_split_table
-      - humann_unpack_pathways
+      HUMAnN for functionally profiling metagenomes and metatranscriptomes at species-level resolution
+      <ul>
+        <li>humann</li>
+        <li>humann_barplot</li>
+        <li>humann_join_tables</li>
+        <li>humann_reduce_table</li>
+        <li>humann_regroup_table</li>
+        <li>humann_rename_table</li>
+        <li>humann_renorm_table</li>
+        <li>humann_split_stratified_table</li>
+        <li>humann_split_table</li>
+        <li>humann_unpack_pathways</li>
+      </ul>
   - title_md: hyphy
     description_md: |-
-      |+ Hypothesis Testing using Phylogenies
-      - hyphy_absrel
-      - hyphy_annotate
-      - hyphy_bgm
-      - hyphy_busted
-      - hyphy_cfel
-      - hyphy_conv
-      - hyphy_fade
-      - hyphy_fel
-      - hyphy_fubar
-      - hyphy_gard
-      - hyphy_meme
-      - hyphy_prime
-      - hyphy_relax
-      - hyphy_slac
-      - hyphy_sm19
-      - hyphy_strike_ambigs
-      - hyphy_summary
+      Hypothesis Testing using Phylogenies
+      <ul>
+        <li>hyphy_absrel</li>
+        <li>hyphy_annotate</li>
+        <li>hyphy_bgm</li>
+        <li>hyphy_busted</li>
+        <li>hyphy_cfel</li>
+        <li>hyphy_conv</li>
+        <li>hyphy_fade</li>
+        <li>hyphy_fel</li>
+        <li>hyphy_fubar</li>
+        <li>hyphy_gard</li>
+        <li>hyphy_meme</li>
+        <li>hyphy_prime</li>
+        <li>hyphy_relax</li>
+        <li>hyphy_slac</li>
+        <li>hyphy_sm19</li>
+        <li>hyphy_strike_ambigs</li>
+        <li>hyphy_summary</li>
+      </ul>
   - title_md: hypo
     description_md: |-
-      |+ Super Fast & Accurate Polisher for Long Read Genome Assemblies
-      - hypo
+      Super Fast & Accurate Polisher for Long Read Genome Assemblies
+      <ul>
+        <li>hypo</li>
+      </ul>
   - title_md: icescreen
     description_md: |-
-      |+ ICEscreen identifies Integrative Conjugative Elements (ICEs) and Integrative Mobilizable Elements (IMEs) in Bacillota genomes.
-      - icescreen
+      ICEscreen identifies Integrative Conjugative Elements (ICEs) and Integrative Mobilizable Elements (IMEs) in Bacillota genomes.
+      <ul>
+        <li>icescreen</li>
+      </ul>
   - title_md: idba_ud
     description_md: |-
-      |+ Wrappers for the idba assembler variants.
-      - idba_hybrid
-      - idba_tran
-      - idba_ud
+      Wrappers for the idba assembler variants.
+      <ul>
+        <li>idba_hybrid</li>
+        <li>idba_tran</li>
+        <li>idba_ud</li>
+      </ul>
   - title_md: infernal
     description_md: |-
-      |+ Infernal ("INFERence of RNA ALignment") is for searching DNA sequence databases for RNA structure and sequence similarities.
-      - infernal_cmalign
-      - infernal_cmbuild
-      - infernal_cmpress
-      - infernal_cmscan
-      - infernal_cmsearch
-      - infernal_cmstat
+      Infernal ("INFERence of RNA ALignment") is for searching DNA sequence databases for RNA structure and sequence similarities.
+      <ul>
+        <li>infernal_cmalign</li>
+        <li>infernal_cmbuild</li>
+        <li>infernal_cmpress</li>
+        <li>infernal_cmscan</li>
+        <li>infernal_cmsearch</li>
+        <li>infernal_cmstat</li>
+      </ul>
   - title_md: instrain
     description_md: |-
-      |+ InStrain is a tool for analysis of co-occurring genome populations from metagenomes
-      - instrain_compare
-      - instrain_profile
+      InStrain is a tool for analysis of co-occurring genome populations from metagenomes
+      <ul>
+        <li>instrain_compare</li>
+        <li>instrain_profile</li>
+      </ul>
   - title_md: integron_finder
     description_md: |-
-      |+ "IntegronFinder identify integrons with high accuracy and sensitivity.It searches for attC sites using covariance models, for integron-integrases using HMM profiles, and for other features (promoters, attI site) using pattern matching"
-      - integron_finder
+      "IntegronFinder identify integrons with high accuracy and sensitivity.It searches for attC sites using covariance models, for integron-integrases using HMM profiles, and for other features (promoters, attI site) using pattern matching"
+      <ul>
+        <li>integron_finder</li>
+      </ul>
   - title_md: interproscan
     description_md: |-
-      |+ Interproscan queries the interpro database and provides annotations.
-      - interproscan
+      Interproscan queries the interpro database and provides annotations.
+      <ul>
+        <li>interproscan</li>
+      </ul>
   - title_md: iprscan5
     description_md: |-
-      |+ Interproscan queries the interpro database and provides annotations.
-      - nan
+      Interproscan queries the interpro database and provides annotations.
+      <ul>
+        <li>nan</li>
+      </ul>
   - title_md: iqtree
     description_md: |-
-      |+ Efficient phylogenomic software by maximum likelihood
-      - iqtree
+      Efficient phylogenomic software by maximum likelihood
+      <ul>
+        <li>iqtree</li>
+      </ul>
   - title_md: isescan
     description_md: |-
-      |+ "ISEScan is a pipeline to identify IS (Insertion Sequence) elements in genome and metagenomebased on profile hidden Markov models constructed from manually curated IS elements."
-      - isescan
+      "ISEScan is a pipeline to identify IS (Insertion Sequence) elements in genome and metagenomebased on profile hidden Markov models constructed from manually curated IS elements."
+      <ul>
+        <li>isescan</li>
+      </ul>
   - title_md: itsx
     description_md: |-
-      |+ ITSx is an open source software utility to extract the highly variable ITS1 and ITS2 subregions from ITS sequences.
-      - itsx
+      ITSx is an open source software utility to extract the highly variable ITS1 and ITS2 subregions from ITS sequences.
+      <ul>
+        <li>itsx</li>
+      </ul>
   - title_md: ivar
     description_md: |-
-      |+ iVar is a computational package that contains functions broadly useful for viral amplicon-based sequencing
-      - ivar_consensus
-      - ivar_filtervariants
-      - ivar_removereads
-      - ivar_trim
-      - ivar_variants
+      iVar is a computational package that contains functions broadly useful for viral amplicon-based sequencing
+      <ul>
+        <li>ivar_consensus</li>
+        <li>ivar_filtervariants</li>
+        <li>ivar_removereads</li>
+        <li>ivar_trim</li>
+        <li>ivar_variants</li>
+      </ul>
   - title_md: jbrowse
     description_md: |-
-      |+ JBrowse Genome Browser integrated as a Galaxy Tool
-      - jbrowse_to_standalone
-      - jbrowse
+      JBrowse Genome Browser integrated as a Galaxy Tool
+      <ul>
+        <li>jbrowse_to_standalone</li>
+        <li>jbrowse</li>
+      </ul>
   - title_md: jellyfish
     description_md: |-
-      |+ Jellyfish is a tool for fast, memory-efficient counting of k-mers in DNA
-      - jellyfish
+      Jellyfish is a tool for fast, memory-efficient counting of k-mers in DNA
+      <ul>
+        <li>jellyfish</li>
+      </ul>
   - title_md: kat_filter
     description_md: |-
-      |+ Filtering kmers or reads from a database of kmers hashes
-      - kat_@EXECUTABLE@
+      Filtering kmers or reads from a database of kmers hashes
+      <ul>
+        <li>kat_@EXECUTABLE@</li>
+      </ul>
   - title_md: kc-align
     description_md: |-
-      |+ Kc-Align custom tool
-      - kc-align
+      Kc-Align custom tool
+      <ul>
+        <li>kc-align</li>
+      </ul>
   - title_md: khmer
     description_md: |-
-      |+ In-memory nucleotide sequence k-mer counting, filtering, graph traversal and more
-      - khmer_abundance_distribution_single
-      - khmer_abundance_distribution
-      - khmer_count_median
-      - khmer_partition
-      - khmer_extract_partitions
-      - khmer_filter_abundance
-      - khmer_filter_below_abundance_cutoff
-      - khmer_normalize_by_median
+      In-memory nucleotide sequence k-mer counting, filtering, graph traversal and more
+      <ul>
+        <li>khmer_abundance_distribution_single</li>
+        <li>khmer_abundance_distribution</li>
+        <li>khmer_count_median</li>
+        <li>khmer_partition</li>
+        <li>khmer_extract_partitions</li>
+        <li>khmer_filter_abundance</li>
+        <li>khmer_filter_below_abundance_cutoff</li>
+        <li>khmer_normalize_by_median</li>
+      </ul>
   - title_md: kleborate
     description_md: |-
-      |+ Screen genome assemblies of Klebsiella pneumoniae and the Klebsiella pneumoniae species complex (KpSC)
-      - kleborate
+      Screen genome assemblies of Klebsiella pneumoniae and the Klebsiella pneumoniae species complex (KpSC)
+      <ul>
+        <li>kleborate</li>
+      </ul>
   - title_md: kofamscan
     description_md: |-
-      |+ Gene function annotation tool based on KEGG Orthology and hidden Markov model
-      - kofamscan
+      Gene function annotation tool based on KEGG Orthology and hidden Markov model
+      <ul>
+        <li>kofamscan</li>
+      </ul>
   - title_md: kraken
     description_md: |-
-      |+ Kraken is a system for assigning taxonomic labels to short DNAsequences, usually obtained through metagenomic studies. Previous attempts by otherbioinformatics software to accomplish this task have often used sequence alignmentor machine learning techniques that were quite slow, leading to the developmentof less sensitive but much faster abundance estimation programs. Kraken aims toachieve high sensitivity and high speed by utilizing exact alignments of k-mersand a novel classification algorithm.
-      - kraken-filter
-      - kraken-mpa-report
-      - kraken-report
-      - kraken-translate
-      - kraken
+      Kraken is a system for assigning taxonomic labels to short DNAsequences, usually obtained through metagenomic studies. Previous attempts by otherbioinformatics software to accomplish this task have often used sequence alignmentor machine learning techniques that were quite slow, leading to the developmentof less sensitive but much faster abundance estimation programs. Kraken aims toachieve high sensitivity and high speed by utilizing exact alignments of k-mersand a novel classification algorithm.
+      <ul>
+        <li>kraken-filter</li>
+        <li>kraken-mpa-report</li>
+        <li>kraken-report</li>
+        <li>kraken-translate</li>
+        <li>kraken</li>
+      </ul>
   - title_md: kraken2
     description_md: |-
-      |+ Kraken2 for taxonomic designation.
-      - kraken2
+      Kraken2 for taxonomic designation.
+      <ul>
+        <li>kraken2</li>
+      </ul>
   - title_md: kraken2tax
     description_md: |-
-      |+ Convert Kraken output to Galaxy taxonomy data.
-      - Kraken2Tax
+      Convert Kraken output to Galaxy taxonomy data.
+      <ul>
+        <li>Kraken2Tax</li>
+      </ul>
   - title_md: kraken_biom
     description_md: |-
-      |+ Create BIOM-format tables (http://biom-format.org) from Kraken output (http://ccb.jhu.edu/software/kraken/)
-      - kraken_biom
+      Create BIOM-format tables (http://biom-format.org) from Kraken output (http://ccb.jhu.edu/software/kraken/)
+      <ul>
+        <li>kraken_biom</li>
+      </ul>
   - title_md: kraken_taxonomy_report
     description_md: |-
-      |+ Kraken taxonomy report
-      - kraken_taxonomy_report
+      Kraken taxonomy report
+      <ul>
+        <li>kraken_taxonomy_report</li>
+      </ul>
   - title_md: krakentools
     description_md: |-
-      |+ KrakenTools is a suite of scripts to be used alongside the Kraken
-      - krakentools_alpha_diversity
-      - krakentools_beta_diversity
-      - krakentools_combine_kreports
-      - krakentools_extract_kraken_reads
-      - krakentools_kreport2krona
-      - krakentools_kreport2mpa
+      KrakenTools is a suite of scripts to be used alongside the Kraken
+      <ul>
+        <li>krakentools_alpha_diversity</li>
+        <li>krakentools_beta_diversity</li>
+        <li>krakentools_combine_kreports</li>
+        <li>krakentools_extract_kraken_reads</li>
+        <li>krakentools_kreport2krona</li>
+        <li>krakentools_kreport2mpa</li>
+      </ul>
   - title_md: krocus
     description_md: |-
-      |+ Predict MLST directly from uncorrected long reads
-      - krocus
+      Predict MLST directly from uncorrected long reads
+      <ul>
+        <li>krocus</li>
+      </ul>
   - title_md: lca_wrapper
     description_md: |-
-      |+ Find lowest diagnostic rank
-      - lca1
+      Find lowest diagnostic rank
+      <ul>
+        <li>lca1</li>
+      </ul>
   - title_md: legsta
     description_md: |-
-      |+ Performs in silico Legionella pneumophila sequence based typing.
-      - legsta
+      Performs in silico Legionella pneumophila sequence based typing.
+      <ul>
+        <li>legsta</li>
+      </ul>
   - title_md: lighter
     description_md: |-
-      |+ Lighter is a kmer-based error correction method for whole genome sequencing data
-      - lighter
+      Lighter is a kmer-based error correction method for whole genome sequencing data
+      <ul>
+        <li>lighter</li>
+      </ul>
   - title_md: limma_voom
     description_md: |-
-      |+ Perform RNA-Seq differential expression analysis using limma voom pipeline
-      - limma_voom
+      Perform RNA-Seq differential expression analysis using limma voom pipeline
+      <ul>
+        <li>limma_voom</li>
+      </ul>
   - title_md: lineagespot
     description_md: |-
-      |+ Identification of SARS-CoV-2 related metagenomic mutations based on a single (or a list of) variant(s) file(s)
-      - lineagespot
+      Identification of SARS-CoV-2 related metagenomic mutations based on a single (or a list of) variant(s) file(s)
+      <ul>
+        <li>lineagespot</li>
+      </ul>
   - title_md: lorikeet
     description_md: |-
-      |+ Tools for M. tuberculosis DNA fingerprinting (spoligotyping)
-      - lorikeet_spoligotype
+      Tools for M. tuberculosis DNA fingerprinting (spoligotyping)
+      <ul>
+        <li>lorikeet_spoligotype</li>
+      </ul>
   - title_md: lotus2
     description_md: |-
-      |+ LotuS2 OTU processing pipeline
-      - lotus2
+      LotuS2 OTU processing pipeline
+      <ul>
+        <li>lotus2</li>
+      </ul>
   - title_md: m6anet
     description_md: |-
-      |+ m6anet to detect m6A RNA modifications from nanopore data
-      - m6anet
+      m6anet to detect m6A RNA modifications from nanopore data
+      <ul>
+        <li>m6anet</li>
+      </ul>
   - title_md: maaslin2
     description_md: |-
-      |+ MaAsLin2 is comprehensive R package for efficiently determining multivariable association between microbial meta'omic features and clinical metadata.
-      - maaslin2
+      MaAsLin2 is comprehensive R package for efficiently determining multivariable association between microbial meta'omic features and clinical metadata.
+      <ul>
+        <li>maaslin2</li>
+      </ul>
   - title_md: mafft
     description_md: |-
-      |+ Multiple alignment program for amino acid or nucleotide sequences
-      - rbc_mafft_add
-      - rbc_mafft
+      Multiple alignment program for amino acid or nucleotide sequences
+      <ul>
+        <li>rbc_mafft_add</li>
+        <li>rbc_mafft</li>
+      </ul>
   - title_md: make_nr
     description_md: |-
-      |+ Make a FASTA file non-redundant
-      - make_nr
+      Make a FASTA file non-redundant
+      <ul>
+        <li>make_nr</li>
+      </ul>
   - title_md: maker
     description_md: |-
-      |+ MAKER is a portable and easily configurable genome annotation pipeline.Its purpose is to allow smaller eukaryotic and prokaryotic genome projects to independently annotate their genomes and to create genome databases.
-      - maker
-      - maker_map_ids
+      MAKER is a portable and easily configurable genome annotation pipeline.Its purpose is to allow smaller eukaryotic and prokaryotic genome projects to independently annotate their genomes and to create genome databases.
+      <ul>
+        <li>maker</li>
+        <li>maker_map_ids</li>
+      </ul>
   - title_md: mapseq
     description_md: |-
-      |+ fast and accurate sequence read classification tool designed to assign taxonomy and OTU classifications to ribosomal RNA sequences.
-      - mapseq
+      fast and accurate sequence read classification tool designed to assign taxonomy and OTU classifications to ribosomal RNA sequences.
+      <ul>
+        <li>mapseq</li>
+      </ul>
   - title_md: mash
     description_md: |-
-      |+ Fast genome and metagenome distance estimation using MinHash
-      - mash_screen
-      - mash_sketch
+      Fast genome and metagenome distance estimation using MinHash
+      <ul>
+        <li>mash_screen</li>
+        <li>mash_sketch</li>
+      </ul>
   - title_md: maxbin2
     description_md: |-
-      |+ clusters metagenomic contigs into bins
-      - maxbin2
+      clusters metagenomic contigs into bins
+      <ul>
+        <li>maxbin2</li>
+      </ul>
   - title_md: maxquant
     description_md: |-
-      |+ wrapper for MaxQuant
-      - maxquant
-      - maxquant_mqpar
+      wrapper for MaxQuant
+      <ul>
+        <li>maxquant</li>
+        <li>maxquant_mqpar</li>
+      </ul>
   - title_md: mcl
     description_md: |-
-      |+ The Markov Cluster Algorithm, a cluster algorithm for graphs
-      - mcl
+      The Markov Cluster Algorithm, a cluster algorithm for graphs
+      <ul>
+        <li>mcl</li>
+      </ul>
   - title_md: medaka
     description_md: |-
-      |+ Sequence correction provided by ONT Research
-      - medaka_consensus
-      - medaka_consensus_pipeline
-      - medaka_snp
-      - medaka_variant
+      Sequence correction provided by ONT Research
+      <ul>
+        <li>medaka_consensus</li>
+        <li>medaka_consensus_pipeline</li>
+        <li>medaka_snp</li>
+        <li>medaka_variant</li>
+      </ul>
   - title_md: megahit
     description_md: |-
-      |+ An ultra-fast single-node solution for large and complex metagenomics assembly via succinct de Bruijn graph.
-      - megahit
+      An ultra-fast single-node solution for large and complex metagenomics assembly via succinct de Bruijn graph.
+      <ul>
+        <li>megahit</li>
+      </ul>
   - title_md: megahit_contig2fastg
     description_md: |-
-      |+ A subprogram within the Megahit toolkit for converting contigs to assembly graphs (fastg)
-      - megahit_contig2fastg
+      A subprogram within the Megahit toolkit for converting contigs to assembly graphs (fastg)
+      <ul>
+        <li>megahit_contig2fastg</li>
+      </ul>
   - title_md: megan
     description_md: |-
-      |+ MEGAN Community Edition - Interactive exploration and analysis of large-scale microbiome sequencing data.  MEGAN is a tool for studying the taxonomic content of a set of DNA reads, typically collected in a metagenomics project.In a preprocessing step, a sequence alignment of all reads against a suitable database of reference DNA or proteinsequences must be performed to produce an input file for the program. MEGAN is suitable for DNA reads (metagenomedata), RNA reads (metatranscriptome data), peptide sequences (metaproteomics data) and, using a suitable synonymsfile that maps SILVA ids to taxon ids, for 16S rRNA data (amplicon sequencing).
-      - megan_blast2lca
-      - megan_blast2rma
-      - megan_daa2info
-      - megan_daa2rma
-      - megan_daa_meganizer
-      - megan_read_extractor
-      - megan_sam2rma
+      MEGAN Community Edition - Interactive exploration and analysis of large-scale microbiome sequencing data.  MEGAN is a tool for studying the taxonomic content of a set of DNA reads, typically collected in a metagenomics project.In a preprocessing step, a sequence alignment of all reads against a suitable database of reference DNA or proteinsequences must be performed to produce an input file for the program. MEGAN is suitable for DNA reads (metagenomedata), RNA reads (metatranscriptome data), peptide sequences (metaproteomics data) and, using a suitable synonymsfile that maps SILVA ids to taxon ids, for 16S rRNA data (amplicon sequencing).
+      <ul>
+        <li>megan_blast2lca</li>
+        <li>megan_blast2rma</li>
+        <li>megan_daa2info</li>
+        <li>megan_daa2rma</li>
+        <li>megan_daa_meganizer</li>
+        <li>megan_read_extractor</li>
+        <li>megan_sam2rma</li>
+      </ul>
   - title_md: meningotype
     description_md: |-
-      |+ Assign sequence type to N. meningitidis genome assemblies
-      - meningotype
+      Assign sequence type to N. meningitidis genome assemblies
+      <ul>
+        <li>meningotype</li>
+      </ul>
   - title_md: merqury
     description_md: |-
-      |+ Merqury is a tool for evaluating genomes assemblies based of k-mer operations.
-      - merqury
-      - merquryplot
+      Merqury is a tool for evaluating genomes assemblies based of k-mer operations.
+      <ul>
+        <li>merqury</li>
+        <li>merquryplot</li>
+      </ul>
   - title_md: meryl
     description_md: |-
-      |+ Meryl a k-mer counter.
-      - meryl_arithmetic_kmers
-      - meryl_count_kmers
-      - meryl_filter_kmers
-      - meryl_groups_kmers
-      - meryl_histogram_kmers
-      - meryl_print
-      - meryl_trio_mode
+      Meryl a k-mer counter.
+      <ul>
+        <li>meryl_arithmetic_kmers</li>
+        <li>meryl_count_kmers</li>
+        <li>meryl_filter_kmers</li>
+        <li>meryl_groups_kmers</li>
+        <li>meryl_histogram_kmers</li>
+        <li>meryl_print</li>
+        <li>meryl_trio_mode</li>
+      </ul>
   - title_md: metabat2
     description_md: |-
-      |+ MetaBAT2 (Metagenome Binning based on Abundance and Tetranucleotide frequency) is an automated metagenome binningsoftware that integrates empirical probabilistic distances of genome abundance and tetranucleotide frequency.
-      - metabat2_jgi_summarize_bam_contig_depths
-      - metabat2
+      MetaBAT2 (Metagenome Binning based on Abundance and Tetranucleotide frequency) is an automated metagenome binningsoftware that integrates empirical probabilistic distances of genome abundance and tetranucleotide frequency.
+      <ul>
+        <li>metabat2_jgi_summarize_bam_contig_depths</li>
+        <li>metabat2</li>
+      </ul>
   - title_md: metaeuk
     description_md: |-
-      |+ MetaEuk is a modular toolkit designed for large-scale gene discovery andannotation in eukaryotic metagenomic contigs. Metaeuk combines the fast andsensitive homology search capabilities of MMseqs2 with a dynamic programmingprocedure to recover optimal exons sets. It reduces redundancies in multiplediscoveries of the same gene and resolves conflicting gene predictions onthe same strand. 
-      - metaeuk_easy_predict
+      MetaEuk is a modular toolkit designed for large-scale gene discovery andannotation in eukaryotic metagenomic contigs. Metaeuk combines the fast andsensitive homology search capabilities of MMseqs2 with a dynamic programmingprocedure to recover optimal exons sets. It reduces redundancies in multiplediscoveries of the same gene and resolves conflicting gene predictions onthe same strand. 
+      <ul>
+        <li>metaeuk_easy_predict</li>
+      </ul>
   - title_md: metagene_annotator
     description_md: |-
-      |+ MetaGeneAnnotator gene-finding program for prokaryote and phage
-      - metagene_annotator
+      MetaGeneAnnotator gene-finding program for prokaryote and phage
+      <ul>
+        <li>metagene_annotator</li>
+      </ul>
   - title_md: metagenomeseq
     description_md: |-
-      |+ metagenomeSeq Normalization
-      - metagenomeseq_normalizaton
+      metagenomeSeq Normalization
+      <ul>
+        <li>metagenomeseq_normalizaton</li>
+      </ul>
   - title_md: metanovo
     description_md: |-
-      |+ Produce targeted databases for mass spectrometry analysis.
-      - metanovo
+      Produce targeted databases for mass spectrometry analysis.
+      <ul>
+        <li>metanovo</li>
+      </ul>
   - title_md: metaphlan
     description_md: |-
-      |+ MetaPhlAn for Metagenomic Phylogenetic Analysis
-      - customize_metaphlan_database
-      - extract_metaphlan_database
-      - merge_metaphlan_tables
-      - metaphlan
+      MetaPhlAn for Metagenomic Phylogenetic Analysis
+      <ul>
+        <li>customize_metaphlan_database</li>
+        <li>extract_metaphlan_database</li>
+        <li>merge_metaphlan_tables</li>
+        <li>metaphlan</li>
+      </ul>
   - title_md: metaquantome
     description_md: |-
-      |+ quantitative analysis of microbiome taxonomy and function
-      - metaquantome_db
-      - metaquantome_expand
-      - metaquantome_filter
-      - metaquantome_sample
-      - metaquantome_stat
-      - metaquantome_viz
+      quantitative analysis of microbiome taxonomy and function
+      <ul>
+        <li>metaquantome_db</li>
+        <li>metaquantome_expand</li>
+        <li>metaquantome_filter</li>
+        <li>metaquantome_sample</li>
+        <li>metaquantome_stat</li>
+        <li>metaquantome_viz</li>
+      </ul>
   - title_md: metawrapmg
     description_md: |-
-      |+ A flexible pipeline for genome-resolved metagenomic data analysis
-      - metawrapmg_binning
+      A flexible pipeline for genome-resolved metagenomic data analysis
+      <ul>
+        <li>metawrapmg_binning</li>
+      </ul>
   - title_md: minia
     description_md: |-
-      |+ Short-read assembler based on a de Bruijn graph
-      - minia
+      Short-read assembler based on a de Bruijn graph
+      <ul>
+        <li>minia</li>
+      </ul>
   - title_md: miniasm
     description_md: |-
-      |+ Miniasm - Ultrafast de novo assembly for long noisy reads (though having no consensus step)
-      - miniasm
+      Miniasm - Ultrafast de novo assembly for long noisy reads (though having no consensus step)
+      <ul>
+        <li>miniasm</li>
+      </ul>
   - title_md: minipolish
     description_md: |-
-      |+ Polishing miniasm assemblies
-      - minipolish
+      Polishing miniasm assemblies
+      <ul>
+        <li>minipolish</li>
+      </ul>
   - title_md: miniprot
     description_md: |-
-      |+ Align a protein sequence against a genome with affine gap penalty, splicing and frameshift.
-      - miniprot
-      - miniprot_index
+      Align a protein sequence against a genome with affine gap penalty, splicing and frameshift.
+      <ul>
+        <li>miniprot</li>
+        <li>miniprot_index</li>
+      </ul>
   - title_md: mitos
     description_md: |-
-      |+ de-novo annotation of metazoan mitochondrial genomes
-      - mitos
-      - mitos2
+      de-novo annotation of metazoan mitochondrial genomes
+      <ul>
+        <li>mitos</li>
+        <li>mitos2</li>
+      </ul>
   - title_md: mlst
     description_md: |-
-      |+ Scan contig files against PubMLST typing schemes
-      - mlst
-      - mlst_list
+      Scan contig files against PubMLST typing schemes
+      <ul>
+        <li>mlst</li>
+        <li>mlst_list</li>
+      </ul>
   - title_md: mob_suite
     description_md: |-
-      |+ MOB-suite is a set of software tools for clustering, reconstruction and typing of plasmids from draft assemblies
-      - mob_recon
-      - mob_typer
+      MOB-suite is a set of software tools for clustering, reconstruction and typing of plasmids from draft assemblies
+      <ul>
+        <li>mob_recon</li>
+        <li>mob_typer</li>
+      </ul>
   - title_md: mothur
     description_md: |-
-      |+ Mothur wrappers
-      - mothur_align_check
-      - mothur_align_seqs
-      - mothur_amova
-      - mothur_anosim
-      - mothur_bin_seqs
-      - mothur_biom_info
-      - mothur_chimera_bellerophon
-      - mothur_chimera_ccode
-      - mothur_chimera_check
-      - mothur_chimera_perseus
-      - mothur_chimera_pintail
-      - mothur_chimera_slayer
-      - mothur_chimera_uchime
-      - mothur_chimera_vsearch
-      - mothur_chop_seqs
-      - mothur_classify_otu
-      - mothur_classify_seqs
-      - mothur_classify_tree
-      - mothur_clearcut
-      - mothur_cluster_classic
-      - mothur_cluster_fragments
-      - mothur_cluster_split
-      - mothur_cluster
-      - mothur_collect_shared
-      - mothur_collect_single
-      - mothur_consensus_seqs
-      - mothur_cooccurrence
-      - mothur_corr_axes
-      - mothur_count_groups
-      - mothur_count_seqs
-      - mothur_create_database
-      - mothur_degap_seqs
-      - mothur_deunique_seqs
-      - mothur_deunique_tree
-      - mothur_dist_seqs
-      - mothur_dist_shared
-      - mothur_fastq_info
-      - mothur_filter_seqs
-      - mothur_filter_shared
-      - mothur_get_communitytype
-      - mothur_get_coremicrobiome
-      - mothur_get_dists
-      - mothur_get_group
-      - mothur_get_groups
-      - mothur_get_label
-      - mothur_get_lineage
-      - mothur_get_mimarkspackage
-      - mothur_get_otulabels
-      - mothur_get_otulist
-      - mothur_get_oturep
-      - mothur_get_otus
-      - mothur_get_rabund
-      - mothur_get_relabund
-      - mothur_get_sabund
-      - mothur_get_seqs
-      - mothur_get_sharedseqs
-      - mothur_heatmap_bin
-      - mothur_heatmap_sim
-      - mothur_homova
-      - mothur_indicator
-      - mothur_lefse
-      - mothur_libshuff
-      - mothur_list_otulabels
-      - mothur_list_seqs
-      - mothur_make_biom
-      - mothur_make_contigs
-      - mothur_make_design
-      - mothur_make_fastq
-      - mothur_make_group
-      - mothur_make_lefse
-      - mothur_make_lookup
-      - mothur_make_shared
-      - mothur_make_sra
-      - mothur_mantel
-      - mothur_merge_count
-      - mothur_merge_files
-      - mothur_merge_groups
-      - mothur_merge_sfffiles
-      - mothur_merge_taxsummary
-      - mothur_metastats
-      - mothur_mimarks_attributes
-      - mothur_nmds
-      - mothur_normalize_shared
-      - mothur_otu_association
-      - mothur_otu_hierarchy
-      - mothur_pairwise_seqs
-      - mothur_parse_list
-      - mothur_parsimony
-      - mothur_pca
-      - mothur_pcoa
-      - mothur_pcr_seqs
-      - mothur_phylo_diversity
-      - mothur_phylotype
-      - mothur_pre_cluster
-      - mothur_primer_design
-      - mothur_rarefaction_shared
-      - mothur_rarefaction_single
-      - mothur_remove_dists
-      - mothur_remove_groups
-      - mothur_remove_lineage
-      - mothur_remove_otulabels
-      - mothur_remove_otus
-      - mothur_remove_rare
-      - mothur_remove_seqs
-      - mothur_rename_seqs
-      - mothur_reverse_seqs
-      - mothur_screen_seqs
-      - mothur_sens_spec
-      - mothur_seq_error
-      - mothur_sffinfo
-      - mothur_shhh_flows
-      - mothur_shhh_seqs
-      - mothur_sort_seqs
-      - mothur_split_abund
-      - mothur_split_groups
-      - mothur_sub_sample
-      - mothur_summary_qual
-      - mothur_summary_seqs
-      - mothur_summary_shared
-      - mothur_summary_single
-      - mothur_summary_tax
-      - mothur_taxonomy_to_krona
-      - mothur_tree_shared
-      - mothur_trim_flows
-      - mothur_trim_seqs
-      - mothur_unifrac_unweighted
-      - mothur_unifrac_weighted
-      - mothur_unique_seqs
-      - mothur_venn
+      Mothur wrappers
+      <ul>
+        <li>mothur_align_check</li>
+        <li>mothur_align_seqs</li>
+        <li>mothur_amova</li>
+        <li>mothur_anosim</li>
+        <li>mothur_bin_seqs</li>
+        <li>mothur_biom_info</li>
+        <li>mothur_chimera_bellerophon</li>
+        <li>mothur_chimera_ccode</li>
+        <li>mothur_chimera_check</li>
+        <li>mothur_chimera_perseus</li>
+        <li>mothur_chimera_pintail</li>
+        <li>mothur_chimera_slayer</li>
+        <li>mothur_chimera_uchime</li>
+        <li>mothur_chimera_vsearch</li>
+        <li>mothur_chop_seqs</li>
+        <li>mothur_classify_otu</li>
+        <li>mothur_classify_seqs</li>
+        <li>mothur_classify_tree</li>
+        <li>mothur_clearcut</li>
+        <li>mothur_cluster_classic</li>
+        <li>mothur_cluster_fragments</li>
+        <li>mothur_cluster_split</li>
+        <li>mothur_cluster</li>
+        <li>mothur_collect_shared</li>
+        <li>mothur_collect_single</li>
+        <li>mothur_consensus_seqs</li>
+        <li>mothur_cooccurrence</li>
+        <li>mothur_corr_axes</li>
+        <li>mothur_count_groups</li>
+        <li>mothur_count_seqs</li>
+        <li>mothur_create_database</li>
+        <li>mothur_degap_seqs</li>
+        <li>mothur_deunique_seqs</li>
+        <li>mothur_deunique_tree</li>
+        <li>mothur_dist_seqs</li>
+        <li>mothur_dist_shared</li>
+        <li>mothur_fastq_info</li>
+        <li>mothur_filter_seqs</li>
+        <li>mothur_filter_shared</li>
+        <li>mothur_get_communitytype</li>
+        <li>mothur_get_coremicrobiome</li>
+        <li>mothur_get_dists</li>
+        <li>mothur_get_group</li>
+        <li>mothur_get_groups</li>
+        <li>mothur_get_label</li>
+        <li>mothur_get_lineage</li>
+        <li>mothur_get_mimarkspackage</li>
+        <li>mothur_get_otulabels</li>
+        <li>mothur_get_otulist</li>
+        <li>mothur_get_oturep</li>
+        <li>mothur_get_otus</li>
+        <li>mothur_get_rabund</li>
+        <li>mothur_get_relabund</li>
+        <li>mothur_get_sabund</li>
+        <li>mothur_get_seqs</li>
+        <li>mothur_get_sharedseqs</li>
+        <li>mothur_heatmap_bin</li>
+        <li>mothur_heatmap_sim</li>
+        <li>mothur_homova</li>
+        <li>mothur_indicator</li>
+        <li>mothur_lefse</li>
+        <li>mothur_libshuff</li>
+        <li>mothur_list_otulabels</li>
+        <li>mothur_list_seqs</li>
+        <li>mothur_make_biom</li>
+        <li>mothur_make_contigs</li>
+        <li>mothur_make_design</li>
+        <li>mothur_make_fastq</li>
+        <li>mothur_make_group</li>
+        <li>mothur_make_lefse</li>
+        <li>mothur_make_lookup</li>
+        <li>mothur_make_shared</li>
+        <li>mothur_make_sra</li>
+        <li>mothur_mantel</li>
+        <li>mothur_merge_count</li>
+        <li>mothur_merge_files</li>
+        <li>mothur_merge_groups</li>
+        <li>mothur_merge_sfffiles</li>
+        <li>mothur_merge_taxsummary</li>
+        <li>mothur_metastats</li>
+        <li>mothur_mimarks_attributes</li>
+        <li>mothur_nmds</li>
+        <li>mothur_normalize_shared</li>
+        <li>mothur_otu_association</li>
+        <li>mothur_otu_hierarchy</li>
+        <li>mothur_pairwise_seqs</li>
+        <li>mothur_parse_list</li>
+        <li>mothur_parsimony</li>
+        <li>mothur_pca</li>
+        <li>mothur_pcoa</li>
+        <li>mothur_pcr_seqs</li>
+        <li>mothur_phylo_diversity</li>
+        <li>mothur_phylotype</li>
+        <li>mothur_pre_cluster</li>
+        <li>mothur_primer_design</li>
+        <li>mothur_rarefaction_shared</li>
+        <li>mothur_rarefaction_single</li>
+        <li>mothur_remove_dists</li>
+        <li>mothur_remove_groups</li>
+        <li>mothur_remove_lineage</li>
+        <li>mothur_remove_otulabels</li>
+        <li>mothur_remove_otus</li>
+        <li>mothur_remove_rare</li>
+        <li>mothur_remove_seqs</li>
+        <li>mothur_rename_seqs</li>
+        <li>mothur_reverse_seqs</li>
+        <li>mothur_screen_seqs</li>
+        <li>mothur_sens_spec</li>
+        <li>mothur_seq_error</li>
+        <li>mothur_sffinfo</li>
+        <li>mothur_shhh_flows</li>
+        <li>mothur_shhh_seqs</li>
+        <li>mothur_sort_seqs</li>
+        <li>mothur_split_abund</li>
+        <li>mothur_split_groups</li>
+        <li>mothur_sub_sample</li>
+        <li>mothur_summary_qual</li>
+        <li>mothur_summary_seqs</li>
+        <li>mothur_summary_shared</li>
+        <li>mothur_summary_single</li>
+        <li>mothur_summary_tax</li>
+        <li>mothur_taxonomy_to_krona</li>
+        <li>mothur_tree_shared</li>
+        <li>mothur_trim_flows</li>
+        <li>mothur_trim_seqs</li>
+        <li>mothur_unifrac_unweighted</li>
+        <li>mothur_unifrac_weighted</li>
+        <li>mothur_unique_seqs</li>
+        <li>mothur_venn</li>
+      </ul>
   - title_md: mrbayes
     description_md: |-
-      |+ A program for the Bayesian estimation of phylogeny.
-      - mrbayes
+      A program for the Bayesian estimation of phylogeny.
+      <ul>
+        <li>mrbayes</li>
+      </ul>
   - title_md: msconvert
     description_md: |-
-      |+ msconvert Convert and/or filter mass spectrometry files (including vendor formats) using the official Docker container
-      - msconvert
+      msconvert Convert and/or filter mass spectrometry files (including vendor formats) using the official Docker container
+      <ul>
+        <li>msconvert</li>
+      </ul>
   - title_md: msstatstmt
     description_md: |-
-      |+ MSstatsTMT protein significance analysis in shotgun mass spectrometry-based proteomic experiments with tandem mass tag (TMT) labeling
-      - msstatstmt
+      MSstatsTMT protein significance analysis in shotgun mass spectrometry-based proteomic experiments with tandem mass tag (TMT) labeling
+      <ul>
+        <li>msstatstmt</li>
+      </ul>
   - title_md: multigsea
     description_md: |-
-      |+ GSEA-based pathway enrichment analysis for multi-omics data
-      - multigsea
+      GSEA-based pathway enrichment analysis for multi-omics data
+      <ul>
+        <li>multigsea</li>
+      </ul>
   - title_md: multiqc
     description_md: |-
-      |+ MultiQC aggregates results from bioinformatics analyses across many samples into a single report
-      - multiqc
+      MultiQC aggregates results from bioinformatics analyses across many samples into a single report
+      <ul>
+        <li>multiqc</li>
+      </ul>
   - title_md: mykrobe
     description_md: |-
-      |+ Antibiotic resistance predictions
-      - mykrobe_predict
+      Antibiotic resistance predictions
+      <ul>
+        <li>mykrobe_predict</li>
+      </ul>
   - title_md: mykrobe_parser
     description_md: |-
-      |+ RScript to parse the results of mykrobe predictor.
-      - mykrobe_parseR
+      RScript to parse the results of mykrobe predictor.
+      <ul>
+        <li>mykrobe_parseR</li>
+      </ul>
   - title_md: mz_to_sqlite
     description_md: |-
-      |+ Creates a SQLite database for proteomics data
-      - mz_to_sqlite
+      Creates a SQLite database for proteomics data
+      <ul>
+        <li>mz_to_sqlite</li>
+      </ul>
   - title_md: nanocompore
     description_md: |-
-      |+ Nanocompore compares 2 ONT nanopore direct RNA sequencing datasets from different experimental conditions expected to have a significant impact on RNA modifications. It is recommended to have at least 2 replicates per condition. For example one can use a control condition with a significantly reduced number of modifications such as a cell line for which a modification writing enzyme was knocked-down or knocked-out. Alternatively, on a smaller scale transcripts of interests could be synthesized in-vitro.
-      - nanocompore_db
-      - nanocompore_sampcomp
+      Nanocompore compares 2 ONT nanopore direct RNA sequencing datasets from different experimental conditions expected to have a significant impact on RNA modifications. It is recommended to have at least 2 replicates per condition. For example one can use a control condition with a significantly reduced number of modifications such as a cell line for which a modification writing enzyme was knocked-down or knocked-out. Alternatively, on a smaller scale transcripts of interests could be synthesized in-vitro.
+      <ul>
+        <li>nanocompore_db</li>
+        <li>nanocompore_sampcomp</li>
+      </ul>
   - title_md: nanoplot
     description_md: |-
-      |+ Plotting tool for long read sequencing data and alignments
-      - nanoplot
+      Plotting tool for long read sequencing data and alignments
+      <ul>
+        <li>nanoplot</li>
+      </ul>
   - title_md: nanopolishcomp
     description_md: |-
-      |+ NanopolishComp contains 2 modules. Eventalign_collapse collapses the raw file generated by nanopolish eventalign by kmers rather than by event. Freq_meth_calculate methylation frequency at genomic CpG sites from the output of nanopolish call-methylation.
-      - nanopolishcomp_eventaligncollapse
-      - nanopolishcomp_freqmethcalculate
+      NanopolishComp contains 2 modules. Eventalign_collapse collapses the raw file generated by nanopolish eventalign by kmers rather than by event. Freq_meth_calculate methylation frequency at genomic CpG sites from the output of nanopolish call-methylation.
+      <ul>
+        <li>nanopolishcomp_eventaligncollapse</li>
+        <li>nanopolishcomp_freqmethcalculate</li>
+      </ul>
   - title_md: ncbi_blast_plus
     description_md: |-
-      |+ NCBI BLAST+
-      - blastxml_to_tabular
-      - get_species_taxids
-      - ncbi_blastdbcmd_info
-      - ncbi_blastdbcmd_wrapper
-      - ncbi_blastn_wrapper
-      - ncbi_blastp_wrapper
-      - ncbi_blastx_wrapper
-      - ncbi_convert2blastmask_wrapper
-      - ncbi_deltablast_wrapper
-      - ncbi_dustmasker_wrapper
-      - ncbi_makeblastdb
-      - ncbi_makeprofiledb
-      - ncbi_psiblast_wrapper
-      - ncbi_rpsblast_wrapper
-      - ncbi_rpstblastn_wrapper
-      - ncbi_segmasker_wrapper
-      - ncbi_tblastn_wrapper
-      - ncbi_tblastx_wrapper
+      NCBI BLAST+
+      <ul>
+        <li>blastxml_to_tabular</li>
+        <li>get_species_taxids</li>
+        <li>ncbi_blastdbcmd_info</li>
+        <li>ncbi_blastdbcmd_wrapper</li>
+        <li>ncbi_blastn_wrapper</li>
+        <li>ncbi_blastp_wrapper</li>
+        <li>ncbi_blastx_wrapper</li>
+        <li>ncbi_convert2blastmask_wrapper</li>
+        <li>ncbi_deltablast_wrapper</li>
+        <li>ncbi_dustmasker_wrapper</li>
+        <li>ncbi_makeblastdb</li>
+        <li>ncbi_makeprofiledb</li>
+        <li>ncbi_psiblast_wrapper</li>
+        <li>ncbi_rpsblast_wrapper</li>
+        <li>ncbi_rpstblastn_wrapper</li>
+        <li>ncbi_segmasker_wrapper</li>
+        <li>ncbi_tblastn_wrapper</li>
+        <li>ncbi_tblastx_wrapper</li>
+      </ul>
   - title_md: ncbi_fcs_gx
     description_md: |-
-      |+ FCS-GX detects contamination from foreign organisms in genome sequences using the genome cross-species aligner (GX).
-      - ncbi_fcs_gx
+      FCS-GX detects contamination from foreign organisms in genome sequences using the genome cross-species aligner (GX).
+      <ul>
+        <li>ncbi_fcs_gx</li>
+      </ul>
   - title_md: newick_utils
     description_md: |-
-      |+ Perform operations on Newick trees
-      - newick_display
+      Perform operations on Newick trees
+      <ul>
+        <li>newick_display</li>
+      </ul>
   - title_md: nextclade
     description_md: |-
-      |+ Identify differences between your sequences and a reference sequence used by Nextstrain
-      - nextalign
-      - nextclade
+      Identify differences between your sequences and a reference sequence used by Nextstrain
+      <ul>
+        <li>nextalign</li>
+        <li>nextclade</li>
+      </ul>
   - title_md: nextdenovo
     description_md: |-
-      |+ String graph-based de novo assembler for long reads
-      - nextdenovo
+      String graph-based de novo assembler for long reads
+      <ul>
+        <li>nextdenovo</li>
+      </ul>
   - title_md: nonpareil
     description_md: |-
-      |+ Estimate average coverage in metagenomic datasets
-      - nonpareil
+      Estimate average coverage in metagenomic datasets
+      <ul>
+        <li>nonpareil</li>
+      </ul>
   - title_md: nucleosome_prediction
     description_md: |-
-      |+ Prediction of Nucleosomes Positions on the Genome
-      - Nucleosome
+      Prediction of Nucleosomes Positions on the Genome
+      <ul>
+        <li>Nucleosome</li>
+      </ul>
   - title_md: nugen_nudup
     description_md: |-
-      |+ Marks/removes PCR introduced duplicate molecules based on the molecular tagging technology used in NuGEN products.
-      - nugen_nudup
+      Marks/removes PCR introduced duplicate molecules based on the molecular tagging technology used in NuGEN products.
+      <ul>
+        <li>nugen_nudup</li>
+      </ul>
   - title_md: obisindicators
     description_md: |-
-      |+ Compute biodiveristy indicators for marine data from obis
-      - obisindicators
-      - obis_data
+      Compute biodiveristy indicators for marine data from obis
+      <ul>
+        <li>obisindicators</li>
+        <li>obis_data</li>
+      </ul>
   - title_md: obitools
     description_md: |-
-      |+ OBITools is a set of programs developed to simplify the manipulation of sequence files
-      - obi_illumina_pairend
-      - obi_ngsfilter
-      - obi_annotate
-      - obi_clean
-      - obi_convert
-      - obi_grep
-      - obi_sort
-      - obi_stat
-      - obi_tab
-      - obi_uniq
+      OBITools is a set of programs developed to simplify the manipulation of sequence files
+      <ul>
+        <li>obi_illumina_pairend</li>
+        <li>obi_ngsfilter</li>
+        <li>obi_annotate</li>
+        <li>obi_clean</li>
+        <li>obi_convert</li>
+        <li>obi_grep</li>
+        <li>obi_sort</li>
+        <li>obi_stat</li>
+        <li>obi_tab</li>
+        <li>obi_uniq</li>
+      </ul>
   - title_md: omark
     description_md: |-
-      |+ Proteome quality assessment software
-      - omark
+      Proteome quality assessment software
+      <ul>
+        <li>omark</li>
+      </ul>
   - title_md: orfipy
     description_md: |-
-      |+ Galaxy wrapper for ORFIPY
-      - orfipy
+      Galaxy wrapper for ORFIPY
+      <ul>
+        <li>orfipy</li>
+      </ul>
   - title_md: orthofinder
     description_md: |-
-      |+ Accurate inference of orthologous gene groups made easy
-      - orthofinder_onlygroups
+      Accurate inference of orthologous gene groups made easy
+      <ul>
+        <li>orthofinder_onlygroups</li>
+      </ul>
   - title_md: peptideshaker
     description_md: |-
-      |+ PeptideShaker and SearchGUI
-      - fasta_cli
-      - ident_params
-      - peptide_shaker
-      - search_gui
+      PeptideShaker and SearchGUI
+      <ul>
+        <li>fasta_cli</li>
+        <li>ident_params</li>
+        <li>peptide_shaker</li>
+        <li>search_gui</li>
+      </ul>
   - title_md: pfamscan
     description_md: |-
-      |+ Search a FASTA sequence against a library of Pfam HMM.
-      - pfamscan
+      Search a FASTA sequence against a library of Pfam HMM.
+      <ul>
+        <li>pfamscan</li>
+      </ul>
   - title_md: pharokka
     description_md: |-
-      |+ rapid standardised annotation tool for bacteriophage genomes and metagenomes
-      - pharokka
+      rapid standardised annotation tool for bacteriophage genomes and metagenomes
+      <ul>
+        <li>pharokka</li>
+      </ul>
   - title_md: phyloseq
     description_md: |-
-      |+ Handling and analysis of high-throughput microbiome census data
-      - phyloseq_from_biom
-      - phyloseq_from_dada2
-      - phyloseq_plot_ordination
-      - phyloseq_plot_richness
+      Handling and analysis of high-throughput microbiome census data
+      <ul>
+        <li>phyloseq_from_biom</li>
+        <li>phyloseq_from_dada2</li>
+        <li>phyloseq_plot_ordination</li>
+        <li>phyloseq_plot_richness</li>
+      </ul>
   - title_md: phyml
     description_md: |-
-      |+ PhyML is a phylogeny software based on the maximum-likelihood principle.
-      - phyml
+      PhyML is a phylogeny software based on the maximum-likelihood principle.
+      <ul>
+        <li>phyml</li>
+      </ul>
   - title_md: picrust
     description_md: |-
-      |+ PICRUSt wrappers
-      - picrust_categorize
-      - picrust_compare_biom
-      - picrust_format_tree_and_trait_table
-      - picrust_metagenome_contributions
-      - picrust_normalize_by_copy_number
-      - picrust_predict_metagenomes
+      PICRUSt wrappers
+      <ul>
+        <li>picrust_categorize</li>
+        <li>picrust_compare_biom</li>
+        <li>picrust_format_tree_and_trait_table</li>
+        <li>picrust_metagenome_contributions</li>
+        <li>picrust_normalize_by_copy_number</li>
+        <li>picrust_predict_metagenomes</li>
+      </ul>
   - title_md: picrust2
     description_md: |-
-      |+ PICRUSt2: Phylogenetic Investigation of Communities by Reconstruction of Unobserved States
-      - picrust2_add_descriptions
-      - picrust2_hsp
-      - picrust2_metagenome_pipeline
-      - picrust2_pathway_pipeline
-      - picrust2_pipeline
-      - picrust2_place_seqs
-      - picrust2_shuffle_predictions
+      PICRUSt2: Phylogenetic Investigation of Communities by Reconstruction of Unobserved States
+      <ul>
+        <li>picrust2_add_descriptions</li>
+        <li>picrust2_hsp</li>
+        <li>picrust2_metagenome_pipeline</li>
+        <li>picrust2_pathway_pipeline</li>
+        <li>picrust2_pipeline</li>
+        <li>picrust2_place_seqs</li>
+        <li>picrust2_shuffle_predictions</li>
+      </ul>
   - title_md: plasflow
     description_md: |-
-      |+ PlasFlow - Prediction of plasmid sequences in metagenomic contigs.
-      - PlasFlow
+      PlasFlow - Prediction of plasmid sequences in metagenomic contigs.
+      <ul>
+        <li>PlasFlow</li>
+      </ul>
   - title_md: plasmidfinder
     description_md: |-
-      |+ "PlasmidFinder provides the detection of replicons in the WGSand assigns the plasmids under study to lineages that trace backthe information to the existing knowledge on Inc groups and suggestspossible reference plasmids for each lineage"
-      - plasmidfinder
+      "PlasmidFinder provides the detection of replicons in the WGSand assigns the plasmids under study to lineages that trace backthe information to the existing knowledge on Inc groups and suggestspossible reference plasmids for each lineage"
+      <ul>
+        <li>plasmidfinder</li>
+      </ul>
   - title_md: plasmidspades
     description_md: |-
-      |+ Genome assembler for assemblying plasmid
-      - plasmidspades
+      Genome assembler for assemblying plasmid
+      <ul>
+        <li>plasmidspades</li>
+      </ul>
   - title_md: polypolish
     description_md: |-
-      |+ "Polypolish is a tool for polishing genome assemblies with short reads.Polypolish uses SAM files where each read has been aligned to all possible locations (not just a single best location).This allows it to repair errors in repeat regions that other alignment-based polishers cannot fix."
-      - polypolish
+      "Polypolish is a tool for polishing genome assemblies with short reads.Polypolish uses SAM files where each read has been aligned to all possible locations (not just a single best location).This allows it to repair errors in repeat regions that other alignment-based polishers cannot fix."
+      <ul>
+        <li>polypolish</li>
+      </ul>
   - title_md: prodigal
     description_md: |-
-      |+ A protein-coding gene prediction software tool for bacterial and archaeal genomes
-      - prodigal
+      A protein-coding gene prediction software tool for bacterial and archaeal genomes
+      <ul>
+        <li>prodigal</li>
+      </ul>
   - title_md: prokka
     description_md: |-
-      |+ Rapid annotation of prokaryotic genomes
-      - prokka
+      Rapid annotation of prokaryotic genomes
+      <ul>
+        <li>prokka</li>
+      </ul>
   - title_md: promer
     description_md: |-
-      |+ Aligns two sets of contigs and reports amino acid substitutions between them
-      - promer4_substitutions
+      Aligns two sets of contigs and reports amino acid substitutions between them
+      <ul>
+        <li>promer4_substitutions</li>
+      </ul>
   - title_md: proteinortho
     description_md: |-
-      |+ Proteinortho is a tool to detect orthologous proteins/genes within different species.
-      - proteinortho
-      - proteinortho_grab_proteins
-      - proteinortho_summary
+      Proteinortho is a tool to detect orthologous proteins/genes within different species.
+      <ul>
+        <li>proteinortho</li>
+        <li>proteinortho_grab_proteins</li>
+        <li>proteinortho_summary</li>
+      </ul>
   - title_md: pycoqc
     description_md: |-
-      |+ QC metrics for ONT Basecalling
-      - pycoqc
+      QC metrics for ONT Basecalling
+      <ul>
+        <li>pycoqc</li>
+      </ul>
   - title_md: pygenometracks
     description_md: |-
-      |+ pyGenomeTracks: Standalone program and library to plot beautiful genome browser tracks.
-      - pygenomeTracks
+      pyGenomeTracks: Standalone program and library to plot beautiful genome browser tracks.
+      <ul>
+        <li>pygenomeTracks</li>
+      </ul>
   - title_md: qiime_add_on
     description_md: |-
-      |+ QIIME to perform microbial community analysis
-      - qiime_collapse_samples
-      - qiime_make_otu_table
+      QIIME to perform microbial community analysis
+      <ul>
+        <li>qiime_collapse_samples</li>
+        <li>qiime_make_otu_table</li>
+      </ul>
   - title_md: qiime_core
     description_md: |-
-      |+ QIIME to perform microbial community analysis
-      - qiime_align_seqs
-      - qiime_alpha_diversity
-      - qiime_alpha_rarefaction
-      - qiime_assign_taxonomy
-      - qiime_beta_diversity
-      - qiime_beta_diversity_through_plots
-      - qiime_compare_categories
-      - qiime_core_diversity
-      - qiime_count_seqs
-      - qiime_extract_barcodes
-      - qiime_filter_alignment
-      - qiime_filter_fasta
-      - qiime_filter_otus_from_otu_table
-      - qiime_filter_samples_from_otu_table
-      - qiime_filter_taxa_from_otu_table
-      - qiime_jackknifed_beta_diversity
-      - qiime_make_emperor
-      - qiime_make_otu_heatmap
-      - qiime_make_phylogeny
-      - qiime_multiple_join_paired_ends
-      - qiime_multiple_split_libraries_fastq
-      - qiime_pick_closed_reference_otus
-      - qiime_pick_open_reference_otus
-      - qiime_pick_otus
-      - qiime_pick_rep_set
-      - qiime_plot_taxa_summary
-      - qiime_split_libraries
-      - qiime_split_libraries_fastq
-      - qiime_summarize_taxa
-      - qiime_summarize_taxa_through_plots
-      - qiime_upgma_cluster
-      - qiime_validate_mapping_file
+      QIIME to perform microbial community analysis
+      <ul>
+        <li>qiime_align_seqs</li>
+        <li>qiime_alpha_diversity</li>
+        <li>qiime_alpha_rarefaction</li>
+        <li>qiime_assign_taxonomy</li>
+        <li>qiime_beta_diversity</li>
+        <li>qiime_beta_diversity_through_plots</li>
+        <li>qiime_compare_categories</li>
+        <li>qiime_core_diversity</li>
+        <li>qiime_count_seqs</li>
+        <li>qiime_extract_barcodes</li>
+        <li>qiime_filter_alignment</li>
+        <li>qiime_filter_fasta</li>
+        <li>qiime_filter_otus_from_otu_table</li>
+        <li>qiime_filter_samples_from_otu_table</li>
+        <li>qiime_filter_taxa_from_otu_table</li>
+        <li>qiime_jackknifed_beta_diversity</li>
+        <li>qiime_make_emperor</li>
+        <li>qiime_make_otu_heatmap</li>
+        <li>qiime_make_phylogeny</li>
+        <li>qiime_multiple_join_paired_ends</li>
+        <li>qiime_multiple_split_libraries_fastq</li>
+        <li>qiime_pick_closed_reference_otus</li>
+        <li>qiime_pick_open_reference_otus</li>
+        <li>qiime_pick_otus</li>
+        <li>qiime_pick_rep_set</li>
+        <li>qiime_plot_taxa_summary</li>
+        <li>qiime_split_libraries</li>
+        <li>qiime_split_libraries_fastq</li>
+        <li>qiime_summarize_taxa</li>
+        <li>qiime_summarize_taxa_through_plots</li>
+        <li>qiime_upgma_cluster</li>
+        <li>qiime_validate_mapping_file</li>
+      </ul>
   - title_md: qualimap
     description_md: |-
-      |+ Qualimap 2 is a platform-independent application written in Java andR that facilitates the quality control of alignment sequencing data and itsderivatives like feature counts.
-      - qualimap_bamqc
-      - qualimap_counts
-      - qualimap_multi_bamqc
-      - qualimap_rnaseq
+      Qualimap 2 is a platform-independent application written in Java andR that facilitates the quality control of alignment sequencing data and itsderivatives like feature counts.
+      <ul>
+        <li>qualimap_bamqc</li>
+        <li>qualimap_counts</li>
+        <li>qualimap_multi_bamqc</li>
+        <li>qualimap_rnaseq</li>
+      </ul>
   - title_md: quast
     description_md: |-
-      |+ Quast (Quality ASsessment Tool) evaluates genome assemblies.
-      - quast
+      Quast (Quality ASsessment Tool) evaluates genome assemblies.
+      <ul>
+        <li>quast</li>
+      </ul>
   - title_md: quickmerge
     description_md: |-
-      |+ Merge long-read and hybrid assemblies to increase contiguity
-      - quickmerge
+      Merge long-read and hybrid assemblies to increase contiguity
+      <ul>
+        <li>quickmerge</li>
+      </ul>
   - title_md: rRNA
     description_md: |-
-      |+ Identification of ribosomal RNA genes in metagenomic fragments.
-      - meta_rna
+      Identification of ribosomal RNA genes in metagenomic fragments.
+      <ul>
+        <li>meta_rna</li>
+      </ul>
   - title_md: racon
     description_md: |-
-      |+ Consensus module for raw de novo DNA assembly of long uncorrected reads.
-      - racon
+      Consensus module for raw de novo DNA assembly of long uncorrected reads.
+      <ul>
+        <li>racon</li>
+      </ul>
   - title_md: rasusa
     description_md: |-
-      |+ Randomly subsample sequencing reads to a specified coverage
-      - rasusa
+      Randomly subsample sequencing reads to a specified coverage
+      <ul>
+        <li>rasusa</li>
+      </ul>
   - title_md: raxml
     description_md: |-
-      |+ RAxML - A Maximum Likelihood based phylogenetic inference
-      - raxml
+      RAxML - A Maximum Likelihood based phylogenetic inference
+      <ul>
+        <li>raxml</li>
+      </ul>
   - title_md: read_it_and_keep
     description_md: |-
-      |+ Rapid decontamination of SARS-CoV-2 sequencing reads
-      - read_it_and_keep
+      Rapid decontamination of SARS-CoV-2 sequencing reads
+      <ul>
+        <li>read_it_and_keep</li>
+      </ul>
   - title_md: reago
     description_md: |-
-      |+ Reago is tool to assembly 16S ribosomal RNA recovery from metagenomic data.
-      - reago
+      Reago is tool to assembly 16S ribosomal RNA recovery from metagenomic data.
+      <ul>
+        <li>reago</li>
+      </ul>
   - title_md: recentrifuge
     description_md: |-
-      |+ "With Recentrifuge, researchers can analyze results from taxonomic classifiers using interactive charts with emphasis on the confidence level of the classifications.In addition to contamination-subtracted samples.Recentrifuge provides shared and exclusive taxa per sample,thus enabling robust contamination removal and comparative analysis in environmental and clinical metagenomics."
-      - recentrifuge
+      "With Recentrifuge, researchers can analyze results from taxonomic classifiers using interactive charts with emphasis on the confidence level of the classifications.In addition to contamination-subtracted samples.Recentrifuge provides shared and exclusive taxa per sample,thus enabling robust contamination removal and comparative analysis in environmental and clinical metagenomics."
+      <ul>
+        <li>recentrifuge</li>
+      </ul>
   - title_md: repeatexplorer2
     description_md: |-
-      |+ Tool for annotation of repeats from unassembled shotgun reads.
-      - repeatexplorer_clustering
+      Tool for annotation of repeats from unassembled shotgun reads.
+      <ul>
+        <li>repeatexplorer_clustering</li>
+      </ul>
   - title_md: roary
     description_md: |-
-      |+ Roary the pangenome pipeline
-      - roary
+      Roary the pangenome pipeline
+      <ul>
+        <li>roary</li>
+      </ul>
   - title_md: rseqc
     description_md: |-
-      |+ an RNA-seq quality control package
-      - rseqc_FPKM_count
-      - rseqc_RNA_fragment_size
-      - rseqc_RPKM_saturation
-      - rseqc_bam2wig
-      - rseqc_bam_stat
-      - rseqc_clipping_profile
-      - rseqc_deletion_profile
-      - rseqc_geneBody_coverage
-      - rseqc_geneBody_coverage2
-      - rseqc_infer_experiment
-      - rseqc_inner_distance
-      - rseqc_insertion_profile
-      - rseqc_junction_annotation
-      - rseqc_junction_saturation
-      - rseqc_mismatch_profile
-      - rseqc_read_GC
-      - rseqc_read_NVC
-      - rseqc_read_distribution
-      - rseqc_read_duplication
-      - rseqc_read_hexamer
-      - rseqc_read_quality
-      - rseqc_tin
+      an RNA-seq quality control package
+      <ul>
+        <li>rseqc_FPKM_count</li>
+        <li>rseqc_RNA_fragment_size</li>
+        <li>rseqc_RPKM_saturation</li>
+        <li>rseqc_bam2wig</li>
+        <li>rseqc_bam_stat</li>
+        <li>rseqc_clipping_profile</li>
+        <li>rseqc_deletion_profile</li>
+        <li>rseqc_geneBody_coverage</li>
+        <li>rseqc_geneBody_coverage2</li>
+        <li>rseqc_infer_experiment</li>
+        <li>rseqc_inner_distance</li>
+        <li>rseqc_insertion_profile</li>
+        <li>rseqc_junction_annotation</li>
+        <li>rseqc_junction_saturation</li>
+        <li>rseqc_mismatch_profile</li>
+        <li>rseqc_read_GC</li>
+        <li>rseqc_read_NVC</li>
+        <li>rseqc_read_distribution</li>
+        <li>rseqc_read_duplication</li>
+        <li>rseqc_read_hexamer</li>
+        <li>rseqc_read_quality</li>
+        <li>rseqc_tin</li>
+      </ul>
   - title_md: salmon
     description_md: |-
-      |+ Salmon is a wicked-fast program to produce a highly-accurate, transcript-level quantification estimates from RNA-seq and single-cell data.
-      - alevin
-      - salmon
-      - salmonquantmerge
+      Salmon is a wicked-fast program to produce a highly-accurate, transcript-level quantification estimates from RNA-seq and single-cell data.
+      <ul>
+        <li>alevin</li>
+        <li>salmon</li>
+        <li>salmonquantmerge</li>
+      </ul>
   - title_md: sarscov2formatter
     description_md: |-
-      |+ sarscov2formatter custom script
-      - sarscov2formatter
+      sarscov2formatter custom script
+      <ul>
+        <li>sarscov2formatter</li>
+      </ul>
   - title_md: sarscov2summary
     description_md: |-
-      |+ sarscov2summary custom script
-      - sarscov2summary
+      sarscov2summary custom script
+      <ul>
+        <li>sarscov2summary</li>
+      </ul>
   - title_md: scoary
     description_md: |-
-      |+ Scoary calculates the assocations between all genes in the accessory genome and the traits.
-      - scoary
+      Scoary calculates the assocations between all genes in the accessory genome and the traits.
+      <ul>
+        <li>scoary</li>
+      </ul>
   - title_md: semibin
     description_md: |-
-      |+ SemiBin: Semi-supervised Metagenomic Binning Using Siamese Neural Networks
-      - semibin_bin
-      - semibin_concatenate_fasta
-      - semibin_generate_cannot_links
-      - semibin_generate_sequence_features
-      - semibin
-      - semibin_train
+      SemiBin: Semi-supervised Metagenomic Binning Using Siamese Neural Networks
+      <ul>
+        <li>semibin_bin</li>
+        <li>semibin_concatenate_fasta</li>
+        <li>semibin_generate_cannot_links</li>
+        <li>semibin_generate_sequence_features</li>
+        <li>semibin</li>
+        <li>semibin_train</li>
+      </ul>
   - title_md: seqkit
     description_md: |-
-      |+ A cross-platform and ultrafast toolkit for FASTA/Q file manipulation
-      - seqkit_fx2tab
-      - seqkit_locate
-      - seqkit_sort
-      - seqkit_stats
-      - seqkit_translate
+      A cross-platform and ultrafast toolkit for FASTA/Q file manipulation
+      <ul>
+        <li>seqkit_fx2tab</li>
+        <li>seqkit_locate</li>
+        <li>seqkit_sort</li>
+        <li>seqkit_stats</li>
+        <li>seqkit_translate</li>
+      </ul>
   - title_md: seqprep
     description_md: |-
-      |+ Tool for merging paired-end Illumina reads and trimming adapters.
-      - seqprep
+      Tool for merging paired-end Illumina reads and trimming adapters.
+      <ul>
+        <li>seqprep</li>
+      </ul>
   - title_md: seqsero2
     description_md: |-
-      |+ Salmonella serotype prediction from genome sequencing data
-      - seqsero2
+      Salmonella serotype prediction from genome sequencing data
+      <ul>
+        <li>seqsero2</li>
+      </ul>
   - title_md: shorah
     description_md: |-
-      |+ Reconstruct haplotypes using ShoRAH in amplicon mode
-      - shorah_amplicon
+      Reconstruct haplotypes using ShoRAH in amplicon mode
+      <ul>
+        <li>shorah_amplicon</li>
+      </ul>
   - title_md: shovill
     description_md: |-
-      |+ Faster de novo assembly pipeline based around Spades
-      - shovill
+      Faster de novo assembly pipeline based around Spades
+      <ul>
+        <li>shovill</li>
+      </ul>
   - title_md: sistr_cmd
     description_md: |-
-      |+ SISTR in silico serotyping tool
-      - sistr_cmd
+      SISTR in silico serotyping tool
+      <ul>
+        <li>sistr_cmd</li>
+      </ul>
   - title_md: smallgenomeutilities
     description_md: |-
-      |+ Set of utilities for manipulating small viral genome data.
-      - smgu_frameshift_deletions_checks
+      Set of utilities for manipulating small viral genome data.
+      <ul>
+        <li>smgu_frameshift_deletions_checks</li>
+      </ul>
   - title_md: smalt
     description_md: |-
-      |+ SMALT aligns DNA sequencing reads with a reference genome.
-      - smalt
+      SMALT aligns DNA sequencing reads with a reference genome.
+      <ul>
+        <li>smalt</li>
+      </ul>
   - title_md: snap
     description_md: |-
-      |+ SNAP is a general purpose gene finding program suitable for both eukaryotic and prokaryotic genomes.
-      - snap
-      - snap_training
+      SNAP is a general purpose gene finding program suitable for both eukaryotic and prokaryotic genomes.
+      <ul>
+        <li>snap</li>
+        <li>snap_training</li>
+      </ul>
   - title_md: snippy
     description_md: |-
-      |+ Contains the snippy tool for characterising microbial snps
-      - snippy_core
-      - snippy
-      - snippy_clean_full_aln
+      Contains the snippy tool for characterising microbial snps
+      <ul>
+        <li>snippy_core</li>
+        <li>snippy</li>
+        <li>snippy_clean_full_aln</li>
+      </ul>
   - title_md: sonneityping
     description_md: |-
-      |+ Scripts for parsing Mykrobe predict results for Shigella sonnei.
-      - sonneityping
+      Scripts for parsing Mykrobe predict results for Shigella sonnei.
+      <ul>
+        <li>sonneityping</li>
+      </ul>
   - title_md: sortmerna
     description_md: |-
-      |+ SortMeRNA is a software designed to rapidly filter ribosomal RNA fragments from metatransriptomic data produced by next-generation sequencers.
-      - bg_sortmerna
+      SortMeRNA is a software designed to rapidly filter ribosomal RNA fragments from metatransriptomic data produced by next-generation sequencers.
+      <ul>
+        <li>bg_sortmerna</li>
+      </ul>
   - title_md: spades
     description_md: |-
-      |+ SPAdes is an assembly toolkit containing various assembly pipelines. It implements the following 4 stages: assembly graph construction, k-bimer adjustment, construction of paired assembly graph and contig construction.
-      - spades_biosyntheticspades
-      - spades_coronaspades
-      - spades_metaplasmidspades
-      - metaspades
-      - spades_metaviralspades
-      - spades_plasmidspades
-      - rnaspades
-      - spades_rnaviralspades
-      - spades
+      SPAdes is an assembly toolkit containing various assembly pipelines. It implements the following 4 stages: assembly graph construction, k-bimer adjustment, construction of paired assembly graph and contig construction.
+      <ul>
+        <li>spades_biosyntheticspades</li>
+        <li>spades_coronaspades</li>
+        <li>spades_metaplasmidspades</li>
+        <li>metaspades</li>
+        <li>spades_metaviralspades</li>
+        <li>spades_plasmidspades</li>
+        <li>rnaspades</li>
+        <li>spades_rnaviralspades</li>
+        <li>spades</li>
+      </ul>
   - title_md: spotyping
     description_md: |-
-      |+ SpoTyping allows fast and accurate in silico Mycobacterium spoligotyping from sequence reads
-      - spotyping
+      SpoTyping allows fast and accurate in silico Mycobacterium spoligotyping from sequence reads
+      <ul>
+        <li>spotyping</li>
+      </ul>
   - title_md: sr_bowtie
     description_md: |-
-      |+ bowtie wrapper tool to align small RNA sequencing reads
-      - bowtieForSmallRNA
+      bowtie wrapper tool to align small RNA sequencing reads
+      <ul>
+        <li>bowtieForSmallRNA</li>
+      </ul>
   - title_md: srst2
     description_md: |-
-      |+ Short Read Sequence Typing for Bacterial Pathogens
-      - srst2
+      Short Read Sequence Typing for Bacterial Pathogens
+      <ul>
+        <li>srst2</li>
+      </ul>
   - title_md: srst2
     description_md: |-
-      |+ SRST2 Short Read Sequence Typing for Bacterial Pathogens
-      - srst2
+      SRST2 Short Read Sequence Typing for Bacterial Pathogens
+      <ul>
+        <li>srst2</li>
+      </ul>
   - title_md: staramr
     description_md: |-
-      |+ Scan genome contigs against the ResFinder, PlasmidFinder, and PointFinder antimicrobial resistance databases.
-      - staramr_search
+      Scan genome contigs against the ResFinder, PlasmidFinder, and PointFinder antimicrobial resistance databases.
+      <ul>
+        <li>staramr_search</li>
+      </ul>
   - title_md: stringmlst
     description_md: |-
-      |+ Rapid and accurate identification of the sequence type (ST)
-      - stringmlst
+      Rapid and accurate identification of the sequence type (ST)
+      <ul>
+        <li>stringmlst</li>
+      </ul>
   - title_md: structure
     description_md: |-
-      |+ for using multi-locus genotype data to investigate population structure.
-      - structure
+      for using multi-locus genotype data to investigate population structure.
+      <ul>
+        <li>structure</li>
+      </ul>
   - title_md: suite_qiime2__alignment
     description_md: |-
-      |+ nan
-      - qiime2__alignment__mafft
-      - qiime2__alignment__mafft_add
-      - qiime2__alignment__mask
+      nan
+      <ul>
+        <li>qiime2__alignment__mafft</li>
+        <li>qiime2__alignment__mafft_add</li>
+        <li>qiime2__alignment__mask</li>
+      </ul>
   - title_md: suite_qiime2__composition
     description_md: |-
-      |+ nan
-      - qiime2__composition__add_pseudocount
-      - qiime2__composition__ancom
-      - qiime2__composition__ancombc
-      - qiime2__composition__da_barplot
-      - qiime2__composition__tabulate
+      nan
+      <ul>
+        <li>qiime2__composition__add_pseudocount</li>
+        <li>qiime2__composition__ancom</li>
+        <li>qiime2__composition__ancombc</li>
+        <li>qiime2__composition__da_barplot</li>
+        <li>qiime2__composition__tabulate</li>
+      </ul>
   - title_md: suite_qiime2__cutadapt
     description_md: |-
-      |+ nan
-      - qiime2__cutadapt__demux_paired
-      - qiime2__cutadapt__demux_single
-      - qiime2__cutadapt__trim_paired
-      - qiime2__cutadapt__trim_single
+      nan
+      <ul>
+        <li>qiime2__cutadapt__demux_paired</li>
+        <li>qiime2__cutadapt__demux_single</li>
+        <li>qiime2__cutadapt__trim_paired</li>
+        <li>qiime2__cutadapt__trim_single</li>
+      </ul>
   - title_md: suite_qiime2__dada2
     description_md: |-
-      |+ nan
-      - qiime2__dada2__denoise_ccs
-      - qiime2__dada2__denoise_paired
-      - qiime2__dada2__denoise_pyro
-      - qiime2__dada2__denoise_single
+      nan
+      <ul>
+        <li>qiime2__dada2__denoise_ccs</li>
+        <li>qiime2__dada2__denoise_paired</li>
+        <li>qiime2__dada2__denoise_pyro</li>
+        <li>qiime2__dada2__denoise_single</li>
+      </ul>
   - title_md: suite_qiime2__deblur
     description_md: |-
-      |+ nan
-      - qiime2__deblur__denoise_16S
-      - qiime2__deblur__denoise_other
-      - qiime2__deblur__visualize_stats
+      nan
+      <ul>
+        <li>qiime2__deblur__denoise_16S</li>
+        <li>qiime2__deblur__denoise_other</li>
+        <li>qiime2__deblur__visualize_stats</li>
+      </ul>
   - title_md: suite_qiime2__demux
     description_md: |-
-      |+ nan
-      - qiime2__demux__emp_paired
-      - qiime2__demux__emp_single
-      - qiime2__demux__filter_samples
-      - qiime2__demux__partition_samples_paired
-      - qiime2__demux__partition_samples_single
-      - qiime2__demux__subsample_paired
-      - qiime2__demux__subsample_single
-      - qiime2__demux__summarize
-      - qiime2__demux__tabulate_read_counts
+      nan
+      <ul>
+        <li>qiime2__demux__emp_paired</li>
+        <li>qiime2__demux__emp_single</li>
+        <li>qiime2__demux__filter_samples</li>
+        <li>qiime2__demux__partition_samples_paired</li>
+        <li>qiime2__demux__partition_samples_single</li>
+        <li>qiime2__demux__subsample_paired</li>
+        <li>qiime2__demux__subsample_single</li>
+        <li>qiime2__demux__summarize</li>
+        <li>qiime2__demux__tabulate_read_counts</li>
+      </ul>
   - title_md: suite_qiime2__diversity
     description_md: |-
-      |+ nan
-      - qiime2__diversity__adonis
-      - qiime2__diversity__alpha
-      - qiime2__diversity__alpha_correlation
-      - qiime2__diversity__alpha_group_significance
-      - qiime2__diversity__alpha_phylogenetic
-      - qiime2__diversity__alpha_rarefaction
-      - qiime2__diversity__beta
-      - qiime2__diversity__beta_correlation
-      - qiime2__diversity__beta_group_significance
-      - qiime2__diversity__beta_phylogenetic
-      - qiime2__diversity__beta_rarefaction
-      - qiime2__diversity__bioenv
-      - qiime2__diversity__core_metrics
-      - qiime2__diversity__core_metrics_phylogenetic
-      - qiime2__diversity__filter_alpha_diversity
-      - qiime2__diversity__filter_distance_matrix
-      - qiime2__diversity__mantel
-      - qiime2__diversity__partial_procrustes
-      - qiime2__diversity__pcoa
-      - qiime2__diversity__pcoa_biplot
-      - qiime2__diversity__procrustes_analysis
-      - qiime2__diversity__tsne
-      - qiime2__diversity__umap
+      nan
+      <ul>
+        <li>qiime2__diversity__adonis</li>
+        <li>qiime2__diversity__alpha</li>
+        <li>qiime2__diversity__alpha_correlation</li>
+        <li>qiime2__diversity__alpha_group_significance</li>
+        <li>qiime2__diversity__alpha_phylogenetic</li>
+        <li>qiime2__diversity__alpha_rarefaction</li>
+        <li>qiime2__diversity__beta</li>
+        <li>qiime2__diversity__beta_correlation</li>
+        <li>qiime2__diversity__beta_group_significance</li>
+        <li>qiime2__diversity__beta_phylogenetic</li>
+        <li>qiime2__diversity__beta_rarefaction</li>
+        <li>qiime2__diversity__bioenv</li>
+        <li>qiime2__diversity__core_metrics</li>
+        <li>qiime2__diversity__core_metrics_phylogenetic</li>
+        <li>qiime2__diversity__filter_alpha_diversity</li>
+        <li>qiime2__diversity__filter_distance_matrix</li>
+        <li>qiime2__diversity__mantel</li>
+        <li>qiime2__diversity__partial_procrustes</li>
+        <li>qiime2__diversity__pcoa</li>
+        <li>qiime2__diversity__pcoa_biplot</li>
+        <li>qiime2__diversity__procrustes_analysis</li>
+        <li>qiime2__diversity__tsne</li>
+        <li>qiime2__diversity__umap</li>
+      </ul>
   - title_md: suite_qiime2__diversity_lib
     description_md: |-
-      |+ nan
-      - qiime2__diversity_lib__alpha_passthrough
-      - qiime2__diversity_lib__beta_passthrough
-      - qiime2__diversity_lib__beta_phylogenetic_meta_passthrough
-      - qiime2__diversity_lib__beta_phylogenetic_passthrough
-      - qiime2__diversity_lib__bray_curtis
-      - qiime2__diversity_lib__faith_pd
-      - qiime2__diversity_lib__jaccard
-      - qiime2__diversity_lib__observed_features
-      - qiime2__diversity_lib__pielou_evenness
-      - qiime2__diversity_lib__shannon_entropy
-      - qiime2__diversity_lib__unweighted_unifrac
-      - qiime2__diversity_lib__weighted_unifrac
+      nan
+      <ul>
+        <li>qiime2__diversity_lib__alpha_passthrough</li>
+        <li>qiime2__diversity_lib__beta_passthrough</li>
+        <li>qiime2__diversity_lib__beta_phylogenetic_meta_passthrough</li>
+        <li>qiime2__diversity_lib__beta_phylogenetic_passthrough</li>
+        <li>qiime2__diversity_lib__bray_curtis</li>
+        <li>qiime2__diversity_lib__faith_pd</li>
+        <li>qiime2__diversity_lib__jaccard</li>
+        <li>qiime2__diversity_lib__observed_features</li>
+        <li>qiime2__diversity_lib__pielou_evenness</li>
+        <li>qiime2__diversity_lib__shannon_entropy</li>
+        <li>qiime2__diversity_lib__unweighted_unifrac</li>
+        <li>qiime2__diversity_lib__weighted_unifrac</li>
+      </ul>
   - title_md: suite_qiime2__emperor
     description_md: |-
-      |+ nan
-      - qiime2__emperor__biplot
-      - qiime2__emperor__plot
-      - qiime2__emperor__procrustes_plot
+      nan
+      <ul>
+        <li>qiime2__emperor__biplot</li>
+        <li>qiime2__emperor__plot</li>
+        <li>qiime2__emperor__procrustes_plot</li>
+      </ul>
   - title_md: suite_qiime2__feature_classifier
     description_md: |-
-      |+ nan
-      - qiime2__feature_classifier__blast
-      - qiime2__feature_classifier__classify_consensus_blast
-      - qiime2__feature_classifier__classify_consensus_vsearch
-      - qiime2__feature_classifier__classify_hybrid_vsearch_sklearn
-      - qiime2__feature_classifier__classify_sklearn
-      - qiime2__feature_classifier__extract_reads
-      - qiime2__feature_classifier__find_consensus_annotation
-      - qiime2__feature_classifier__fit_classifier_naive_bayes
-      - qiime2__feature_classifier__fit_classifier_sklearn
-      - qiime2__feature_classifier__makeblastdb
-      - qiime2__feature_classifier__vsearch_global
+      nan
+      <ul>
+        <li>qiime2__feature_classifier__blast</li>
+        <li>qiime2__feature_classifier__classify_consensus_blast</li>
+        <li>qiime2__feature_classifier__classify_consensus_vsearch</li>
+        <li>qiime2__feature_classifier__classify_hybrid_vsearch_sklearn</li>
+        <li>qiime2__feature_classifier__classify_sklearn</li>
+        <li>qiime2__feature_classifier__extract_reads</li>
+        <li>qiime2__feature_classifier__find_consensus_annotation</li>
+        <li>qiime2__feature_classifier__fit_classifier_naive_bayes</li>
+        <li>qiime2__feature_classifier__fit_classifier_sklearn</li>
+        <li>qiime2__feature_classifier__makeblastdb</li>
+        <li>qiime2__feature_classifier__vsearch_global</li>
+      </ul>
   - title_md: suite_qiime2__feature_table
     description_md: |-
-      |+ nan
-      - qiime2__feature_table__core_features
-      - qiime2__feature_table__filter_features
-      - qiime2__feature_table__filter_features_conditionally
-      - qiime2__feature_table__filter_samples
-      - qiime2__feature_table__filter_seqs
-      - qiime2__feature_table__group
-      - qiime2__feature_table__heatmap
-      - qiime2__feature_table__merge
-      - qiime2__feature_table__merge_seqs
-      - qiime2__feature_table__merge_taxa
-      - qiime2__feature_table__presence_absence
-      - qiime2__feature_table__rarefy
-      - qiime2__feature_table__relative_frequency
-      - qiime2__feature_table__rename_ids
-      - qiime2__feature_table__split
-      - qiime2__feature_table__subsample_ids
-      - qiime2__feature_table__summarize
-      - qiime2__feature_table__summarize_plus
-      - qiime2__feature_table__tabulate_feature_frequencies
-      - qiime2__feature_table__tabulate_sample_frequencies
-      - qiime2__feature_table__tabulate_seqs
-      - qiime2__feature_table__transpose
+      nan
+      <ul>
+        <li>qiime2__feature_table__core_features</li>
+        <li>qiime2__feature_table__filter_features</li>
+        <li>qiime2__feature_table__filter_features_conditionally</li>
+        <li>qiime2__feature_table__filter_samples</li>
+        <li>qiime2__feature_table__filter_seqs</li>
+        <li>qiime2__feature_table__group</li>
+        <li>qiime2__feature_table__heatmap</li>
+        <li>qiime2__feature_table__merge</li>
+        <li>qiime2__feature_table__merge_seqs</li>
+        <li>qiime2__feature_table__merge_taxa</li>
+        <li>qiime2__feature_table__presence_absence</li>
+        <li>qiime2__feature_table__rarefy</li>
+        <li>qiime2__feature_table__relative_frequency</li>
+        <li>qiime2__feature_table__rename_ids</li>
+        <li>qiime2__feature_table__split</li>
+        <li>qiime2__feature_table__subsample_ids</li>
+        <li>qiime2__feature_table__summarize</li>
+        <li>qiime2__feature_table__summarize_plus</li>
+        <li>qiime2__feature_table__tabulate_feature_frequencies</li>
+        <li>qiime2__feature_table__tabulate_sample_frequencies</li>
+        <li>qiime2__feature_table__tabulate_seqs</li>
+        <li>qiime2__feature_table__transpose</li>
+      </ul>
   - title_md: suite_qiime2__fragment_insertion
     description_md: |-
-      |+ nan
-      - qiime2__fragment_insertion__classify_otus_experimental
-      - qiime2__fragment_insertion__filter_features
-      - qiime2__fragment_insertion__sepp
+      nan
+      <ul>
+        <li>qiime2__fragment_insertion__classify_otus_experimental</li>
+        <li>qiime2__fragment_insertion__filter_features</li>
+        <li>qiime2__fragment_insertion__sepp</li>
+      </ul>
   - title_md: suite_qiime2__longitudinal
     description_md: |-
-      |+ nan
-      - qiime2__longitudinal__anova
-      - qiime2__longitudinal__feature_volatility
-      - qiime2__longitudinal__first_differences
-      - qiime2__longitudinal__first_distances
-      - qiime2__longitudinal__linear_mixed_effects
-      - qiime2__longitudinal__maturity_index
-      - qiime2__longitudinal__nmit
-      - qiime2__longitudinal__pairwise_differences
-      - qiime2__longitudinal__pairwise_distances
-      - qiime2__longitudinal__plot_feature_volatility
-      - qiime2__longitudinal__volatility
+      nan
+      <ul>
+        <li>qiime2__longitudinal__anova</li>
+        <li>qiime2__longitudinal__feature_volatility</li>
+        <li>qiime2__longitudinal__first_differences</li>
+        <li>qiime2__longitudinal__first_distances</li>
+        <li>qiime2__longitudinal__linear_mixed_effects</li>
+        <li>qiime2__longitudinal__maturity_index</li>
+        <li>qiime2__longitudinal__nmit</li>
+        <li>qiime2__longitudinal__pairwise_differences</li>
+        <li>qiime2__longitudinal__pairwise_distances</li>
+        <li>qiime2__longitudinal__plot_feature_volatility</li>
+        <li>qiime2__longitudinal__volatility</li>
+      </ul>
   - title_md: suite_qiime2__metadata
     description_md: |-
-      |+ nan
-      - qiime2__metadata__distance_matrix
-      - qiime2__metadata__merge
-      - qiime2__metadata__shuffle_groups
-      - qiime2__metadata__tabulate
+      nan
+      <ul>
+        <li>qiime2__metadata__distance_matrix</li>
+        <li>qiime2__metadata__merge</li>
+        <li>qiime2__metadata__shuffle_groups</li>
+        <li>qiime2__metadata__tabulate</li>
+      </ul>
   - title_md: suite_qiime2__phylogeny
     description_md: |-
-      |+ nan
-      - qiime2__phylogeny__align_to_tree_mafft_fasttree
-      - qiime2__phylogeny__align_to_tree_mafft_iqtree
-      - qiime2__phylogeny__align_to_tree_mafft_raxml
-      - qiime2__phylogeny__fasttree
-      - qiime2__phylogeny__filter_table
-      - qiime2__phylogeny__filter_tree
-      - qiime2__phylogeny__iqtree
-      - qiime2__phylogeny__iqtree_ultrafast_bootstrap
-      - qiime2__phylogeny__midpoint_root
-      - qiime2__phylogeny__raxml
-      - qiime2__phylogeny__raxml_rapid_bootstrap
-      - qiime2__phylogeny__robinson_foulds
+      nan
+      <ul>
+        <li>qiime2__phylogeny__align_to_tree_mafft_fasttree</li>
+        <li>qiime2__phylogeny__align_to_tree_mafft_iqtree</li>
+        <li>qiime2__phylogeny__align_to_tree_mafft_raxml</li>
+        <li>qiime2__phylogeny__fasttree</li>
+        <li>qiime2__phylogeny__filter_table</li>
+        <li>qiime2__phylogeny__filter_tree</li>
+        <li>qiime2__phylogeny__iqtree</li>
+        <li>qiime2__phylogeny__iqtree_ultrafast_bootstrap</li>
+        <li>qiime2__phylogeny__midpoint_root</li>
+        <li>qiime2__phylogeny__raxml</li>
+        <li>qiime2__phylogeny__raxml_rapid_bootstrap</li>
+        <li>qiime2__phylogeny__robinson_foulds</li>
+      </ul>
   - title_md: suite_qiime2__quality_control
     description_md: |-
-      |+ nan
-      - qiime2__quality_control__bowtie2_build
-      - qiime2__quality_control__decontam_identify
-      - qiime2__quality_control__decontam_identify_batches
-      - qiime2__quality_control__decontam_remove
-      - qiime2__quality_control__decontam_score_viz
-      - qiime2__quality_control__evaluate_composition
-      - qiime2__quality_control__evaluate_seqs
-      - qiime2__quality_control__evaluate_taxonomy
-      - qiime2__quality_control__exclude_seqs
-      - qiime2__quality_control__filter_reads
+      nan
+      <ul>
+        <li>qiime2__quality_control__bowtie2_build</li>
+        <li>qiime2__quality_control__decontam_identify</li>
+        <li>qiime2__quality_control__decontam_identify_batches</li>
+        <li>qiime2__quality_control__decontam_remove</li>
+        <li>qiime2__quality_control__decontam_score_viz</li>
+        <li>qiime2__quality_control__evaluate_composition</li>
+        <li>qiime2__quality_control__evaluate_seqs</li>
+        <li>qiime2__quality_control__evaluate_taxonomy</li>
+        <li>qiime2__quality_control__exclude_seqs</li>
+        <li>qiime2__quality_control__filter_reads</li>
+      </ul>
   - title_md: suite_qiime2__quality_filter
     description_md: |-
-      |+ nan
-      - qiime2__quality_filter__q_score
+      nan
+      <ul>
+        <li>qiime2__quality_filter__q_score</li>
+      </ul>
   - title_md: suite_qiime2__rescript
     description_md: |-
-      |+ nan
-      - qiime2__rescript__cull_seqs
-      - qiime2__rescript__degap_seqs
-      - qiime2__rescript__dereplicate
-      - qiime2__rescript__edit_taxonomy
-      - qiime2__rescript__evaluate_classifications
-      - qiime2__rescript__evaluate_cross_validate
-      - qiime2__rescript__evaluate_fit_classifier
-      - qiime2__rescript__evaluate_seqs
-      - qiime2__rescript__evaluate_taxonomy
-      - qiime2__rescript__extract_seq_segments
-      - qiime2__rescript__filter_seqs_length
-      - qiime2__rescript__filter_seqs_length_by_taxon
-      - qiime2__rescript__filter_taxa
-      - qiime2__rescript__get_gtdb_data
-      - qiime2__rescript__get_ncbi_data
-      - qiime2__rescript__get_ncbi_data_protein
-      - qiime2__rescript__get_ncbi_genomes
-      - qiime2__rescript__get_silva_data
-      - qiime2__rescript__get_unite_data
-      - qiime2__rescript__merge_taxa
-      - qiime2__rescript__orient_seqs
-      - qiime2__rescript__parse_silva_taxonomy
-      - qiime2__rescript__reverse_transcribe
-      - qiime2__rescript__subsample_fasta
-      - qiime2__rescript__trim_alignment
+      nan
+      <ul>
+        <li>qiime2__rescript__cull_seqs</li>
+        <li>qiime2__rescript__degap_seqs</li>
+        <li>qiime2__rescript__dereplicate</li>
+        <li>qiime2__rescript__edit_taxonomy</li>
+        <li>qiime2__rescript__evaluate_classifications</li>
+        <li>qiime2__rescript__evaluate_cross_validate</li>
+        <li>qiime2__rescript__evaluate_fit_classifier</li>
+        <li>qiime2__rescript__evaluate_seqs</li>
+        <li>qiime2__rescript__evaluate_taxonomy</li>
+        <li>qiime2__rescript__extract_seq_segments</li>
+        <li>qiime2__rescript__filter_seqs_length</li>
+        <li>qiime2__rescript__filter_seqs_length_by_taxon</li>
+        <li>qiime2__rescript__filter_taxa</li>
+        <li>qiime2__rescript__get_gtdb_data</li>
+        <li>qiime2__rescript__get_ncbi_data</li>
+        <li>qiime2__rescript__get_ncbi_data_protein</li>
+        <li>qiime2__rescript__get_ncbi_genomes</li>
+        <li>qiime2__rescript__get_silva_data</li>
+        <li>qiime2__rescript__get_unite_data</li>
+        <li>qiime2__rescript__merge_taxa</li>
+        <li>qiime2__rescript__orient_seqs</li>
+        <li>qiime2__rescript__parse_silva_taxonomy</li>
+        <li>qiime2__rescript__reverse_transcribe</li>
+        <li>qiime2__rescript__subsample_fasta</li>
+        <li>qiime2__rescript__trim_alignment</li>
+      </ul>
   - title_md: suite_qiime2__sample_classifier
     description_md: |-
-      |+ nan
-      - qiime2__sample_classifier__classify_samples
-      - qiime2__sample_classifier__classify_samples_from_dist
-      - qiime2__sample_classifier__classify_samples_ncv
-      - qiime2__sample_classifier__confusion_matrix
-      - qiime2__sample_classifier__fit_classifier
-      - qiime2__sample_classifier__fit_regressor
-      - qiime2__sample_classifier__heatmap
-      - qiime2__sample_classifier__metatable
-      - qiime2__sample_classifier__predict_classification
-      - qiime2__sample_classifier__predict_regression
-      - qiime2__sample_classifier__regress_samples
-      - qiime2__sample_classifier__regress_samples_ncv
-      - qiime2__sample_classifier__scatterplot
-      - qiime2__sample_classifier__split_table
-      - qiime2__sample_classifier__summarize
+      nan
+      <ul>
+        <li>qiime2__sample_classifier__classify_samples</li>
+        <li>qiime2__sample_classifier__classify_samples_from_dist</li>
+        <li>qiime2__sample_classifier__classify_samples_ncv</li>
+        <li>qiime2__sample_classifier__confusion_matrix</li>
+        <li>qiime2__sample_classifier__fit_classifier</li>
+        <li>qiime2__sample_classifier__fit_regressor</li>
+        <li>qiime2__sample_classifier__heatmap</li>
+        <li>qiime2__sample_classifier__metatable</li>
+        <li>qiime2__sample_classifier__predict_classification</li>
+        <li>qiime2__sample_classifier__predict_regression</li>
+        <li>qiime2__sample_classifier__regress_samples</li>
+        <li>qiime2__sample_classifier__regress_samples_ncv</li>
+        <li>qiime2__sample_classifier__scatterplot</li>
+        <li>qiime2__sample_classifier__split_table</li>
+        <li>qiime2__sample_classifier__summarize</li>
+      </ul>
   - title_md: suite_qiime2__taxa
     description_md: |-
-      |+ nan
-      - qiime2__taxa__barplot
-      - qiime2__taxa__collapse
-      - qiime2__taxa__filter_seqs
-      - qiime2__taxa__filter_table
+      nan
+      <ul>
+        <li>qiime2__taxa__barplot</li>
+        <li>qiime2__taxa__collapse</li>
+        <li>qiime2__taxa__filter_seqs</li>
+        <li>qiime2__taxa__filter_table</li>
+      </ul>
   - title_md: suite_qiime2__vsearch
     description_md: |-
-      |+ nan
-      - qiime2__vsearch__cluster_features_closed_reference
-      - qiime2__vsearch__cluster_features_de_novo
-      - qiime2__vsearch__cluster_features_open_reference
-      - qiime2__vsearch__dereplicate_sequences
-      - qiime2__vsearch__fastq_stats
-      - qiime2__vsearch__merge_pairs
-      - qiime2__vsearch__uchime_denovo
-      - qiime2__vsearch__uchime_ref
+      nan
+      <ul>
+        <li>qiime2__vsearch__cluster_features_closed_reference</li>
+        <li>qiime2__vsearch__cluster_features_de_novo</li>
+        <li>qiime2__vsearch__cluster_features_open_reference</li>
+        <li>qiime2__vsearch__dereplicate_sequences</li>
+        <li>qiime2__vsearch__fastq_stats</li>
+        <li>qiime2__vsearch__merge_pairs</li>
+        <li>qiime2__vsearch__uchime_denovo</li>
+        <li>qiime2__vsearch__uchime_ref</li>
+      </ul>
   - title_md: suite_qiime2_core
     description_md: |-
-      |+ nan
-      - nan
+      nan
+      <ul>
+        <li>nan</li>
+      </ul>
   - title_md: suite_qiime2_core__tools
     description_md: |-
-      |+ nan
-      - qiime2_core__tools__export
-      - qiime2_core__tools__import
-      - qiime2_core__tools__import_fastq
+      nan
+      <ul>
+        <li>qiime2_core__tools__export</li>
+        <li>qiime2_core__tools__import</li>
+        <li>qiime2_core__tools__import_fastq</li>
+      </ul>
   - title_md: t2ps
     description_md: |-
-      |+ Draw phylogeny
-      - Draw_phylogram
+      Draw phylogeny
+      <ul>
+        <li>Draw_phylogram</li>
+      </ul>
   - title_md: t2t_report
     description_md: |-
-      |+ Summarize taxonomy
-      - t2t_report
+      Summarize taxonomy
+      <ul>
+        <li>t2t_report</li>
+      </ul>
   - title_md: t_coffee
     description_md: |-
-      |+ T-Coffee
-      - t_coffee
+      T-Coffee
+      <ul>
+        <li>t_coffee</li>
+      </ul>
   - title_md: taxonomy_krona_chart
     description_md: |-
-      |+ Krona pie chart from taxonomic profile
-      - taxonomy_krona_chart
+      Krona pie chart from taxonomic profile
+      <ul>
+        <li>taxonomy_krona_chart</li>
+      </ul>
   - title_md: tb-profiler
     description_md: |-
-      |+ Processes M. tuberculosis sequence data to infer strain type and identify known drug resistance markers.
-      - tb_profiler_profile
+      Processes M. tuberculosis sequence data to infer strain type and identify known drug resistance markers.
+      <ul>
+        <li>tb_profiler_profile</li>
+      </ul>
   - title_md: tooldistillator
     description_md: |-
-      |+ ToolDistillator extract and aggregate information from different tool outputs to JSON parsable files
-      - tooldistillator
-      - tooldistillator_summarize
+      ToolDistillator extract and aggregate information from different tool outputs to JSON parsable files
+      <ul>
+        <li>tooldistillator</li>
+        <li>tooldistillator_summarize</li>
+      </ul>
   - title_md: transit
     description_md: |-
-      |+ TRANSIT
-      - gff_to_prot
-      - transit_gumbel
-      - transit_hmm
-      - transit_resampling
-      - transit_tn5gaps
+      TRANSIT
+      <ul>
+        <li>gff_to_prot</li>
+        <li>transit_gumbel</li>
+        <li>transit_hmm</li>
+        <li>transit_resampling</li>
+        <li>transit_tn5gaps</li>
+      </ul>
   - title_md: transtermhp
     description_md: |-
-      |+ Finds rho-independent transcription terminators in bacterial genomes
-      - transtermhp
+      Finds rho-independent transcription terminators in bacterial genomes
+      <ul>
+        <li>transtermhp</li>
+      </ul>
   - title_md: trim_galore
     description_md: |-
-      |+ Trim Galore adaptive quality and adapter trimmer
-      - trim_galore
+      Trim Galore adaptive quality and adapter trimmer
+      <ul>
+        <li>trim_galore</li>
+      </ul>
   - title_md: trycycler
     description_md: |-
-      |+ Trycycler toolkit wrappers
-      - trycycler_cluster
-      - trycycler_consensus
-      - trycycler_partition
-      - trycycler_reconcile_msa
-      - trycycler_subsample
+      Trycycler toolkit wrappers
+      <ul>
+        <li>trycycler_cluster</li>
+        <li>trycycler_consensus</li>
+        <li>trycycler_partition</li>
+        <li>trycycler_reconcile_msa</li>
+        <li>trycycler_subsample</li>
+      </ul>
   - title_md: unicycler
     description_md: |-
-      |+ Unicycler is a hybrid assembly pipeline for bacterial genomes.
-      - unicycler
+      Unicycler is a hybrid assembly pipeline for bacterial genomes.
+      <ul>
+        <li>unicycler</li>
+      </ul>
   - title_md: unipept
     description_md: |-
-      |+ Unipept retrieves metaproteomics information
-      - unipept
+      Unipept retrieves metaproteomics information
+      <ul>
+        <li>unipept</li>
+      </ul>
   - title_md: uniprotxml_downloader
     description_md: |-
-      |+ Download UniProt proteome in XML or fasta format
-      - uniprotxml_downloader
+      Download UniProt proteome in XML or fasta format
+      <ul>
+        <li>uniprotxml_downloader</li>
+      </ul>
   - title_md: usher
     description_md: |-
-      |+ UShER toolkit wrappers
-      - usher_matutils
-      - usher
+      UShER toolkit wrappers
+      <ul>
+        <li>usher_matutils</li>
+        <li>usher</li>
+      </ul>
   - title_md: valet
     description_md: |-
-      |+ A pipeline for detecting mis-assemblies in metagenomic assemblies.
-      - valet
+      A pipeline for detecting mis-assemblies in metagenomic assemblies.
+      <ul>
+        <li>valet</li>
+      </ul>
   - title_md: vapor
     description_md: |-
-      |+ Classify Influenza samples from raw short read sequence data
-      - vapor
+      Classify Influenza samples from raw short read sequence data
+      <ul>
+        <li>vapor</li>
+      </ul>
   - title_md: varvamp
     description_md: |-
-      |+ Variable VirusAMPlicons (varVAMP) is a tool to design primers for highly diverse viruses
-      - varvamp
+      Variable VirusAMPlicons (varVAMP) is a tool to design primers for highly diverse viruses
+      <ul>
+        <li>varvamp</li>
+      </ul>
   - title_md: vegan
     description_md: |-
-      |+ an R package fo community ecologist
-      - vegan_diversity
-      - vegan_fisher_alpha
-      - vegan_rarefaction
+      an R package fo community ecologist
+      <ul>
+        <li>vegan_diversity</li>
+        <li>vegan_fisher_alpha</li>
+        <li>vegan_rarefaction</li>
+      </ul>
   - title_md: velvet
     description_md: |-
-      |+ de novo genomic assembler specially designed for short read sequencing technologies
-      - velvetg
-      - velveth
+      de novo genomic assembler specially designed for short read sequencing technologies
+      <ul>
+        <li>velvetg</li>
+        <li>velveth</li>
+      </ul>
   - title_md: velvet_optimiser
     description_md: |-
-      |+ Automatically optimize Velvet assemblies
-      - velvetoptimiser
+      Automatically optimize Velvet assemblies
+      <ul>
+        <li>velvetoptimiser</li>
+      </ul>
   - title_md: virAnnot
     description_md: |-
-      |+ virAnnot wrappers
-      - virannot_blast2tsv
-      - virannot_otu
-      - virAnnot_rps2tsv
+      virAnnot wrappers
+      <ul>
+        <li>virannot_blast2tsv</li>
+        <li>virannot_otu</li>
+        <li>virAnnot_rps2tsv</li>
+      </ul>
   - title_md: vsearch
     description_md: |-
-      |+ VSEARCH including searching, clustering, chimera detection, dereplication, sorting, masking and shuffling of sequences.
-      - vsearch_alignment
-      - vsearch_chimera_detection
-      - vsearch_clustering
-      - vsearch_dereplication
-      - vsearch_masking
-      - vsearch_search
-      - vsearch_shuffling
-      - vsearch_sorting
+      VSEARCH including searching, clustering, chimera detection, dereplication, sorting, masking and shuffling of sequences.
+      <ul>
+        <li>vsearch_alignment</li>
+        <li>vsearch_chimera_detection</li>
+        <li>vsearch_clustering</li>
+        <li>vsearch_dereplication</li>
+        <li>vsearch_masking</li>
+        <li>vsearch_search</li>
+        <li>vsearch_shuffling</li>
+        <li>vsearch_sorting</li>
+      </ul>
   - title_md: wtdbg
     description_md: |-
-      |+ WTDBG is a fuzzy Bruijn graph (FBG) approach to long noisy reads assembly.
-      - wtdbg
+      WTDBG is a fuzzy Bruijn graph (FBG) approach to long noisy reads assembly.
+      <ul>
+        <li>wtdbg</li>
+      </ul>
