@@ -47,17 +47,28 @@ def main() -> None:
             # Use the first column (assumed to be the tool title) as the title_md
             title_md = row[data.columns[0]]  # Get the first column's value as title_md
 
-            # Prepare the description with an HTML unordered list for each Galaxy tool ID
+            # Prepare the description with an HTML unordered list and links for each Galaxy tool ID
             description = f"{row['Description']}"
             tool_ids = row["Galaxy tool ids"]
+            owner = row["Galaxy wrapper owner"]
+            wrapper_id = row["Galaxy wrapper id"]
 
-            # Split the tool IDs by comma (or any other delimiter as needed)
-            tool_ids_list = tool_ids.split(",") if isinstance(tool_ids, str) else [tool_ids]
+            # Split the tool IDs by comma if it's a valid string, otherwise handle as an empty list
+            tool_ids_list = tool_ids.split(",") if isinstance(tool_ids, str) else []
 
-            # Create an HTML unordered list for tool IDs
-            description += (
-                "\n<ul>\n" + "\n".join([f"  <li>{str(tool_id).strip()}</li>" for tool_id in tool_ids_list]) + "\n</ul>"
+            # Create the base URL template for each tool link
+            url_template = (
+                "{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu/{owner}/{wrapper_id}/{tool_id}"
             )
+
+            # Build HTML list items with links
+            description += "\n<ul>\n"
+            for tool_id in tool_ids_list:
+                tool_id = tool_id.strip()  # Trim whitespace
+                # Format the URL with owner, wrapper ID, and tool ID
+                url = url_template.format(owner=owner, wrapper_id=wrapper_id, tool_id=tool_id)
+                description += f'  <li><a href="{url}">{tool_id}</a></li>\n'
+            description += "</ul>"
 
             # Use LiteralScalarString to enforce literal block style for the description
             description_md = LiteralScalarString(description.strip())
