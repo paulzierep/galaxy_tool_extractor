@@ -1,7 +1,7 @@
 id: tools
 title: Community curated tools
 tabs:
-- id: Antimicrobial resistance prediction
+- id: antimicrobial_resistance_prediction
   title: Antimicrobial resistance prediction
   heading_md: 'Top 5 tool with EDAM operation: Antimicrobial resistance prediction'
   content:
@@ -38,7 +38,7 @@ tabs:
       <ul>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%pharokka%pharokka">pharokka</a></li>
       </ul>
-- id: Genome annotation
+- id: genome_annotation
   title: Genome annotation
   heading_md: 'Top 5 tool with EDAM operation: Genome annotation'
   content:
@@ -75,7 +75,7 @@ tabs:
       <ul>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%bakta%bakta">bakta</a></li>
       </ul>
-- id: Sequencing quality control
+- id: sequencing_quality_control
   title: Sequencing quality control
   heading_md: 'Top 5 tool with EDAM operation: Sequencing quality control'
   content:
@@ -240,7 +240,7 @@ tabs:
       <ul>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%filtlong%filtlong">filtlong</a></li>
       </ul>
-- id: Taxonomic classification
+- id: taxonomic_classification
   title: Taxonomic classification
   heading_md: 'Top 5 tool with EDAM operation: Taxonomic classification'
   content:
@@ -292,7 +292,7 @@ tabs:
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%cat%cat_prepare">cat_prepare</a></li>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%cat%cat_summarise">cat_summarise</a></li>
       </ul>
-- id: Visualisation
+- id: visualisation
   title: Visualisation
   heading_md: 'Top 5 tool with EDAM operation: Visualisation'
   content:
