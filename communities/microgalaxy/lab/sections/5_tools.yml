@@ -68,6 +68,15 @@ tabs:
       <ul>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%mykrobe%mykrobe_predict">mykrobe_predict</a></li>
       </ul>
+- id: more_tools
+  title: More tools !
+  heading_md: Request a new tools or look at the complete list
+  content:
+  - title_md: Request a new tool
+    description_md: 'You can request a new tool by contacting the microGalaxy community:
+      microgalaxy@lists.galaxyproject.org'
+  - title_md: See the complete tool list
+    description_md: Our comprehensive curated tool list is available via https://galaxyproject.github.io/galaxy_codex/microgalaxy
 - id: dna_barcoding
   title: DNA barcoding
   heading_md: 'Top 10 for the EDAM operation: DNA barcoding'
@@ -244,6 +253,15 @@ tabs:
       <ul>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%ancombc%ancombc">ancombc</a></li>
       </ul>
+- id: more_tools
+  title: More tools !
+  heading_md: Request a new tools or look at the complete list
+  content:
+  - title_md: Request a new tool
+    description_md: 'You can request a new tool by contacting the microGalaxy community:
+      microgalaxy@lists.galaxyproject.org'
+  - title_md: See the complete tool list
+    description_md: Our comprehensive curated tool list is available via https://galaxyproject.github.io/galaxy_codex/microgalaxy
 - id: genome_annotation
   title: Genome annotation
   heading_md: 'Top 10 for the EDAM operation: Genome annotation'
@@ -317,6 +335,15 @@ tabs:
       <ul>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxy-australia%metawrapmg%metawrapmg_binning">metawrapmg_binning</a></li>
       </ul>
+- id: more_tools
+  title: More tools !
+  heading_md: Request a new tools or look at the complete list
+  content:
+  - title_md: Request a new tool
+    description_md: 'You can request a new tool by contacting the microGalaxy community:
+      microgalaxy@lists.galaxyproject.org'
+  - title_md: See the complete tool list
+    description_md: Our comprehensive curated tool list is available via https://galaxyproject.github.io/galaxy_codex/microgalaxy
 - id: genome_assembly
   title: Genome assembly
   heading_md: 'Top 10 for the EDAM operation: Genome assembly'
@@ -389,6 +416,15 @@ tabs:
       <ul>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%abyss%abyss-pe">abyss-pe</a></li>
       </ul>
+- id: more_tools
+  title: More tools !
+  heading_md: Request a new tools or look at the complete list
+  content:
+  - title_md: Request a new tool
+    description_md: 'You can request a new tool by contacting the microGalaxy community:
+      microgalaxy@lists.galaxyproject.org'
+  - title_md: See the complete tool list
+    description_md: Our comprehensive curated tool list is available via https://galaxyproject.github.io/galaxy_codex/microgalaxy
 - id: phylogenetic_analysis
   title: Phylogenetic analysis
   heading_md: 'Top 10 for the EDAM operation: Phylogenetic analysis'
@@ -476,6 +512,15 @@ tabs:
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%earlhaminst%ete%ete3_mod">ete3_mod</a></li>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%earlhaminst%ete%ete_species_tree_generator">ete_species_tree_generator</a></li>
       </ul>
+- id: more_tools
+  title: More tools !
+  heading_md: Request a new tools or look at the complete list
+  content:
+  - title_md: Request a new tool
+    description_md: 'You can request a new tool by contacting the microGalaxy community:
+      microgalaxy@lists.galaxyproject.org'
+  - title_md: See the complete tool list
+    description_md: Our comprehensive curated tool list is available via https://galaxyproject.github.io/galaxy_codex/microgalaxy
 - id: sequence_clustering
   title: Sequence clustering
   heading_md: 'Top 10 for the EDAM operation: Sequence clustering'
@@ -524,6 +569,15 @@ tabs:
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%virAnnot%virannot_otu">virannot_otu</a></li>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%virAnnot%virAnnot_rps2tsv">virAnnot_rps2tsv</a></li>
       </ul>
+- id: more_tools
+  title: More tools !
+  heading_md: Request a new tools or look at the complete list
+  content:
+  - title_md: Request a new tool
+    description_md: 'You can request a new tool by contacting the microGalaxy community:
+      microgalaxy@lists.galaxyproject.org'
+  - title_md: See the complete tool list
+    description_md: Our comprehensive curated tool list is available via https://galaxyproject.github.io/galaxy_codex/microgalaxy
 - id: sequence_trimming
   title: Sequence trimming
   heading_md: 'Top 10 for the EDAM operation: Sequence trimming'
@@ -574,6 +628,15 @@ tabs:
       <ul>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%ncbi_fcs_gx%ncbi_fcs_gx">ncbi_fcs_gx</a></li>
       </ul>
+- id: more_tools
+  title: More tools !
+  heading_md: Request a new tools or look at the complete list
+  content:
+  - title_md: Request a new tool
+    description_md: 'You can request a new tool by contacting the microGalaxy community:
+      microgalaxy@lists.galaxyproject.org'
+  - title_md: See the complete tool list
+    description_md: Our comprehensive curated tool list is available via https://galaxyproject.github.io/galaxy_codex/microgalaxy
 - id: sequencing_quality_control
   title: Sequencing quality control
   heading_md: 'Top 10 for the EDAM operation: Sequencing quality control'
@@ -638,6 +701,15 @@ tabs:
       <ul>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%bgruening%lighter%lighter">lighter</a></li>
       </ul>
+- id: more_tools
+  title: More tools !
+  heading_md: Request a new tools or look at the complete list
+  content:
+  - title_md: Request a new tool
+    description_md: 'You can request a new tool by contacting the microGalaxy community:
+      microgalaxy@lists.galaxyproject.org'
+  - title_md: See the complete tool list
+    description_md: Our comprehensive curated tool list is available via https://galaxyproject.github.io/galaxy_codex/microgalaxy
 - id: taxonomic_classification
   title: Taxonomic classification
   heading_md: 'Top 10 for the EDAM operation: Taxonomic classification'
@@ -732,6 +804,15 @@ tabs:
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_Tree">FROGS_Tree</a></li>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_tsv_to_biom">FROGS_tsv_to_biom</a></li>
       </ul>
+- id: more_tools
+  title: More tools !
+  heading_md: Request a new tools or look at the complete list
+  content:
+  - title_md: Request a new tool
+    description_md: 'You can request a new tool by contacting the microGalaxy community:
+      microgalaxy@lists.galaxyproject.org'
+  - title_md: See the complete tool list
+    description_md: Our comprehensive curated tool list is available via https://galaxyproject.github.io/galaxy_codex/microgalaxy
 - id: visualisation
   title: Visualisation
   heading_md: 'Top 10 for the EDAM operation: Visualisation'
@@ -811,3 +892,12 @@ tabs:
       <ul>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%maaslin2%maaslin2">maaslin2</a></li>
       </ul>
+- id: more_tools
+  title: More tools !
+  heading_md: Request a new tools or look at the complete list
+  content:
+  - title_md: Request a new tool
+    description_md: 'You can request a new tool by contacting the microGalaxy community:
+      microgalaxy@lists.galaxyproject.org'
+  - title_md: See the complete tool list
+    description_md: Our comprehensive curated tool list is available via https://galaxyproject.github.io/galaxy_codex/microgalaxy

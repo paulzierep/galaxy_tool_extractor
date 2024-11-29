@@ -144,6 +144,35 @@ def main() -> None:
                 }
             )
 
+            #################################
+            # Add manual entry for tool request and complete list
+            #################################
+
+            entries = []
+
+            # Tool request
+            entry = {
+                "title_md": "Request a new tool",
+                "description_md": "You can request a new tool by contacting the microGalaxy community: microgalaxy@lists.galaxyproject.org",
+            }
+            entries.append(entry)
+
+            # Tool request
+            entry = {
+                "title_md": "See the complete tool list",
+                "description_md": "Our comprehensive curated tool list is available via https://galaxyproject.github.io/galaxy_codex/microgalaxy",
+            }
+            entries.append(entry)
+
+            yaml_data["tabs"].append(
+                {
+                    "id": "more_tools",
+                    "title": "More tools !",
+                    "heading_md": f"Request a new tools or look at the complete list",
+                    "content": entries,
+                }
+            )
+
         # Write the YAML data to the output file
         with open(args.tool_yml, "w") as yaml_file:
             yaml().dump(yaml_data, yaml_file)
