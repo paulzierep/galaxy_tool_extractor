@@ -3,7 +3,7 @@ title: Community curated tools
 tabs:
 - id: antimicrobial_resistance_prediction
   title: Antimicrobial resistance prediction
-  heading_md: 'Top 5 tool with EDAM operation: Antimicrobial resistance prediction'
+  heading_md: 'Top 10 for the EDAM operation: Antimicrobial resistance prediction'
   content:
   - title_md: abricate
     description_md: |-
@@ -38,53 +38,40 @@ tabs:
       <ul>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%pharokka%pharokka">pharokka</a></li>
       </ul>
-- id: genome_annotation
-  title: Genome annotation
-  heading_md: 'Top 5 tool with EDAM operation: Genome annotation'
+  - title_md: seqsero2
+    description_md: |-
+      Salmonella serotype prediction from genome sequencing data
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%seqsero2%seqsero2">seqsero2</a></li>
+      </ul>
+  - title_md: fargene
+    description_md: |-
+      fARGene (Fragmented Antibiotic Resistance Gene iENntifiEr )
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%fargene%fargene">fargene</a></li>
+      </ul>
+  - title_md: abritamr
+    description_md: |-
+      A pipeline for running AMRfinderPlus and collating results into functional classes
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%abritamr%abritamr">abritamr</a></li>
+      </ul>
+  - title_md: sonneityping
+    description_md: |-
+      Scripts for parsing Mykrobe predict results for Shigella sonnei.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%sonneityping%sonneityping">sonneityping</a></li>
+      </ul>
+  - title_md: mykrobe
+    description_md: |-
+      Antibiotic resistance predictions
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%mykrobe%mykrobe_predict">mykrobe_predict</a></li>
+      </ul>
+- id: dna_barcoding
+  title: DNA barcoding
+  heading_md: 'Top 10 for the EDAM operation: DNA barcoding'
   content:
-  - title_md: prokka
-    description_md: |-
-      Rapid annotation of prokaryotic genomes
-      <ul>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%crs4%prokka%prokka">prokka</a></li>
-      </ul>
-  - title_md: mitos
-    description_md: |-
-      de-novo annotation of metazoan mitochondrial genomes
-      <ul>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%mitos%mitos">mitos</a></li>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%mitos%mitos2">mitos2</a></li>
-      </ul>
-  - title_md: integron_finder
-    description_md: |-
-      "IntegronFinder identify integrons with high accuracy and sensitivity.It searches for attC sites using covariance models, for integron-integrases using HMM profiles, and for other features (promoters, attI site) using pattern matching"
-      <ul>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%integron_finder%integron_finder">integron_finder</a></li>
-      </ul>
-  - title_md: eggnog_mapper
-    description_md: |-
-      eggnog-mapper fast functional annotation of novel sequences
-      <ul>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxyp%eggnog_mapper%eggnog_mapper">eggnog_mapper</a></li>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxyp%eggnog_mapper%eggnog_mapper_annotate">eggnog_mapper_annotate</a></li>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxyp%eggnog_mapper%eggnog_mapper_search">eggnog_mapper_search</a></li>
-      </ul>
-  - title_md: bakta
-    description_md: |-
-      "Bakta is a tool for the rapid & standardized annotation of bacterial genomes and plasmids from both isolates and MAGs.It provides dbxref-rich and sORF-including annotations in machine-readable JSON & bioinformatics standard file formats for automatic downstream analysis."
-      <ul>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%bakta%bakta">bakta</a></li>
-      </ul>
-- id: sequencing_quality_control
-  title: Sequencing quality control
-  heading_md: 'Top 5 tool with EDAM operation: Sequencing quality control'
-  content:
-  - title_md: fastp
-    description_md: |-
-      Fast all-in-one preprocessing for FASTQ files
-      <ul>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%fastp%fastp">fastp</a></li>
-      </ul>
   - title_md: mothur
     description_md: |-
       Mothur wrappers
@@ -219,6 +206,384 @@ tabs:
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%mothur%mothur_unique_seqs">mothur_unique_seqs</a></li>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%mothur%mothur_venn">mothur_venn</a></li>
       </ul>
+  - title_md: dada2
+    description_md: |-
+      DADA2 wrappers
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%dada2%dada2_assignTaxonomyAddspecies">dada2_assignTaxonomyAddspecies</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%dada2%dada2_dada">dada2_dada</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%dada2%dada2_filterAndTrim">dada2_filterAndTrim</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%dada2%dada2_learnErrors">dada2_learnErrors</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%dada2%dada2_makeSequenceTable">dada2_makeSequenceTable</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%dada2%dada2_mergePairs">dada2_mergePairs</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%dada2%dada2_plotComplexity">dada2_plotComplexity</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%dada2%dada2_plotQualityProfile">dada2_plotQualityProfile</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%dada2%dada2_removeBimeraDenovo">dada2_removeBimeraDenovo</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%dada2%dada2_seqCounts">dada2_seqCounts</a></li>
+      </ul>
+  - title_md: picrust
+    description_md: |-
+      PICRUSt wrappers
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%picrust%picrust_categorize">picrust_categorize</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%picrust%picrust_compare_biom">picrust_compare_biom</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%picrust%picrust_format_tree_and_trait_table">picrust_format_tree_and_trait_table</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%picrust%picrust_metagenome_contributions">picrust_metagenome_contributions</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%picrust%picrust_normalize_by_copy_number">picrust_normalize_by_copy_number</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%picrust%picrust_predict_metagenomes">picrust_predict_metagenomes</a></li>
+      </ul>
+  - title_md: lotus2
+    description_md: |-
+      LotuS2 OTU processing pipeline
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%earlhaminst%lotus2%lotus2">lotus2</a></li>
+      </ul>
+  - title_md: ancombc
+    description_md: |-
+      Performs analysis of compositions of microbiomes with bias correction.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%ancombc%ancombc">ancombc</a></li>
+      </ul>
+- id: genome_annotation
+  title: Genome annotation
+  heading_md: 'Top 10 for the EDAM operation: Genome annotation'
+  content:
+  - title_md: prokka
+    description_md: |-
+      Rapid annotation of prokaryotic genomes
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%crs4%prokka%prokka">prokka</a></li>
+      </ul>
+  - title_md: mitos
+    description_md: |-
+      de-novo annotation of metazoan mitochondrial genomes
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%mitos%mitos">mitos</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%mitos%mitos2">mitos2</a></li>
+      </ul>
+  - title_md: integron_finder
+    description_md: |-
+      "IntegronFinder identify integrons with high accuracy and sensitivity.It searches for attC sites using covariance models, for integron-integrases using HMM profiles, and for other features (promoters, attI site) using pattern matching"
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%integron_finder%integron_finder">integron_finder</a></li>
+      </ul>
+  - title_md: eggnog_mapper
+    description_md: |-
+      eggnog-mapper fast functional annotation of novel sequences
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxyp%eggnog_mapper%eggnog_mapper">eggnog_mapper</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxyp%eggnog_mapper%eggnog_mapper_annotate">eggnog_mapper_annotate</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxyp%eggnog_mapper%eggnog_mapper_search">eggnog_mapper_search</a></li>
+      </ul>
+  - title_md: bakta
+    description_md: |-
+      "Bakta is a tool for the rapid & standardized annotation of bacterial genomes and plasmids from both isolates and MAGs.It provides dbxref-rich and sORF-including annotations in machine-readable JSON & bioinformatics standard file formats for automatic downstream analysis."
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%bakta%bakta">bakta</a></li>
+      </ul>
+  - title_md: maker
+    description_md: |-
+      MAKER is a portable and easily configurable genome annotation pipeline.Its purpose is to allow smaller eukaryotic and prokaryotic genome projects to independently annotate their genomes and to create genome databases.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%maker%maker">maker</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%maker%maker_map_ids">maker_map_ids</a></li>
+      </ul>
+  - title_md: funannotate
+    description_md: |-
+      Funannotate is a genome prediction, annotation, and comparison software package.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%funannotate%funannotate_annotate">funannotate_annotate</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%funannotate%funannotate_clean">funannotate_clean</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%funannotate%funannotate_compare">funannotate_compare</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%funannotate%funannotate_predict">funannotate_predict</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%funannotate%funannotate_sort">funannotate_sort</a></li>
+      </ul>
+  - title_md: metabat2
+    description_md: |-
+      MetaBAT2 (Metagenome Binning based on Abundance and Tetranucleotide frequency) is an automated metagenome binningsoftware that integrates empirical probabilistic distances of genome abundance and tetranucleotide frequency.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%metabat2%metabat2_jgi_summarize_bam_contig_depths">metabat2_jgi_summarize_bam_contig_depths</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%metabat2%metabat2">metabat2</a></li>
+      </ul>
+  - title_md: prodigal
+    description_md: |-
+      A protein-coding gene prediction software tool for bacterial and archaeal genomes
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%prodigal%prodigal">prodigal</a></li>
+      </ul>
+  - title_md: metawrapmg
+    description_md: |-
+      A flexible pipeline for genome-resolved metagenomic data analysis
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxy-australia%metawrapmg%metawrapmg_binning">metawrapmg_binning</a></li>
+      </ul>
+- id: genome_assembly
+  title: Genome assembly
+  heading_md: 'Top 10 for the EDAM operation: Genome assembly'
+  content:
+  - title_md: spades
+    description_md: |-
+      SPAdes is an assembly toolkit containing various assembly pipelines. It implements the following 4 stages: assembly graph construction, k-bimer adjustment, construction of paired assembly graph and contig construction.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%spades%spades_biosyntheticspades">spades_biosyntheticspades</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%spades%spades_coronaspades">spades_coronaspades</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%spades%spades_metaplasmidspades">spades_metaplasmidspades</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%spades%metaspades">metaspades</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%spades%spades_metaviralspades">spades_metaviralspades</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%spades%spades_plasmidspades">spades_plasmidspades</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%spades%rnaspades">rnaspades</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%spades%spades_rnaviralspades">spades_rnaviralspades</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%spades%spades">spades</a></li>
+      </ul>
+  - title_md: busco
+    description_md: |-
+      BUSCO assess genome and annotation completeness
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%busco%busco">busco</a></li>
+      </ul>
+  - title_md: unicycler
+    description_md: |-
+      Unicycler is a hybrid assembly pipeline for bacterial genomes.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%unicycler%unicycler">unicycler</a></li>
+      </ul>
+  - title_md: shovill
+    description_md: |-
+      Faster de novo assembly pipeline based around Spades
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%shovill%shovill">shovill</a></li>
+      </ul>
+  - title_md: flye
+    description_md: |-
+      Assembly of long and error-prone reads.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%bgruening%flye%flye">flye</a></li>
+      </ul>
+  - title_md: racon
+    description_md: |-
+      Consensus module for raw de novo DNA assembly of long uncorrected reads.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%bgruening%racon%racon">racon</a></li>
+      </ul>
+  - title_md: megahit
+    description_md: |-
+      An ultra-fast single-node solution for large and complex metagenomics assembly via succinct de Bruijn graph.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%megahit%megahit">megahit</a></li>
+      </ul>
+  - title_md: roary
+    description_md: |-
+      Roary the pangenome pipeline
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%roary%roary">roary</a></li>
+      </ul>
+  - title_md: plasmidfinder
+    description_md: |-
+      "PlasmidFinder provides the detection of replicons in the WGSand assigns the plasmids under study to lineages that trace backthe information to the existing knowledge on Inc groups and suggestspossible reference plasmids for each lineage"
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%plasmidfinder%plasmidfinder">plasmidfinder</a></li>
+      </ul>
+  - title_md: abyss
+    description_md: |-
+      Assembly By Short Sequences - a de novo, parallel, paired-end sequence assembler
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%abyss%abyss-pe">abyss-pe</a></li>
+      </ul>
+- id: phylogenetic_analysis
+  title: Phylogenetic analysis
+  heading_md: 'Top 10 for the EDAM operation: Phylogenetic analysis'
+  content:
+  - title_md: iqtree
+    description_md: |-
+      Efficient phylogenomic software by maximum likelihood
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%iqtree%iqtree">iqtree</a></li>
+      </ul>
+  - title_md: qiime_core
+    description_md: |-
+      QIIME to perform microbial community analysis
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_align_seqs">qiime_align_seqs</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_alpha_diversity">qiime_alpha_diversity</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_alpha_rarefaction">qiime_alpha_rarefaction</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_assign_taxonomy">qiime_assign_taxonomy</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_beta_diversity">qiime_beta_diversity</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_beta_diversity_through_plots">qiime_beta_diversity_through_plots</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_compare_categories">qiime_compare_categories</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_core_diversity">qiime_core_diversity</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_count_seqs">qiime_count_seqs</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_extract_barcodes">qiime_extract_barcodes</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_filter_alignment">qiime_filter_alignment</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_filter_fasta">qiime_filter_fasta</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_filter_otus_from_otu_table">qiime_filter_otus_from_otu_table</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_filter_samples_from_otu_table">qiime_filter_samples_from_otu_table</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_filter_taxa_from_otu_table">qiime_filter_taxa_from_otu_table</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_jackknifed_beta_diversity">qiime_jackknifed_beta_diversity</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_make_emperor">qiime_make_emperor</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_make_otu_heatmap">qiime_make_otu_heatmap</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_make_phylogeny">qiime_make_phylogeny</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_multiple_join_paired_ends">qiime_multiple_join_paired_ends</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_multiple_split_libraries_fastq">qiime_multiple_split_libraries_fastq</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_pick_closed_reference_otus">qiime_pick_closed_reference_otus</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_pick_open_reference_otus">qiime_pick_open_reference_otus</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_pick_otus">qiime_pick_otus</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_pick_rep_set">qiime_pick_rep_set</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_plot_taxa_summary">qiime_plot_taxa_summary</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_split_libraries">qiime_split_libraries</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_split_libraries_fastq">qiime_split_libraries_fastq</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_summarize_taxa">qiime_summarize_taxa</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_summarize_taxa_through_plots">qiime_summarize_taxa_through_plots</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_upgma_cluster">qiime_upgma_cluster</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_core%qiime_validate_mapping_file">qiime_validate_mapping_file</a></li>
+      </ul>
+  - title_md: humann
+    description_md: |-
+      HUMAnN for functionally profiling metagenomes and metatranscriptomes at species-level resolution
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann">humann</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_barplot">humann_barplot</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_join_tables">humann_join_tables</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_reduce_table">humann_reduce_table</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_regroup_table">humann_regroup_table</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_rename_table">humann_rename_table</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_renorm_table">humann_renorm_table</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_split_stratified_table">humann_split_stratified_table</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_split_table">humann_split_table</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_unpack_pathways">humann_unpack_pathways</a></li>
+      </ul>
+  - title_md: qiime_add_on
+    description_md: |-
+      QIIME to perform microbial community analysis
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_add_on%qiime_collapse_samples">qiime_collapse_samples</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%qiime_add_on%qiime_make_otu_table">qiime_make_otu_table</a></li>
+      </ul>
+  - title_md: TreeBest
+    description_md: |-
+      TreeBeST best
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%earlhaminst%TreeBest%treebest_best">treebest_best</a></li>
+      </ul>
+  - title_md: ete
+    description_md: |-
+      Analyse phylogenetic trees using the ETE Toolkit
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%earlhaminst%ete%ete_gene_csv_finder">ete_gene_csv_finder</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%earlhaminst%ete%ete_genetree_splitter">ete_genetree_splitter</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%earlhaminst%ete%ete_homology_classifier">ete_homology_classifier</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%earlhaminst%ete%ete_init_taxdb">ete_init_taxdb</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%earlhaminst%ete%ete_lineage_generator">ete_lineage_generator</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%earlhaminst%ete%ete3_mod">ete3_mod</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%earlhaminst%ete%ete_species_tree_generator">ete_species_tree_generator</a></li>
+      </ul>
+- id: sequence_clustering
+  title: Sequence clustering
+  heading_md: 'Top 10 for the EDAM operation: Sequence clustering'
+  content:
+  - title_md: antismash
+    description_md: |-
+      Antismash allows the genome-wide identification, annotation and analysis of secondary metabolite biosynthesis gene clusters
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%bgruening%antismash%antismash">antismash</a></li>
+      </ul>
+  - title_md: cdhit
+    description_md: |-
+      Cluster or compare biological sequence datasets
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%cdhit%cd_hit">cd_hit</a></li>
+      </ul>
+  - title_md: proteinortho
+    description_md: |-
+      Proteinortho is a tool to detect orthologous proteins/genes within different species.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%proteinortho%proteinortho">proteinortho</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%proteinortho%proteinortho_grab_proteins">proteinortho_grab_proteins</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%proteinortho%proteinortho_summary">proteinortho_summary</a></li>
+      </ul>
+  - title_md: concoct
+    description_md: |-
+      CONCOCT (Clustering cONtigs with COverage and ComposiTion) does unsupervised binning of metagenomic contigs byusing nucleotide composition - kmer frequencies - and coverage data for multiple samples. CONCOCT can accurately(up to species level) bin metagenomic contigs.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%concoct%concoct">concoct</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%concoct%concoct_coverage_table">concoct_coverage_table</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%concoct%concoct_cut_up_fasta">concoct_cut_up_fasta</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%concoct%concoct_extract_fasta_bins">concoct_extract_fasta_bins</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%concoct%concoct_merge_cut_up_clustering">concoct_merge_cut_up_clustering</a></li>
+      </ul>
+  - title_md: binning_refiner
+    description_md: |-
+      Reconciles the outputs of different binning programs with the aim to improve the quality of genome bins,especially with respect to contamination levels.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%binning_refiner%bin_refiner">bin_refiner</a></li>
+      </ul>
+  - title_md: virAnnot
+    description_md: |-
+      virAnnot wrappers
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%virAnnot%virannot_blast2tsv">virannot_blast2tsv</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%virAnnot%virannot_otu">virannot_otu</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%virAnnot%virAnnot_rps2tsv">virAnnot_rps2tsv</a></li>
+      </ul>
+- id: sequence_trimming
+  title: Sequence trimming
+  heading_md: 'Top 10 for the EDAM operation: Sequence trimming'
+  content:
+  - title_md: cutadapt
+    description_md: |-
+      Flexible tool to remove adapter sequences (and quality trim) high throughput sequencing reads (fasta/fastq).
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%lparsons%cutadapt%cutadapt">cutadapt</a></li>
+      </ul>
+  - title_md: trim_galore
+    description_md: |-
+      Trim Galore adaptive quality and adapter trimmer
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%bgruening%trim_galore%trim_galore">trim_galore</a></li>
+      </ul>
+  - title_md: bbtools
+    description_md: |-
+      BBTools is a suite of fast, multithreaded bioinformatics tools designed for analysis of DNA and RNA sequence data.BBTools can handle common sequencing file formats such as fastq, fasta, sam, scarf, fasta+qual, compressed or raw,with autodetection of quality encoding and interleaving. It is written in Java and works on any platform supportingJava, including Linux, MacOS, and Microsoft Windows and Linux; there are no dependencies other than Java (version7 or higher). Program descriptions and options are shown when running the shell scripts with no parameters.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%bbtools%bbtools_bbduk">bbtools_bbduk</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%bbtools%bbtools_bbmap">bbtools_bbmap</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%bbtools%bbtools_bbmerge">bbtools_bbmerge</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%bbtools%bbtools_bbnorm">bbtools_bbnorm</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%bbtools%bbtools_callvariants">bbtools_callvariants</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%bbtools%bbtools_tadpole">bbtools_tadpole</a></li>
+      </ul>
+  - title_md: graphmap
+    description_md: |-
+      Mapper for long, error-prone reads.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%bgruening%graphmap%graphmap_align">graphmap_align</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%bgruening%graphmap%graphmap_overlap">graphmap_overlap</a></li>
+      </ul>
+  - title_md: seqkit
+    description_md: |-
+      A cross-platform and ultrafast toolkit for FASTA/Q file manipulation
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%seqkit%seqkit_fx2tab">seqkit_fx2tab</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%seqkit%seqkit_locate">seqkit_locate</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%seqkit%seqkit_sort">seqkit_sort</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%seqkit%seqkit_stats">seqkit_stats</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%seqkit%seqkit_translate">seqkit_translate</a></li>
+      </ul>
+  - title_md: ncbi_fcs_gx
+    description_md: |-
+      FCS-GX detects contamination from foreign organisms in genome sequences using the genome cross-species aligner (GX).
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%ncbi_fcs_gx%ncbi_fcs_gx">ncbi_fcs_gx</a></li>
+      </ul>
+- id: sequencing_quality_control
+  title: Sequencing quality control
+  heading_md: 'Top 10 for the EDAM operation: Sequencing quality control'
+  content:
+  - title_md: fastp
+    description_md: |-
+      Fast all-in-one preprocessing for FASTQ files
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%fastp%fastp">fastp</a></li>
+      </ul>
   - title_md: qualimap
     description_md: |-
       Qualimap 2 is a platform-independent application written in Java andR that facilitates the quality control of alignment sequencing data and itsderivatives like feature counts.
@@ -240,9 +605,42 @@ tabs:
       <ul>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%filtlong%filtlong">filtlong</a></li>
       </ul>
+  - title_md: pycoqc
+    description_md: |-
+      QC metrics for ONT Basecalling
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%pycoqc%pycoqc">pycoqc</a></li>
+      </ul>
+  - title_md: fastqe
+    description_md: |-
+      FASTQE
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%fastqe%fastqe">fastqe</a></li>
+      </ul>
+  - title_md: checkm
+    description_md: |-
+      Assess the quality of microbial genomes recovered from isolates, single cells, and metagenomes
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%checkm%checkm_analyze">checkm_analyze</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%checkm%checkm_lineage_set">checkm_lineage_set</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%checkm%checkm_lineage_wf">checkm_lineage_wf</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%checkm%checkm_plot">checkm_plot</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%checkm%checkm_qa">checkm_qa</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%checkm%checkm_taxon_set">checkm_taxon_set</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%checkm%checkm_taxonomy_wf">checkm_taxonomy_wf</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%checkm%checkm_tetra">checkm_tetra</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%checkm%checkm_tree">checkm_tree</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%checkm%checkm_tree_qa">checkm_tree_qa</a></li>
+      </ul>
+  - title_md: lighter
+    description_md: |-
+      Lighter is a kmer-based error correction method for whole genome sequencing data
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%bgruening%lighter%lighter">lighter</a></li>
+      </ul>
 - id: taxonomic_classification
   title: Taxonomic classification
-  heading_md: 'Top 5 tool with EDAM operation: Taxonomic classification'
+  heading_md: 'Top 10 for the EDAM operation: Taxonomic classification'
   content:
   - title_md: kraken2
     description_md: |-
@@ -259,21 +657,6 @@ tabs:
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%devteam%kraken%kraken-report">kraken-report</a></li>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%devteam%kraken%kraken-translate">kraken-translate</a></li>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%devteam%kraken%kraken">kraken</a></li>
-      </ul>
-  - title_md: humann
-    description_md: |-
-      HUMAnN for functionally profiling metagenomes and metatranscriptomes at species-level resolution
-      <ul>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann">humann</a></li>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_barplot">humann_barplot</a></li>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_join_tables">humann_join_tables</a></li>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_reduce_table">humann_reduce_table</a></li>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_regroup_table">humann_regroup_table</a></li>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_rename_table">humann_rename_table</a></li>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_renorm_table">humann_renorm_table</a></li>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_split_stratified_table">humann_split_stratified_table</a></li>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_split_table">humann_split_table</a></li>
-        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%humann%humann_unpack_pathways">humann_unpack_pathways</a></li>
       </ul>
   - title_md: graphlan
     description_md: |-
@@ -292,9 +675,66 @@ tabs:
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%cat%cat_prepare">cat_prepare</a></li>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%cat%cat_summarise">cat_summarise</a></li>
       </ul>
+  - title_md: megan
+    description_md: |-
+      MEGAN Community Edition - Interactive exploration and analysis of large-scale microbiome sequencing data.  MEGAN is a tool for studying the taxonomic content of a set of DNA reads, typically collected in a metagenomics project.In a preprocessing step, a sequence alignment of all reads against a suitable database of reference DNA or proteinsequences must be performed to produce an input file for the program. MEGAN is suitable for DNA reads (metagenomedata), RNA reads (metatranscriptome data), peptide sequences (metaproteomics data) and, using a suitable synonymsfile that maps SILVA ids to taxon ids, for 16S rRNA data (amplicon sequencing).
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%megan%megan_blast2lca">megan_blast2lca</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%megan%megan_blast2rma">megan_blast2rma</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%megan%megan_daa2info">megan_daa2info</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%megan%megan_daa2rma">megan_daa2rma</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%megan%megan_daa_meganizer">megan_daa_meganizer</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%megan%megan_read_extractor">megan_read_extractor</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%megan%megan_sam2rma">megan_sam2rma</a></li>
+      </ul>
+  - title_md: gtdbtk
+    description_md: |-
+      GTDB-Tk is a software tool kit for assigning objective taxonomic classifications to bacterial and archaeal genomesbased on the Genome Database Taxonomy GTDB. It is designed to work with recent advances that allow hundreds orthousands of metagenome-assembled genomes (MAGs) to be obtained directly from environmental samples. It can alsobe applied to isolate and single-cell genomes. 
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%gtdbtk%gtdbtk_classify_wf">gtdbtk_classify_wf</a></li>
+      </ul>
+  - title_md: recentrifuge
+    description_md: |-
+      "With Recentrifuge, researchers can analyze results from taxonomic classifiers using interactive charts with emphasis on the confidence level of the classifications.In addition to contamination-subtracted samples.Recentrifuge provides shared and exclusive taxa per sample,thus enabling robust contamination removal and comparative analysis in environmental and clinical metagenomics."
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%recentrifuge%recentrifuge">recentrifuge</a></li>
+      </ul>
+  - title_md: frogs
+    description_md: |-
+      Suite for metabarcoding analysis
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_affiliation_filters">FROGS_affiliation_filters</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_affiliation_postprocess">FROGS_affiliation_postprocess</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_affiliation_stats">FROGS_affiliation_stats</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_biom_to_stdBiom">FROGS_biom_to_stdBiom</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_biom_to_tsv">FROGS_biom_to_tsv</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_cluster_filters">FROGS_cluster_filters</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_cluster_stats">FROGS_cluster_stats</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_clustering">FROGS_clustering</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_demultiplex">FROGS_demultiplex</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGSSTAT_DESeq2_Preprocess">FROGSSTAT_DESeq2_Preprocess</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGSSTAT_DESeq2_Visualisation">FROGSSTAT_DESeq2_Visualisation</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGSFUNC_step2_functions">FROGSFUNC_step2_functions</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGSFUNC_step3_pathways">FROGSFUNC_step3_pathways</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGSFUNC_step1_placeseqs">FROGSFUNC_step1_placeseqs</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_itsx">FROGS_itsx</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_normalisation">FROGS_normalisation</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGSSTAT_Phyloseq_Alpha_Diversity">FROGSSTAT_Phyloseq_Alpha_Diversity</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGSSTAT_Phyloseq_Beta_Diversity">FROGSSTAT_Phyloseq_Beta_Diversity</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGSSTAT_Phyloseq_Sample_Clustering">FROGSSTAT_Phyloseq_Sample_Clustering</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGSSTAT_Phyloseq_Composition_Visualisation">FROGSSTAT_Phyloseq_Composition_Visualisation</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGSSTAT_Phyloseq_Import_Data">FROGSSTAT_Phyloseq_Import_Data</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGSSTAT_Phyloseq_Multivariate_Analysis_Of_Variance">FROGSSTAT_Phyloseq_Multivariate_Analysis_Of_Variance</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGSSTAT_Phyloseq_Structure_Visualisation">FROGSSTAT_Phyloseq_Structure_Visualisation</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_preprocess">FROGS_preprocess</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_remove_chimera">FROGS_remove_chimera</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_taxonomic_affiliation">FROGS_taxonomic_affiliation</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_Tree">FROGS_Tree</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%frogs%frogs%FROGS_tsv_to_biom">FROGS_tsv_to_biom</a></li>
+      </ul>
 - id: visualisation
   title: Visualisation
-  heading_md: 'Top 5 tool with EDAM operation: Visualisation'
+  heading_md: 'Top 10 for the EDAM operation: Visualisation'
   content:
   - title_md: quast
     description_md: |-
@@ -334,4 +774,40 @@ tabs:
       pyGenomeTracks: Standalone program and library to plot beautiful genome browser tracks.
       <ul>
         <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%pygenometracks%pygenomeTracks">pygenomeTracks</a></li>
+      </ul>
+  - title_md: maxquant
+    description_md: |-
+      wrapper for MaxQuant
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxyp%maxquant%maxquant">maxquant</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxyp%maxquant%maxquant_mqpar">maxquant_mqpar</a></li>
+      </ul>
+  - title_md: kraken_taxonomy_report
+    description_md: |-
+      Kraken taxonomy report
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%kraken_taxonomy_report%kraken_taxonomy_report">kraken_taxonomy_report</a></li>
+      </ul>
+  - title_md: unipept
+    description_md: |-
+      Unipept retrieves metaproteomics information
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxyp%unipept%unipept">unipept</a></li>
+      </ul>
+  - title_md: metaquantome
+    description_md: |-
+      quantitative analysis of microbiome taxonomy and function
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxyp%metaquantome%metaquantome_db">metaquantome_db</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxyp%metaquantome%metaquantome_expand">metaquantome_expand</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxyp%metaquantome%metaquantome_filter">metaquantome_filter</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxyp%metaquantome%metaquantome_sample">metaquantome_sample</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxyp%metaquantome%metaquantome_stat">metaquantome_stat</a></li>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%galaxyp%metaquantome%metaquantome_viz">metaquantome_viz</a></li>
+      </ul>
+  - title_md: maaslin2
+    description_md: |-
+      MaAsLin2 is comprehensive R package for efficiently determining multivariable association between microbial meta'omic features and clinical metadata.
+      <ul>
+        <li><a href="{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%iuc%maaslin2%maaslin2">maaslin2</a></li>
       </ul>

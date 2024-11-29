@@ -6,6 +6,9 @@ import pandas as pd
 from ruamel.yaml import YAML as yaml
 from ruamel.yaml.scalarstring import LiteralScalarString
 
+number_of_categories = 10
+number_of_tools = 10
+
 
 def add_tools_url(tools) -> None:
     return tools
@@ -41,7 +44,7 @@ def main() -> None:
         }
 
         #######################################
-        # Get 5 highest ranking EDAM operations
+        # Get highest ranking EDAM operations
         #######################################
 
         count_column = "No. of tool users (5 years) - all main servers"
@@ -68,7 +71,7 @@ def main() -> None:
         ###########################
 
         # Step 4: Sort by total count in descending order
-        top_categories = filtered.sort_values(by="total_count", ascending=False).head(5)["Category"]
+        top_categories = filtered.sort_values(by="total_count", ascending=False).head(number_of_categories)["Category"]
 
         # Step 5: Assign each tool to the first category it appears in
         # Sort by 'Galaxy wrapper id' to ensure we assign based on first appearance
@@ -83,7 +86,7 @@ def main() -> None:
         # Step 7: Extract top 5 items per category based on total count
         top_items_per_category = (
             df_unique.groupby("Category", group_keys=False)  # Group by category
-            .apply(lambda group: group.nlargest(5, count_column))  # Get top 5 items per category
+            .apply(lambda group: group.nlargest(number_of_tools, count_column))  # Get top items per category
             .reset_index(drop=True)  # Reset index for clean output
         )
 
@@ -134,9 +137,9 @@ def main() -> None:
             # create table entry for each EDAM
             yaml_data["tabs"].append(
                 {
-                    "id": group_id,
+                    "id": group_id.replace(" ", "_").lower(),
                     "title": group_id,
-                    "heading_md": f"Top 5 tool with EDAM operation: {group_id}",
+                    "heading_md": f"Top 10 for the EDAM operation: {group_id}",
                     "content": tool_entries,
                 }
             )
