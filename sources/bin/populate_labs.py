@@ -31,54 +31,115 @@ def main() -> None:
 
     try:
         # Read the TSV file with pandas (use tab delimiter)
-        data = pd.read_csv(args.tool_tsv, sep="\t")
+        tools = pd.read_csv(args.tool_tsv, sep="\t")
 
         # Construct the YAML data structure
         yaml_data = {
             "id": "tools",
-            "title": "Community Tools",
-            "tabs": [
-                {"id": "tool_list", "title": "List of community curated tools available for microGalaxy", "content": []}
-            ],
+            "title": "Community curated tools",
+            "tabs": [],
         }
 
-        # Populate the content section with each row from the TSV
-        for _, row in data.iterrows():
-            # Use the first column (assumed to be the tool title) as the title_md
-            title_md = row[data.columns[0]]  # Get the first column's value as title_md
+        #######################################
+        # Get 5 highest ranking EDAM operations
+        #######################################
 
-            # Prepare the description with an HTML unordered list and links for each Galaxy tool ID
-            description = f"{row['Description']}"
-            tool_ids = row["Galaxy tool ids"]
-            owner = row["Galaxy wrapper owner"]
-            wrapper_id = row["Galaxy wrapper id"]
+        count_column = "No. of tool users (5 years) - all main servers"
 
-            # Split the tool IDs by comma if it's a valid string, otherwise handle as an empty list
-            tool_ids_list = tool_ids.split(",") if isinstance(tool_ids, str) else []
+        # Step 1: Split the categories into separate rows and strip whitespace
+        df = tools.assign(Category=tools["EDAM operation"].str.split(",")).explode("Category")
+        df["Category"] = df["Category"].str.strip()  # Strip whitespace
 
-            # Create the base URL template for each tool link
-            url_template = (
-                "{{ galaxy_base_url }}/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%{owner}%{wrapper_id}%{tool_id}"
+        # Step 2: Group by category to calculate total count and item count
+        grouped = (
+            df.groupby("Category")
+            .agg(
+                total_count=(count_column, "sum"),
+                item_count=("Galaxy wrapper id", "size"),  # Count distinct items if necessary, use 'nunique'
             )
+            .reset_index()
+        )
 
-            # Build HTML list items with links
-            description += "\n<ul>\n"
-            for tool_id in tool_ids_list:
-                tool_id = tool_id.strip()  # Trim whitespace
-                # Format the URL with owner, wrapper ID, and tool ID
-                url = url_template.format(owner=owner, wrapper_id=wrapper_id, tool_id=tool_id)
-                description += f'  <li><a href="{url}">{tool_id}</a></li>\n'
-            description += "</ul>"
+        # Step 3: Filter categories with at least 5 items
+        filtered = grouped[grouped["item_count"] >= 5]
 
-            # Use LiteralScalarString to enforce literal block style for the description
-            description_md = LiteralScalarString(description.strip())
+        ###########################
+        # Get the corresponding tools
+        ###########################
 
-            # Create the tool entry
-            tool_entry = {
-                "title_md": title_md,
-                "description_md": description_md,
-            }
-            yaml_data["tabs"][0]["content"].append(tool_entry)
+        # Step 4: Sort by total count in descending order
+        top_categories = filtered.sort_values(by="total_count", ascending=False).head(5)["Category"]
+
+        # Step 5: Assign each tool to the first category it appears in
+        # Sort by 'Galaxy wrapper id' to ensure we assign based on first appearance
+        df_unique = df[df["Category"].isin(top_categories)]  # Filter rows for top 5 categories
+        df_unique = df_unique.sort_values(
+            by=["Galaxy wrapper id", "Category"]
+        )  # Sort by tool ID to keep first category only
+
+        # Step 6: Remove duplicates, keeping the first appearance of each tool
+        df_unique = df_unique.drop_duplicates(subset=["Galaxy wrapper id"], keep="first")
+
+        # Step 7: Extract top 5 items per category based on total count
+        top_items_per_category = (
+            df_unique.groupby("Category", group_keys=False)  # Group by category
+            .apply(lambda group: group.nlargest(5, count_column))  # Get top 5 items per category
+            .reset_index(drop=True)  # Reset index for clean output
+        )
+
+        #############################
+        # Populate the table
+        #############################
+
+        for group_id, group in top_items_per_category.groupby("Category"):
+
+            tool_entries = []
+            for index, row in group.iterrows():
+
+                # title_md = row[data.columns[0]]  # Get the first column's value as title_md
+
+                # Prepare the description with an HTML unordered list and links for each Galaxy tool ID
+                description = f"{row['Description']}"
+                tool_ids = row["Galaxy tool ids"]
+                owner = row["Galaxy wrapper owner"]
+                wrapper_id = row["Galaxy wrapper id"]
+
+                # Split the tool IDs by comma if it's a valid string, otherwise handle as an empty list
+                tool_ids_list = tool_ids.split(",") if isinstance(tool_ids, str) else []
+
+                # Create the base URL template for each tool link
+                url_template = "/tool_runner?tool_id=toolshed.g2.bx.psu.edu%Frepos%{owner}%{wrapper_id}%{tool_id}"
+
+                # Build HTML list items with links
+                description += "\n<ul>\n"
+                for tool_id in tool_ids_list:
+                    tool_id = tool_id.strip()  # Trim whitespace
+                    # Format the URL with owner, wrapper ID, and tool ID
+                    url = url_template.format(owner=owner, wrapper_id=wrapper_id, tool_id=tool_id)
+                    url = "{{ galaxy_base_url }}" + url
+                    description += f'  <li><a href="{url}">{tool_id}</a></li>\n'
+                description += "</ul>"
+
+                # Use LiteralScalarString to enforce literal block style for the description
+                description_md = LiteralScalarString(description.strip())
+
+                # Create the tool entry
+                tool_entry = {
+                    "title_md": wrapper_id,
+                    "description_md": description_md,
+                }
+
+                tool_entries.append(tool_entry)
+
+            # create table entry for each EDAM
+            yaml_data["tabs"].append(
+                {
+                    "id": group_id,
+                    "title": group_id,
+                    "heading_md": f"Top 5 tool with EDAM operation: {group_id}",
+                    "content": tool_entries,
+                }
+            )
 
         # Write the YAML data to the output file
         with open(args.tool_yml, "w") as yaml_file:
