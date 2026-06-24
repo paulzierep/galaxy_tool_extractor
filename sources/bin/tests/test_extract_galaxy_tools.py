@@ -22,7 +22,7 @@ from extract_galaxy_tools import (
     add_workflow_ids_to_tools,
     aggregate_tool_stats,
     get_all_installed_tool_ids_on_server,
-    get_galaxy_eu_usage_from_api,
+    get_galaxy_usage_from_api,
     get_github_repo,
     get_last_url_position,
     get_suite_ID_fallback,
@@ -431,8 +431,8 @@ class TestGetAllInstalledToolIdsOnServer(unittest.TestCase):
         self.assertEqual(result, [])
 
 
-class TestGetGalaxyEuUsageFromApi(unittest.TestCase):
-    """Tests for get_galaxy_eu_usage_from_api."""
+class TestGetGalaxyUsageFromApi(unittest.TestCase):
+    """Tests for get_galaxy_usage_from_api."""
 
     def _make_frame(self, tool_ids, versions, counts):
         """Helper to build a mock Grafana response frame."""
@@ -468,26 +468,26 @@ class TestGetGalaxyEuUsageFromApi(unittest.TestCase):
                 counts=[100, 200, 300, 400, 500],
             )
         ])
-        result = get_galaxy_eu_usage_from_api()
+        result = get_galaxy_usage_from_api("test-ds-uid")
         self.assertEqual(result, {"rna_star": 300, "fastp": 700, "bwa": 500})
 
     @patch("extract_galaxy_tools.requests.post")
     def test_no_frames_returns_empty(self, mock_post: MagicMock) -> None:
         """When the API returns no frames, return empty dict."""
         mock_post.return_value.json.return_value = self._make_response([])
-        result = get_galaxy_eu_usage_from_api()
+        result = get_galaxy_usage_from_api("test-ds-uid")
         self.assertEqual(result, {})
 
     @patch("extract_galaxy_tools.requests.post")
     def test_http_error_returns_empty(self, mock_post: MagicMock) -> None:
         """On HTTP error, return empty dict."""
         mock_post.return_value.raise_for_status.side_effect = Exception("API error")
-        result = get_galaxy_eu_usage_from_api()
+        result = get_galaxy_usage_from_api("test-ds-uid")
         self.assertEqual(result, {})
 
     @patch("extract_galaxy_tools.requests.post")
     def test_malformed_response_returns_empty(self, mock_post: MagicMock) -> None:
         """On malformed JSON, return empty dict."""
         mock_post.return_value.json.side_effect = ValueError("bad json")
-        result = get_galaxy_eu_usage_from_api()
+        result = get_galaxy_usage_from_api("test-ds-uid")
         self.assertEqual(result, {})

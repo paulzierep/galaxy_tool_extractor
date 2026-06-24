@@ -35,7 +35,9 @@ from ruamel.yaml.scalarstring import LiteralScalarString
 # Config variables
 BIOTOOLS_API_URL = "https://bio.tools"
 GALAXY_STATS_API_URL = "https://stats.galaxyproject.eu/api/ds/query"
-INFLUXDB_DS_UID = "P9B81C0353945995B"
+GALAXY_STATS_DATASOURCES = {
+    "eu": "P9B81C0353945995B",
+}
 
 USEGALAXY_SERVER_URLS = {
     "UseGalaxy.org (Main)": "https://usegalaxy.org",
@@ -95,9 +97,9 @@ def get_last_url_position(toot_id: str) -> str:
     return toot_id
 
 
-def get_galaxy_eu_usage_from_api() -> Dict[str, int]:
+def get_galaxy_usage_from_api(datasource_uid: str) -> Dict[str, int]:
     """
-    Query Galaxy EU tool usage from the stats Grafana API.
+    Query tool usage for a Galaxy server from the stats Grafana API.
 
     Runs a single query that returns LAST("count") per tool_id per version,
     then sums across versions to produce a dict of {tool_id: total_jobs}.
@@ -108,7 +110,7 @@ def get_galaxy_eu_usage_from_api() -> Dict[str, int]:
         "queries": [
             {
                 "refId": "A",
-                "datasource": {"type": "influxdb", "uid": INFLUXDB_DS_UID},
+                "datasource": {"type": "influxdb", "uid": datasource_uid},
                 "query": query,
                 "rawQuery": True,
                 "resultFormat": "table",
@@ -133,7 +135,7 @@ def get_galaxy_eu_usage_from_api() -> Dict[str, int]:
         return totals
     except Exception:
         print(
-            "Failed to fetch Galaxy EU tool usage from API",
+            f"Failed to fetch Galaxy usage stats for datasource {datasource_uid} from API",
             file=sys.stderr,
         )
         return {}
@@ -829,8 +831,12 @@ def get_tools(
             )
             print(traceback.format_exc())
 
-    # fetch Galaxy EU tool usage from stats API
-    eu_tool_usage = get_galaxy_eu_usage_from_api()
+    # fetch tool usage from stats API for each configured server
+    galaxy_usage_from_api: Dict[str, Dict[str, int]] = {}
+    for server_name in GALAXY_STATS_DATASOURCES:
+        galaxy_usage_from_api[server_name] = get_galaxy_usage_from_api(
+            GALAXY_STATS_DATASOURCES[server_name]
+        )
 
     # add additional information to tools
     for tool in tools:
@@ -875,10 +881,12 @@ def get_tools(
 
             tool[name] = get_tool_stats_from_stats_file(tool_stats_df, tool["Tool IDs"], mode=mode)
 
-        # add EU tool usage from API
-        tool["Suite runs (usegalaxy.eu) via API"] = sum(
-            eu_tool_usage.get(tid, 0) for tid in tool["Tool IDs"]
-        )
+        # add tool usage from API for each configured server
+        for server_name in GALAXY_STATS_DATASOURCES:
+            server_usage = galaxy_usage_from_api.get(server_name, {})
+            tool[f"Suite runs (usegalaxy.{server_name}) via API"] = sum(
+                server_usage.get(tid, 0) for tid in tool["Tool IDs"]
+            )
 
         # sum up tool stats
         tool = aggregate_tool_stats(tool, STATS_SUM)
