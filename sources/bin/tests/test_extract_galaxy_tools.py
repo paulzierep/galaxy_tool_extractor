@@ -468,26 +468,26 @@ class TestGetGalaxyUsageFromApi(unittest.TestCase):
                 counts=[100, 200, 300, 400, 500],
             )
         ])
-        result = get_galaxy_usage_from_api("test-ds-uid")
+        result = get_galaxy_usage_from_api("https://stats.example.com/api/ds/query", "test-ds-uid")
         self.assertEqual(result, {"rna_star": 300, "fastp": 700, "bwa": 500})
 
     @patch("extract_galaxy_tools.requests.post")
     def test_no_frames_returns_empty(self, mock_post: MagicMock) -> None:
         """When the API returns no frames, return empty dict."""
         mock_post.return_value.json.return_value = self._make_response([])
-        result = get_galaxy_usage_from_api("test-ds-uid")
+        result = get_galaxy_usage_from_api("https://stats.example.com/api/ds/query", "test-ds-uid")
         self.assertEqual(result, {})
 
     @patch("extract_galaxy_tools.requests.post")
     def test_http_error_returns_empty(self, mock_post: MagicMock) -> None:
         """On HTTP error, return empty dict."""
         mock_post.return_value.raise_for_status.side_effect = Exception("API error")
-        result = get_galaxy_usage_from_api("test-ds-uid")
+        result = get_galaxy_usage_from_api("https://stats.example.com/api/ds/query", "test-ds-uid")
         self.assertEqual(result, {})
 
     @patch("extract_galaxy_tools.requests.post")
     def test_malformed_response_returns_empty(self, mock_post: MagicMock) -> None:
         """On malformed JSON, return empty dict."""
         mock_post.return_value.json.side_effect = ValueError("bad json")
-        result = get_galaxy_usage_from_api("test-ds-uid")
+        result = get_galaxy_usage_from_api("https://stats.example.com/api/ds/query", "test-ds-uid")
         self.assertEqual(result, {})

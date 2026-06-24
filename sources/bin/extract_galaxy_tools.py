@@ -34,9 +34,11 @@ from ruamel.yaml.scalarstring import LiteralScalarString
 
 # Config variables
 BIOTOOLS_API_URL = "https://bio.tools"
-GALAXY_STATS_API_URL = "https://stats.galaxyproject.eu/api/ds/query"
-GALAXY_STATS_DATASOURCES = {
-    "eu": "P9B81C0353945995B",
+GALAXY_STATS_SOURCES = {
+    "eu": {
+        "url": "https://stats.galaxyproject.eu/api/ds/query",
+        "ds_uid": "P9B81C0353945995B",
+    },
 }
 
 USEGALAXY_SERVER_URLS = {
@@ -97,7 +99,7 @@ def get_last_url_position(toot_id: str) -> str:
     return toot_id
 
 
-def get_galaxy_usage_from_api(datasource_uid: str) -> Dict[str, int]:
+def get_galaxy_usage_from_api(api_url: str, datasource_uid: str) -> Dict[str, int]:
     """
     Query tool usage for a Galaxy server from the stats Grafana API.
 
@@ -120,7 +122,7 @@ def get_galaxy_usage_from_api(datasource_uid: str) -> Dict[str, int]:
         "to": "now",
     }
     try:
-        resp = requests.post(GALAXY_STATS_API_URL, json=payload, timeout=30)
+        resp = requests.post(api_url, json=payload, timeout=30)
         resp.raise_for_status()
         data = resp.json()
         frames = data["results"]["A"].get("frames", [])
@@ -833,9 +835,9 @@ def get_tools(
 
     # fetch tool usage from stats API for each configured server
     galaxy_usage_from_api: Dict[str, Dict[str, int]] = {}
-    for server_name in GALAXY_STATS_DATASOURCES:
+    for server_name, source in GALAXY_STATS_SOURCES.items():
         galaxy_usage_from_api[server_name] = get_galaxy_usage_from_api(
-            GALAXY_STATS_DATASOURCES[server_name]
+            source["url"], source["ds_uid"]
         )
 
     # add additional information to tools
@@ -882,7 +884,7 @@ def get_tools(
             tool[name] = get_tool_stats_from_stats_file(tool_stats_df, tool["Tool IDs"], mode=mode)
 
         # add tool usage from API for each configured server
-        for server_name in GALAXY_STATS_DATASOURCES:
+        for server_name in GALAXY_STATS_SOURCES:
             server_usage = galaxy_usage_from_api.get(server_name, {})
             tool[f"Suite runs (usegalaxy.{server_name}) via API"] = sum(
                 server_usage.get(tid, 0) for tid in tool["Tool IDs"]
