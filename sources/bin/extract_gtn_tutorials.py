@@ -5,6 +5,7 @@ import os
 import time
 from datetime import date
 from typing import (
+    Any,
     Dict,
     List,
     Optional,
@@ -18,6 +19,35 @@ from owlready2 import get_ontology
 from ruamel.yaml import YAML as ruamelyaml
 
 PLAUSIBLE_REQUEST_NB = 0
+
+
+TUTORIAL_COLUMNS = [
+    "Topic",
+    "Title",
+    "ID",
+    "Permanent link",
+    "Link",
+    "EDAM topic",
+    "EDAM operation",
+    "Creation",
+    "Last modification",
+    "Version",
+    "Tutorial",
+    "Slides",
+    "Video",
+    "Workflows",
+    "Tools",
+    "Servers with precise tool versions",
+    "Servers with tool but different versions",
+    "Feedback number",
+    "Feedback mean note",
+    "Visitors",
+    "Page views",
+    "Visit duration",
+    "Video views",
+]
+STATUS_COLUMNS = ["Topic", "Title", "Permanent link", "Last modification", "To keep", "Deprecated"]
+CURATED_COLUMNS = TUTORIAL_COLUMNS + ["To keep", "Deprecated"]
 
 
 def add_supported_servers(tuto: dict) -> None:
@@ -136,6 +166,7 @@ def get_youtube_stats(tuto: dict) -> None:
 
 def format_tutorial(tuto: dict, edam_ontology: dict, tools: dict, feedback: dict, plausible_api: str) -> Dict:
     tuto["url"] = f'https://training.galaxyproject.org/{tuto["url"]}'
+    tuto["purl"] = f'gxy.io/GTN:{tuto["short_id"]}'
     tuto["mod_date"] = shared.format_date(tuto["mod_date"])
     tuto["pub_date"] = shared.format_date(tuto["pub_date"])
     add_supported_servers(tuto)
@@ -204,44 +235,50 @@ def get_tutorials(
 
 
 def filter_tutorials(
-    tutorials: List[Dict],
+    tutorials: Any,
     tags: Optional[List[str]],
-    tutorials_status: pd.DataFrame,
-) -> list:
+    tutorials_status: Optional[pd.DataFrame] = None,
+) -> List[Dict]:
     """
-    Filter tutorial
+    Filter tutorials based on a list of tags and add their status (To keep, Deprecated)
+    If tags is None or an empty list, returns all tutorials.
     """
-    if tags is None:
-        tags = []  # Default to an empty list if `tags` is `None`
+    # Normalize input: always work with a list
+    if isinstance(tutorials, dict):
+        tutorials = list(tutorials.values())
 
-    filtered_tutorials = []
-    for tuto in tutorials:
-        to_keep = False
-        if "tags" in tuto and tuto["tags"]:
-            for t in tuto["tags"]:
-                if t in tags:
-                    to_keep = True
-        if to_keep:
-            filtered_tutorials.append(tuto)
+    if not tags:
+        # No tags specified, keep all tutorials
+        filtered_tutorials = list(tutorials)
+    else:
+        filtered_tutorials = [tuto for tuto in tutorials if set(tuto.get("tags") or []) & set(tags)]
+
+    if tutorials_status is not None:
+        for tuto in filtered_tutorials:
             add_status(tuto, tutorials_status)
     return filtered_tutorials
 
 
 def add_status(tutorial: Dict, tutorial_status: pd.DataFrame) -> None:
     """
-    Add status to tutorial
+    Add status (To keep, Deprecated) to a tutorial from the status table
+
+    The tutorial is matched on its permanent link (titles are not unique in the GTN),
+    or on its title for status tables without permanent link
     """
-    title = tutorial["title"]
-    query = tutorial_status.query(f'`Title` == "{title}"')
-    if query.empty:
-        tutorial["To keep"] = None
-        tutorial["Deprecated"] = None
-    else:
-        selected_query = query.iloc[0]
-        tutorial["To keep"] = bool(selected_query["To keep"]) if selected_query["To keep"] is not None else None
-        tutorial["Deprecated"] = (
-            bool(selected_query["Deprecated"]) if selected_query["Deprecated"] is not None else None
-        )
+    match = pd.DataFrame()
+    if "Permanent link" in tutorial_status.columns and tutorial.get("purl"):
+        match = tutorial_status[tutorial_status["Permanent link"] == tutorial["purl"]]
+    if match.empty and "Title" in tutorial_status.columns:
+        match = tutorial_status[tutorial_status["Title"] == tutorial["title"]]
+
+    tutorial["To keep"] = None
+    tutorial["Deprecated"] = None
+    if not match.empty:
+        row = match.iloc[0]
+        for col in ["To keep", "Deprecated"]:
+            if col in row and row[col] is not None:
+                tutorial[col] = bool(row[col])
 
 
 def export_tutorials_to_tsv(
@@ -256,8 +293,6 @@ def export_tutorials_to_tsv(
     """
 
     if tutorials:  # Only proceed if 'tutorials' is not empty
-        df = pd.DataFrame(tutorials).sort_values("title")
-
         df = pd.DataFrame(tutorials).assign(
             Workflows=lambda df: df.workflows.notna(),
             exact_supported_servers=lambda df: df.exact_supported_servers.fillna("").apply(list),
@@ -276,8 +311,10 @@ def export_tutorials_to_tsv(
         df = df.rename(
             columns={
                 "title": "Title",
+                "short_id": "ID",
                 "hands_on": "Tutorial",
                 "url": "Link",
+                "purl": "Permanent link",
                 "slides": "Slides",
                 "mod_date": "Last modification",
                 "pub_date": "Creation",
@@ -300,11 +337,10 @@ def export_tutorials_to_tsv(
                 "deprecated": "Deprecated",
             }
         ).fillna("")
-        if to_keep_columns is not None:
-            df = df[to_keep_columns]
-    # else:  # Create a DataFrame with the specified headers and save it
-    # df = pd.DataFrame(columns=["Suite ID", "bio.tool name", "EDAM operations", "EDAM topics"])
-
+        df = df.reindex(columns=to_keep_columns if to_keep_columns is not None else TUTORIAL_COLUMNS)
+    else:
+        # no tutorials: write the header only
+        df = pd.DataFrame(columns=to_keep_columns if to_keep_columns is not None else TUTORIAL_COLUMNS)
     df.to_csv(output_fp, sep="\t", index=False)
 
 
@@ -325,7 +361,7 @@ def extract_top_tutorials_per_category(
         df.groupby("Category")
         .agg(
             total_count=(count_column, "sum"),
-            item_count=("Link", "size"),  # Count distinct items if necessary, use 'nunique'
+            item_count=("Permanent link", "size"),  # Count distinct items if necessary, use 'nunique'
         )
         .reset_index()
     )
@@ -339,10 +375,12 @@ def extract_top_tutorials_per_category(
     # Step 5: Assign each tutorial to the first category it appears in
     # Sort by 'Galaxy wrapper id' to ensure we assign based on first appearance
     df_unique = df[df["Category"].isin(top_categories)]  # Filter rows for top 5 categories
-    df_unique = df_unique.sort_values(by=["Link", "Category"])  # Sort by tutorial ID to keep first category only
+    df_unique = df_unique.sort_values(
+        by=["Permanent link", "Category"]
+    )  # Sort by tutorial ID to keep first category only
 
     # Step 6: Remove duplicates, keeping the first appearance of each tutorial
-    df_unique = df_unique.drop_duplicates(subset=["Link"], keep="first")
+    df_unique = df_unique.drop_duplicates(subset=["Permanent link"], keep="first")
 
     # Step 7: Extract top X items per category based on total count
     top_tutorials_per_category = (
@@ -382,7 +420,7 @@ def fill_lab_tutorial_section(
             # Prepare the description with an HTML unordered list and links for each tutorial link (only unique id)
             title = f"{row['Title']}\n (Visitors: {row[count_column]})"
             description = f"Tutorial stored in {row['Topic']} topic on the Galaxy Training Network and covering topics related to {row['EDAM topic']}"
-            link = row["Link"]
+            link = row["Permanent link"]
 
             # Create the tutorial entry
             tutorial_entry = {
@@ -453,8 +491,7 @@ if __name__ == "__main__":
     filtertuto.add_argument(
         "--json",
         "-j",
-        required=True,
-        help="Filepath to JSON file with all extracted tutorials, generated by extracttutorials command",
+        help="Filepath to JSON file with the filtered tutorials (needed for the curate command)",
     )
     filtertuto.add_argument(
         "--filtered",
@@ -504,6 +541,7 @@ if __name__ == "__main__":
     labpop = subparser.add_parser("popLabSection", help="Fill in Lab section tutorials")
     labpop.add_argument(
         "--curated",
+        "--tsv",
         "-c",
         required=True,
         help="Filepath to TSV with curated tutorials",
@@ -522,89 +560,24 @@ if __name__ == "__main__":
 
     elif args.command == "filter":
         all_tutorials = shared.load_json(args.all)
-        # get categories
+        # get tags
         tags = shared.read_file(args.tags) if args.tags else None
         # get status if file provided
         if args.status and os.path.exists(args.status):
             status = pd.read_csv(args.status, sep="\t").replace(np.nan, None)
         else:
-            status = pd.DataFrame(
-                columns=[
-                    "Topic",
-                    "Title",
-                    "Link",
-                    "EDAM topic",
-                    "EDAM operation",
-                    "Creation",
-                    "Last modification",
-                    "Version",
-                    "Tutorial",
-                    "Slides",
-                    "Video",
-                    "Workflows",
-                    "Tools",
-                    "Servers with precise tool versions",
-                    "Servers with tool but different versions",
-                    "Feedback number",
-                    "Feedback mean note",
-                    "Visitors",
-                    "Page views",
-                    "Visit duration",
-                    "Video views",
-                    "To keep",
-                    "Deprecated",
-                ]
-            )
+            status = pd.DataFrame(columns=STATUS_COLUMNS)
         # filter lists
         filtered_tutorials = filter_tutorials(all_tutorials, tags, status)
-        if filtered_tutorials:
-            # Export filtered tutorials to resource folder
+        if not filtered_tutorials:
+            print(f"No tutorials found for {args.filtered}")
+        export_tutorials_to_tsv(filtered_tutorials, args.filtered)
+        shared.export_to_yml(filtered_tutorials, args.yml)
+        if args.json:
             shared.export_to_json(filtered_tutorials, args.json)
-            shared.export_to_yml(filtered_tutorials, args.yml)
-            export_tutorials_to_tsv(
-                filtered_tutorials,
-                args.filtered,
-                to_keep_columns=[
-                    "Topic",
-                    "Title",
-                    "Link",
-                    "EDAM topic",
-                    "EDAM operation",
-                    "Creation",
-                    "Last modification",
-                    "Version",
-                    "Tutorial",
-                    "Slides",
-                    "Video",
-                    "Workflows",
-                    "Tools",
-                    "Servers with precise tool versions",
-                    "Servers with tool but different versions",
-                    "Feedback number",
-                    "Feedback mean note",
-                    "Visitors",
-                    "Page views",
-                    "Visit duration",
-                    "Video views",
-                    "To keep",
-                    "Deprecated",
-                ],
-            )
-            # Export filtered tutorials to metadata folder (file that will be manually updated for curation)
-            export_tutorials_to_tsv(
-                filtered_tutorials,
-                args.status,
-                to_keep_columns=[
-                    "Topic",
-                    "Title",
-                    "Last modification",
-                    "To keep",
-                    "Deprecated",
-                ],
-            )
-        else:
-            # if there are no ts filtered tutorials
-            print(f"No tutorials found for category {args.filtered}")
+        if args.status:
+            # tutorial status file in the metadata folder, manually updated by the community for curation
+            export_tutorials_to_tsv(filtered_tutorials, args.status, to_keep_columns=STATUS_COLUMNS)
 
     elif args.command == "curate":
         tutos = shared.load_json(args.filtered)
@@ -613,43 +586,13 @@ if __name__ == "__main__":
         except Exception as ex:
             print(f"Failed to load {args.status} file with:\n{ex}")
             print("Not assigning tutorial status for this community !")
-            status = pd.DataFrame(columns=["Topic", "Title", "Last modification", "To keep", "Deprecated"])
+            status = pd.DataFrame(columns=STATUS_COLUMNS)
         curated_tutorials = curate_tutorials(tutos, status)
-        if curated_tutorials:
-            shared.export_to_json(curated_tutorials, args.curated)
-            shared.export_to_yml(curated_tutorials, args.yml)
-            export_tutorials_to_tsv(
-                curated_tutorials,
-                args.tsv_curated,
-                to_keep_columns=[
-                    "Topic",
-                    "Title",
-                    "Link",
-                    "EDAM topic",
-                    "EDAM operation",
-                    "Creation",
-                    "Last modification",
-                    "Version",
-                    "Tutorial",
-                    "Slides",
-                    "Video",
-                    "Workflows",
-                    "Tools",
-                    "Servers with precise tool versions",
-                    "Servers with tool but different versions",
-                    "Feedback number",
-                    "Feedback mean note",
-                    "Visitors",
-                    "Page views",
-                    "Visit duration",
-                    "Video views",
-                    "To keep",
-                    "Deprecated",
-                ],
-            )
-        else:
-            # if there are no ts filtered tutorials
+        if not curated_tutorials:
             print("No tutorials left after curation")
+        shared.export_to_json(curated_tutorials, args.curated)
+        shared.export_to_yml(curated_tutorials, args.yml)
+        export_tutorials_to_tsv(curated_tutorials, args.tsv_curated, to_keep_columns=CURATED_COLUMNS)
 
     elif args.command == "popLabSection":
         lab_section = shared.load_yaml(args.lab)

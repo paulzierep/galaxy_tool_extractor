@@ -67,9 +67,14 @@ if [[ ! -e $tutorials_section ]]; then
 fi
 
 ### Create/Update the tutorial file
+### Use the curated tutorials if the community curated some, otherwise all tutorials matching its tags
+tutorials_tsv="communities/$COMMUNITY/resources/curated_tutorials.tsv"
+if [[ ! -f $tutorials_tsv || $(wc -l < $tutorials_tsv) -le 1 ]]; then
+    tutorials_tsv="communities/$COMMUNITY/resources/tutorials.tsv"
+fi
 python sources/bin/extract_gtn_tutorials.py \
     popLabSection \
-    --curated communities/$COMMUNITY/resources/curated_tutorials.tsv \
+    --curated $tutorials_tsv \
     --lab $tutorials_section
     
 ##Update the tutorial in the topic sections of the microbiology labs
